@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h1>{{ page.name }}</h1>
+
+
+<amp-carousel height="500"
+              layout="fixed-height"
+              type="slides">
+{% for image in page.gallery %}
+        <amp-img src="{{ image.url}}"
+                 height="450"
+                 layout="fixed-height"
+                 alt="a sample image"></amp-img>
+{% endfor %}
+</amp-carousel>
