@@ -11,12 +11,13 @@
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     {% include css-head.html %}
 </head>
 <body>
-<header>
+<header class="borders content">
     <amp-img src="/images/weddian-logo-72.png" width="72" height="72"></amp-img>
-    <h3 style="display: inline-block">Weddian Branchenbuch</h3>
+    <h3 style="display: inline-block">Weddian Branchenbuch<sup>(Beta)</sup></h3>
 </header>
 <div class="image-header">
     <div class="slt_item_head">
@@ -39,12 +40,13 @@
     </div>
 </div>
 
-<section class="content">
+<section class="borders content">
     <h2>Intro</h2>
     <p class="intro">{{ page.description}}</p>
 </section>
 
-<section class="content ampstart-card">
+{% if page.gallery %}
+<section class="borders content ampstart-card">
     <amp-carousel width="1280" height="720"
                   layout="responsive"
                   type="slides" id="carousel-with-preview">
@@ -72,12 +74,91 @@
         {% endfor %}
     </amp-carousel>
 </section>
+{% endif %}
 
-<section class="content">
-    <h2>Beschreibung</h2>
-    {{ page.longDescription }}
+<section class="borders content" style="display: flex;">
+    <div style="margin-right: 16px">
+        <h2>Beschreibung</h2>
+        {{ page.longDescription }}
+
+        {% if page.extraData.questions %}
+        <h2>Fragen und Antworten</h2>
+        {% for question in page.extraData.questions %}
+        <h4>{{ question.question }}</h4>
+        <p>{{ question.answer }}
+        {% endfor %}
+        {% endif %}
+
+    </div>
+    <div class="contacts">
+        <h3>Kontakt</h3>
+        <h4>Telefon:</h4>
+        <div><a href="tel:{{page.phone}}">{{page.phone}}</a></div>
+        <h4>E-Mail:</h4>
+        <div><a href="mailto:{{page.email}}">{{page.email}}</a></div>
+        {% if page.socialNetworks %}
+        {% if page.socialNetworks.instagram %}
+        <h4>Instagram:</h4>
+        <div><a href="{{ page.socialNetworks.instagram }}">{{ page.socialNetworks.instagram }}</a></div>
+        {% endif %}
+        {% endif %}
+    </div>
 </section>
 
+<section class="borders content">
+<a name="anfrage"><h2>Unverbindliche Anfrage stellen</h2></a>
+
+    <form method="post"
+          action-xhr="/components/amp-form/submit-form-input-text-xhr"
+          target="_top">
+        <input type="hidden" name="serviceProviderId" value="{{ page.id }}">
+        <div class="form-input-group" style="display: flex; justify-content: space-between">
+            <div style="margin-right: 16px; margin-left: 16px">
+            <input type="text" class="form-control"
+                   name="name"
+                   placeholder="Name"
+                   required>
+            </div>
+            <div style="margin-right: 16px; margin-left: 16px">
+            <input type="email"  class="form-control"
+                   name="userId"
+                   placeholder="E-Mail"
+                   required>
+            </div>
+            <div style="margin-right: 16px; margin-left: 16px">
+            <input type="text"  class="form-control"
+                   name="weddingDate"
+                   placeholder="Hochzeitsdatum"
+                   required>
+            </div>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control"
+                  name="inquiry"
+                  rows="3"
+                  placeholder="Deine Anfrage..."></textarea>
+            <div></div>
+        </div>
+        <div class="form-group" style="display: flex; justify-content: flex-end">
+            <button>Absenden</button>
+        </div>
+        <div submit-success>
+            <template type="amp-mustache">
+                Success! Thanks {{name}} for trying the
+                <code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how
+                <code>amp-form</code> handles errors.
+            </template>
+        </div>
+        <div submit-error>
+            <template type="amp-mustache">
+                Error! Thanks {{name}} for trying the
+                <code>amp-form</code> demo with an error response.
+            </template>
+        </div>
+    </form>
+</section>
+
+{% include footer.html %}
 </body>
 </html>
 

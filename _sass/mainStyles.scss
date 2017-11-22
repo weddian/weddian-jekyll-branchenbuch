@@ -11,13 +11,92 @@ i.fa {
   color: $primary;
 }
 
+a {
+  text-decoration: none;
+}
+
+textarea.form-control {
+  box-sizing: border-box;
+  height: auto;
+}
+
+.form-control {
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border: 1px solid #f1f1f1;
+  border-radius: 0;
+  display: block;
+  font-size: 14px;
+  height: 46px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 15px 20px;
+  color: #969595;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+  box-shadow: none;
+}
+
+.form-group button {
+  background-color: $primary;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  height: 44px;
+  border-radius: 6px;
+  letter-spacing: 0.6px;
+  padding: 0 40px;
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-input-group {
+  margin-right: -16px;
+  margin-left: -16px;
+  margin-bottom: 16px;
+}
+
 .detail-banner-btn i.fa {
   color: #ffffff;
 }
 
 .content {
-  margin-left: $margin;
-  margin-right: $margin;
+  max-width: 980px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.borders {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts {
+  min-width: 320px;
+}
+
+.contacts h3 {
+  background: #f1f1f1;
+  border: 1px solid #ededed;
+  color: #6b6b6b;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px;
+  text-align: left;
+  letter-spacing: 0.4px;
+}
+
+.contacts h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7e7e7e;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 .intro {
@@ -34,7 +113,6 @@ i.fa {
 header {
   display: flex;
   align-items: center;
-  padding-left: $margin;
   height: 80px;
 }
 
