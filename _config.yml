@@ -40,8 +40,8 @@ defaults:
       path: ""
       type: serviceprovider
     values:
-      layout: sp
-      permalink: "/sp/:slug.html"
+      layout: serviceProviderDetails
+      permalink: "/:slug.html"
 
 sass:
   style: compressed

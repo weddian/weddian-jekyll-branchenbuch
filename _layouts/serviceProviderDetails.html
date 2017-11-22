@@ -1,16 +1,84 @@
----
-layout: default
----
-<h1>{{ page.name }}</h1>
+<!doctype html>
+<html amp lang="en">
+<head>
+    {% include amp-head.html %}
+    <title>{{ page.name }}</title>
+    <link rel="canonical" href="https://branchenbuch.weddian.de{{ page.url }}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    {% include css-head.html %}
+</head>
+<body>
+<header>
+    <amp-img src="/images/weddian-logo-72.png" width="72" height="72"></amp-img>
+    <h3 style="display: inline-block">Weddian Branchenbuch</h3>
+</header>
+<div class="image-header">
+    <div class="slt_item_head">
+        <div class="user_logo_pic"><img alt="" src="{{ page.logo.url }}"/></div>
+        <div class="slt_item_contant">
+            <h1>{{ page.name }}</h1>
+            <p class="location"><i class="fa fa-map-marker"></i> {{ page.addressLabel }}</p>
+            <div class="rating-box">
+                <div class="rating"><span> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                        class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </span></div>
+            </div>
+            <div class="head-bookmark-bock">
+                <div class="detail-banner-btn"><a href="#anfrage"><i
+                        class="fa fa-bookmark-o"></i>&nbsp;&nbsp;Anfragen</a>
+                </div>
+                <div class="detail-banner-btn"><a href="#bewertung"><i
+                        class="fa fa-heart-o"></i>&nbsp;&nbsp;Bewerten</a></div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<section class="content">
+    <h2>Intro</h2>
+    <p class="intro">{{ page.description}}</p>
+</section>
 
-<amp-carousel height="500"
-              layout="fixed-height"
-              type="slides">
-{% for image in page.gallery %}
-        <amp-img src="{{ image.url}}"
-                 height="450"
-                 layout="fixed-height"
+<section class="content ampstart-card">
+    <amp-carousel width="1280" height="720"
+                  layout="responsive"
+                  type="slides" id="carousel-with-preview">
+        {% for image in page.gallery %}
+        <amp-img src="{{ image.url | replace: 't_gallery', 't_glry'}}"
+                 width="1280" height="720"
+                 layout="responsive"
                  alt="a sample image"></amp-img>
-{% endfor %}
-</amp-carousel>
+        {% endfor %}
+    </amp-carousel>
+    <amp-carousel class="carousel-preview"
+                  width="auto"
+                  height="100"
+                  style="margin-top:8px"
+                  layout="fixed-height"
+                  type="carousel">
+        {% for image in page.gallery %}
+        <button on="tap:carousel-with-preview.goToSlide(index={{forloop.index0}})">
+            <amp-img src="{{ image.url | replace: 't_gallery', 't_glrythumb' }}"
+                     width="160"
+                     height="90"
+                     layout="fixed"
+                     alt="a sample image"></amp-img>
+        </button>
+        {% endfor %}
+    </amp-carousel>
+</section>
+
+<section class="content">
+    <h2>Beschreibung</h2>
+    {{ page.longDescription }}
+</section>
+
+</body>
+</html>
+
+
