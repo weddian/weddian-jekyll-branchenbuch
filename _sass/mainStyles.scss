@@ -124,12 +124,6 @@ textarea.form-control {
   margin-bottom: 0;
 }
 
-.intro {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  text-align: center;
-  font-size: 18px;
-}
 
 .ampstart-card {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 1px -1px rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
@@ -309,8 +303,31 @@ form.amp-form-submit-error [submit-error] {
   color: red;
 }
 
+q {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  quotes: "“" "”" "‘" "’";
+}
+
+q:before {
+  content: open-quote;
+  font-size: 60px;
+  display: block;
+  margin-right: 8px;
+}
+
+q:after {
+  content: close-quote;
+  font-size: 60px;
+  display: block;
+  margin-left: 8px;
+}
+
 .footer-map {
- /* background-image: url("../images/bg-map.png");*/
+  /* background-image: url("../images/bg-map.png");*/
   background-color: #000000;
   background-position: 50% -40px;
   background-size: contain;
