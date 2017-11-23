@@ -3,7 +3,7 @@
 <head>
 {% include amp-head.html %}
     <title>{{ page.name }}</title>
-    <link rel="canonical" href="https://branchenbuch.weddian.de{{ page.url }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"
           integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
@@ -77,15 +77,6 @@
     <div class="description">
         <h2>Beschreibung</h2>
         {{ page.longDescription }}
-
-        {% if page.extraData.questions %}
-        <h2>Fragen und Antworten</h2>
-        {% for question in page.extraData.questions %}
-        <h4>{{ question.question }}</h4>
-        <p>{{ question.answer }}
-        {% endfor %}
-        {% endif %}
-
     </div>
     <div class="contacts">
         <h3>Kontakt</h3>
@@ -99,10 +90,26 @@
         <div><a href="{{ page.socialNetworks.instagram }}">{{ page.socialNetworks.instagram }}</a></div>
         {% endif %}
         {% endif %}
+        <div class="head-bookmark-bock">
+            <div class="detail-banner-btn"><a href="#anfragen"><i
+                    class="fa fa-bookmark-o"></i>&nbsp;&nbsp;Anfragen</a>
+            </div>
+        </div>
     </div>
 </section>
+
+{% if page.extraData.questions %}
+<section class="borders content" id="faq">
+<h2>Fragen und Antworten</h2>
+{% for question in page.extraData.questions %}
+<h4>{{ question.question }}</h4>
+{{ question.answer }}
+    {% endfor %}
+    {% endif %}
+</section>
+
 {% if page.reviews > 0 %}
-<section class="borders content">
+<section class="borders content" id="reviews">
     <h2>Bewertungen</h2>
     {% for review in page.reviewList %}
     <div class="review">
@@ -131,7 +138,7 @@
     <form method="post"
           action-xhr="/components/amp-form/submit-form-input-text-xhr"
           target="_top">
-        <input type="hidden" name="serviceProviderId" value="{{ page.id }}">
+        <input type="hidden" name="serviceProviderId" value="{{ page.serviceProviderId }}">
         <fieldset class="rating">
             <input name="rating"
                    type="radio"
@@ -220,13 +227,14 @@
     </form>
 </section>
 
+{% if page.offerInquiry %}
 <section class="borders content" id="anfragen" >
 <h2>Unverbindliche Anfrage stellen</h2>
 
     <form method="post"
           action-xhr="/components/amp-form/submit-form-input-text-xhr"
           target="_top">
-        <input type="hidden" name="serviceProviderId" value="{{ page.id }}">
+        <input type="hidden" name="serviceProviderId" value="{{ page.serviceProviderId }}">
         <div class="form-input-group">
             <div>
             <input type="text" class="form-control"
@@ -271,6 +279,7 @@
         </div>
     </form>
 </section>
+{% endif %}
 
 {% include footer.html %}
 </body>

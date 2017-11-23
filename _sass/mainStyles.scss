@@ -199,12 +199,12 @@ header h3 {
   line-height: 40px;
 }
 
-.slt_item_head .detail-banner-btn {
+.detail-banner-btn {
   display: inline-block;
   margin-right: 15px;
 }
 
-.slt_item_head .detail-banner-btn a {
+.detail-banner-btn a {
   background-color: $primary;
   color: #ffffff;
   cursor: pointer;
@@ -245,16 +245,15 @@ header h3 {
 }
 
 .rating {
-  --star-size: 2; /* use CSS variables to calculate dependent dimensions later */
+  color: $primary;
   padding: 0; /* to prevent flicker when mousing over padding */
   border: none; /* to prevent flicker when mousing over border */
   unicode-bidi: bidi-override;
   direction: rtl; /* for CSS-only style change on hover */
   text-align: left; /* revert the RTL direction */
   user-select: none; /* disable mouse/touch selection */
-  font-size: 3em; /* fallback - IE doesn't support CSS variables */
-  font-size: calc(var(--star-size) * 1em); /* because `var(--star-size)em` would be too good to be true */
   cursor: pointer;
+  font-size: 2em;
   /* disable touch feedback on cursor: pointer - http://stackoverflow.com/q/25704650/1269037 */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
@@ -264,9 +263,7 @@ header h3 {
 /* the stars */
 .rating > label {
   display: inline-block;
-  position: relative;
   width: 1.1em; /* magic number to overlap the radio buttons on top of the stars */
-  width: calc(var(--star-size) / 3 * 1.1em);
 }
 
 .rating > *:hover,
@@ -280,9 +277,7 @@ header h3 {
 .rating > *:hover ~ label:before,
 .rating:not(:hover) > input:checked ~ label:before {
   content: "★";
-  position: absolute;
-  left: 0;
-  color: gold;
+  color: $primary;
 }
 
 .rating > input {
