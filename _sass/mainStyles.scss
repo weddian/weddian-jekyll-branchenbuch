@@ -60,6 +60,30 @@ textarea.form-control {
   margin-right: -16px;
   margin-left: -16px;
   margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between
+}
+
+.form-input-group div {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.form-button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.half-box {
+  width: 50%;
+}
+
+.description {
+  margin-right: 16px;
 }
 
 .detail-banner-btn i.fa {
@@ -111,10 +135,18 @@ textarea.form-control {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 1px -1px rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
 
+.carousel-preview {
+  margin-top: 8px;
+}
+
 header {
   display: flex;
   align-items: center;
   height: 80px;
+}
+
+header h3 {
+  display: inline-block;
 }
 
 .image-header {
@@ -278,7 +310,7 @@ form.amp-form-submit-error [submit-error] {
 }
 
 .footer-map {
-  background-image: url("../images/bg-map.png");
+ /* background-image: url("../images/bg-map.png");*/
   background-color: #000000;
   background-position: 50% -40px;
   background-size: contain;
@@ -299,6 +331,18 @@ form.amp-form-submit-error [submit-error] {
   font-size: 0.875rem;
   border-top: 1px solid #353535;
   padding: 30px 0;
+}
+
+.footer-bottom p {
+  text-align: center;
+}
+
+.footer-content {
+  width: 920px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .site-footer hr {

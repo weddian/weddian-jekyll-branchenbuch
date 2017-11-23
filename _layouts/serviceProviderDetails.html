@@ -1,16 +1,14 @@
 <!doctype html>
-<html amp lang="en">
+<html amp lang="de">
 <head>
-    {% include amp-head.html %}
+{% include amp-head.html %}
     <title>{{ page.name }}</title>
     <link rel="canonical" href="https://branchenbuch.weddian.de{{ page.url }}">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"
           integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
-    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <script async custom-element="amp-timeago" src="https://cdn.ampproject.org/v0/amp-timeago-0.1.js"></script>
     {% include css-head.html %}
@@ -18,11 +16,11 @@
 <body>
 <header class="borders content">
     <amp-img src="/images/weddian-logo-72.png" width="72" height="72"></amp-img>
-    <h3 style="display: inline-block">Weddian Branchenbuch<sup>(Beta)</sup></h3>
+    <h3>Weddian Branchenbuch<sup>(Beta)</sup></h3>
 </header>
 <div class="image-header">
     <div class="slt_item_head">
-        <div class="user_logo_pic"><img alt="" src="{{ page.logo.url }}"/></div>
+        <div class="user_logo_pic"><amp-img layout="responsive" width="302" height="170" src="{{ page.logo.url }}"/></div>
         <div class="slt_item_contant">
             <h1>{{ page.name }}</h1>
             <p class="location"><i class="fa fa-map-marker"></i> {{ page.addressLabel }}</p>
@@ -61,7 +59,6 @@
     <amp-carousel class="carousel-preview"
                   width="auto"
                   height="100"
-                  style="margin-top:8px"
                   layout="fixed-height"
                   type="carousel">
         {% for image in page.gallery %}
@@ -77,8 +74,8 @@
 </section>
 {% endif %}
 
-<section class="borders content" style="display: flex;">
-    <div style="margin-right: 16px">
+<section class="borders content flex-box">
+    <div class="description">
         <h2>Beschreibung</h2>
         {{ page.longDescription }}
 
@@ -114,26 +111,23 @@
             <p>{{ review.review }}</p>
         </div>
         <div class="reviewer">
-            <div style="display: flex">
+            <div class="flex-box">
                 <b>{{ review.userName }}</b>
                 <span>&nbsp;aus {{review.userCity}},&nbsp;</span>
-                <amp-timeago locale="de"
+                <amp-timeago locale="de" layout="fixed-height" height="24"
                          cutoff="15552000"
                          datetime="{{review.createdDate | divided_by: 1000 | date: '%FT%T.%LZ'}}">
                 {{review.createdDate | divided_by: 1000 | date: 'am %e.%m.%Y '}}</amp-timeago>
             </div>
-            <div class="stars">{% for i in (1..5) %}
-                {% if i <= review.stars %}★{% else %}☆{% endif %}
-                {% endfor %}
-            </div>
+            <div class="stars">{% for i in (1..5) %}{% if i <= review.stars %}★{% else %}☆{% endif %}{% endfor %}</div>
         </div>
     </div>
     {% endfor %}
 </section>
 {% endif %}
 
-<section class="borders content">
-<a name="bewerten"><h2>{% if page.reviews == 0 %}Erste {% endif %}Bewertung schreiben</h2></a>
+<section class="borders content" id="bewerten" >
+<h2>{% if page.reviews == 0 %}Erste {% endif %}Bewertung schreiben</h2>
 
     <form method="post"
           action-xhr="/components/amp-form/submit-form-input-text-xhr"
@@ -181,20 +175,20 @@
             <label for="rating1"
                    title="1 stars">☆</label>
         </fieldset>
-        <div class="form-input-group" style="display: flex; justify-content: space-between">
-            <div style="margin-right: 16px; margin-left: 16px">
+        <div class="form-input-group">
+            <div>
             <input type="text" class="form-control"
                    name="name"
                    placeholder="Name"
                    required>
             </div>
-            <div style="margin-right: 16px; margin-left: 16px">
+            <div>
             <input type="email"  class="form-control"
                    name="userId"
                    placeholder="E-Mail"
                    required>
             </div>
-            <div style="margin-right: 16px; margin-left: 16px">
+            <div>
             <input type="text"  class="form-control"
                    name="userCity"
                    placeholder="Wohnort"
@@ -208,7 +202,7 @@
                   placeholder="Deine Bewertung..."></textarea>
             <div></div>
         </div>
-        <div class="form-group" style="display: flex; justify-content: flex-end">
+        <div class="form-button-group" >
             <button>Absenden</button>
         </div>
         <div submit-success>
@@ -227,27 +221,27 @@
     </form>
 </section>
 
-<section class="borders content">
-<a name="anfragen"><h2>Unverbindliche Anfrage stellen</h2></a>
+<section class="borders content" id="anfragen" >
+<h2>Unverbindliche Anfrage stellen</h2>
 
     <form method="post"
           action-xhr="/components/amp-form/submit-form-input-text-xhr"
           target="_top">
         <input type="hidden" name="serviceProviderId" value="{{ page.id }}">
-        <div class="form-input-group" style="display: flex; justify-content: space-between">
-            <div style="margin-right: 16px; margin-left: 16px">
+        <div class="form-input-group">
+            <div>
             <input type="text" class="form-control"
                    name="name"
                    placeholder="Name"
                    required>
             </div>
-            <div style="margin-right: 16px; margin-left: 16px">
+            <div>
             <input type="email"  class="form-control"
                    name="userId"
                    placeholder="E-Mail"
                    required>
             </div>
-            <div style="margin-right: 16px; margin-left: 16px">
+            <div>
             <input type="text"  class="form-control"
                    name="weddingDate"
                    placeholder="Hochzeitsdatum"
@@ -259,9 +253,8 @@
                   name="inquiry"
                   rows="3"
                   placeholder="Deine Anfrage..."></textarea>
-            <div></div>
         </div>
-        <div class="form-group" style="display: flex; justify-content: flex-end">
+        <div class="form-button-group">
             <button>Absenden</button>
         </div>
         <div submit-success>
