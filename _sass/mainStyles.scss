@@ -298,6 +298,18 @@ form.amp-form-submit-error [submit-error] {
   color: red;
 }
 
+form.amp-form-submit-success [submit-success] {
+  color: green;
+  font-weight: bold;
+}
+
+form.amp-form-submit-success.hide-inputs > fieldset,
+form.amp-form-submit-success.hide-inputs .form-input-group,
+form.amp-form-submit-success.hide-inputs .form-group,
+form.amp-form-submit-success.hide-inputs .form-button-group {
+  display: none;
+}
+
 q {
   margin-top: 24px;
   margin-bottom: 24px;
