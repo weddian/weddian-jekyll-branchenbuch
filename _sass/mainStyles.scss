@@ -38,7 +38,7 @@ textarea.form-control {
   box-shadow: none;
 }
 
-.form-group button {
+.form-button-group button {
   background-color: $primary;
   color: #ffffff;
   font-size: 16px;
@@ -212,7 +212,6 @@ header h3 {
   font-weight: 600;
   font-size: 14px;
   border-radius: 6px;
-  -webkit-transition: all .6s ease 0;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
@@ -263,7 +262,7 @@ header h3 {
 /* the stars */
 .rating > label {
   display: inline-block;
-  width: 1.1em; /* magic number to overlap the radio buttons on top of the stars */
+  width: 1em; /* magic number to overlap the radio buttons on top of the stars */
 }
 
 .rating > *:hover,
@@ -334,7 +333,7 @@ q:after {
 }
 
 .footer-map {
-  /* background-image: url("../images/bg-map.png");*/
+  margin-top: 16px;
   background-color: #000000;
   background-position: 50% -40px;
   background-size: contain;
