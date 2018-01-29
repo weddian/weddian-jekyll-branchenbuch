@@ -223,8 +223,8 @@
 <section class="borders content" id="anfragen" >
 <h2>Unverbindliche Anfrage stellen</h2>
 
-    <form method="post"
-          action-xhr="/components/amp-form/submit-form-input-text-xhr"
+    <form method="post" class="hide-inputs"
+          action-xhr="{{ site.backend }}/api/v2/userInquiry"
           target="_top">
         <input type="hidden" name="serviceProviderId" value="{{ page.serviceProviderId }}">
         <div class="form-input-group">
@@ -239,6 +239,11 @@
                    name="userId"
                    placeholder="E-Mail"
                    required>
+            </div>
+            <div>
+            <input type="tel"  class="form-control"
+                   name="phone"
+                   placeholder="Telefon (optional)">
             </div>
             <div>
             <input type="text"  class="form-control"
@@ -258,15 +263,12 @@
         </div>
         <div submit-success>
             <template type="amp-mustache">
-                Success! Thanks {{name}} for trying the
-                <code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how
-                <code>amp-form</code> handles errors.
+                Vielen Dank für deine Anfrage!
             </template>
         </div>
         <div submit-error>
             <template type="amp-mustache">
-                Error! Thanks {{name}} for trying the
-                <code>amp-form</code> demo with an error response.
+                Bitte fülle alle Felder aus und gib mindestens 30 Zeichen in der Anfrage ein.
             </template>
         </div>
     </form>
