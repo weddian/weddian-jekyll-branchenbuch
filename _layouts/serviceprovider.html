@@ -1,23 +1,7 @@
-<!doctype html>
-<html amp lang="de">
-<head>
-{% include amp-head.html %}
-    <title>{{ page.name }}</title>
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"
-          integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
-    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
-    <script async custom-element="amp-timeago" src="https://cdn.ampproject.org/v0/amp-timeago-0.1.js"></script>
-    {% include css-head.html %}
-</head>
-<body>
-<header class="borders content">
-    <amp-img src="/images/weddian-logo-72.png" width="72" height="72"></amp-img>
-    <h3>Weddian Branchenbuch<sup>(Beta)</sup></h3>
-</header>
+---
+layout: default
+---
+
 <div class="image-header">
     <div class="slt_item_head">
         <div class="user_logo_pic"><amp-img layout="responsive" width="302" height="170" src="{{ page.logo.url }}"/></div>
@@ -274,9 +258,5 @@
     </form>
 </section>
 {% endif %}
-
-{% include footer.html %}
-</body>
-</html>
 
 

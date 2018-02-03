@@ -21,15 +21,35 @@ plugins:
 collections:
   serviceprovider:
     output: true
-
+  cities:
+    output: true
+  states:
+    output: true
+  categories:
+    output: true
 
 defaults:
   - scope:
       path: ""
       type: serviceprovider
     values:
-      layout: serviceProviderDetails
+      layout: serviceprovider
       permalink: "/:slug.html"
+  - scope:
+      path: ""
+      type: cities
+    values:
+      layout: city
+  - scope:
+      path: ""
+      type: categories
+    values:
+      layout: category
+  - scope:
+      path: ""
+      type: states
+    values:
+      layout: city
 
 sass:
   style: compressed

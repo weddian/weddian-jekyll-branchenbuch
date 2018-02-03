@@ -1,0 +1,1831 @@
+[{
+    "relation_id": 62456,
+    "schluessel": 51120000000,
+    "name": "Duisburg",
+    "ways": 57756,
+    "nodes": 6352,
+    "relations": 12,
+    "all_elements": 64120,
+    "monthly_growth": 14013,
+    "inhabitants": 486855
+}, {
+    "relation_id": 162715,
+    "schluessel": 55540008008,
+    "name": "Bocholt",
+    "ways": 15533,
+    "nodes": 2079,
+    "relations": 2,
+    "all_elements": 17614,
+    "monthly_growth": 3381,
+    "inhabitants": 70856
+}, {
+    "relation_id": 62630,
+    "schluessel": 73150000000,
+    "name": "Mainz",
+    "ways": 21908,
+    "nodes": 2578,
+    "relations": 22,
+    "all_elements": 24508,
+    "monthly_growth": 3228,
+    "inhabitants": 204268
+}, {
+    "relation_id": 915486,
+    "schluessel": 81365001088,
+    "name": "Aalen",
+    "ways": 16229,
+    "nodes": 437,
+    "relations": 4,
+    "all_elements": 16670,
+    "monthly_growth": 2658,
+    "inhabitants": 66813
+}, {
+    "relation_id": 62782,
+    "schluessel": 20000000000,
+    "name": "Hamburg",
+    "ways": 182404,
+    "nodes": 35679,
+    "relations": 83,
+    "all_elements": 218166,
+    "monthly_growth": 2256,
+    "inhabitants": 1746342
+}, {
+    "relation_id": 58623,
+    "schluessel": 51700024024,
+    "name": "Moers",
+    "ways": 5819,
+    "nodes": 1348,
+    "relations": 3,
+    "all_elements": 7170,
+    "monthly_growth": 2189,
+    "inhabitants": 103108
+}, {
+    "relation_id": 62634,
+    "schluessel": 55120000000,
+    "name": "Bottrop",
+    "ways": 21499,
+    "nodes": 394,
+    "relations": 1,
+    "all_elements": 21894,
+    "monthly_growth": 2098,
+    "inhabitants": 116055
+}, {
+    "relation_id": 62591,
+    "schluessel": 55150000000,
+    "name": "Münster",
+    "ways": 57414,
+    "nodes": 2784,
+    "relations": 66,
+    "all_elements": 60264,
+    "monthly_growth": 1795,
+    "inhabitants": 299708
+}, {
+    "relation_id": 62693,
+    "schluessel": 160530000000,
+    "name": "Jena",
+    "ways": 9179,
+    "nodes": 3918,
+    "relations": 11,
+    "all_elements": 13108,
+    "monthly_growth": 1612,
+    "inhabitants": 107679
+}, {
+    "relation_id": 62499,
+    "schluessel": 59150000000,
+    "name": "Hamm",
+    "ways": 36225,
+    "nodes": 857,
+    "relations": 1,
+    "all_elements": 37083,
+    "monthly_growth": 1423,
+    "inhabitants": 176048
+}, {
+    "relation_id": 79194,
+    "schluessel": 71380045045,
+    "name": "Neuwied",
+    "ways": 2927,
+    "nodes": 789,
+    "relations": 0,
+    "all_elements": 3716,
+    "monthly_growth": 1307,
+    "inhabitants": 63883
+}, {
+    "relation_id": 2793104,
+    "schluessel": 81110000000,
+    "name": "Stuttgart",
+    "ways": 74788,
+    "nodes": 6096,
+    "relations": 71,
+    "all_elements": 80955,
+    "monthly_growth": 835,
+    "inhabitants": 604297
+}, {
+    "relation_id": 722092,
+    "schluessel": 81150045045,
+    "name": "Sindelfingen",
+    "ways": 9070,
+    "nodes": 113,
+    "relations": 6,
+    "all_elements": 9189,
+    "monthly_growth": 743,
+    "inhabitants": 61669
+}, {
+    "relation_id": 62638,
+    "schluessel": 150020000000,
+    "name": "Halle (Saale)",
+    "ways": 18755,
+    "nodes": 12763,
+    "relations": 25,
+    "all_elements": 31543,
+    "monthly_growth": 625,
+    "inhabitants": 231565
+}, {
+    "relation_id": 285864,
+    "schluessel": 82210000000,
+    "name": "Heidelberg",
+    "ways": 14432,
+    "nodes": 2405,
+    "relations": 43,
+    "all_elements": 16880,
+    "monthly_growth": 548,
+    "inhabitants": 152113
+}, {
+    "relation_id": 1432648,
+    "schluessel": 31580037037,
+    "name": "Wolfenbüttel",
+    "ways": 3027,
+    "nodes": 2828,
+    "relations": 10,
+    "all_elements": 5865,
+    "monthly_growth": 539,
+    "inhabitants": 51569
+}, {
+    "relation_id": 62409,
+    "schluessel": 34030000000,
+    "name": "Oldenburg",
+    "ways": 16384,
+    "nodes": 6451,
+    "relations": 15,
+    "all_elements": 22850,
+    "monthly_growth": 496,
+    "inhabitants": 159610
+}, {
+    "relation_id": 62713,
+    "schluessel": 51130000000,
+    "name": "Essen",
+    "ways": 78516,
+    "nodes": 4451,
+    "relations": 16,
+    "all_elements": 82983,
+    "monthly_growth": 496,
+    "inhabitants": 569884
+}, {
+    "relation_id": 62508,
+    "schluessel": 53140000000,
+    "name": "Bonn",
+    "ways": 50596,
+    "nodes": 2763,
+    "relations": 29,
+    "all_elements": 53388,
+    "monthly_growth": 489,
+    "inhabitants": 311287
+}, {
+    "relation_id": 157996,
+    "schluessel": 53340032032,
+    "name": "Stolberg",
+    "ways": 6491,
+    "nodes": 132,
+    "relations": 8,
+    "all_elements": 6631,
+    "monthly_growth": 459,
+    "inhabitants": 56191
+}, {
+    "relation_id": 155641,
+    "schluessel": 55660028028,
+    "name": "Ibbenbüren",
+    "ways": 4584,
+    "nodes": 683,
+    "relations": 1,
+    "all_elements": 5268,
+    "monthly_growth": 415,
+    "inhabitants": 50438
+}, {
+    "relation_id": 62532,
+    "schluessel": 96610000000,
+    "name": "Aschaffenburg",
+    "ways": 6606,
+    "nodes": 509,
+    "relations": 9,
+    "all_elements": 7124,
+    "monthly_growth": 410,
+    "inhabitants": 67844
+}, {
+    "relation_id": 62649,
+    "schluessel": 147130000000,
+    "name": "Leipzig",
+    "ways": 24236,
+    "nodes": 18320,
+    "relations": 48,
+    "all_elements": 42604,
+    "monthly_growth": 402,
+    "inhabitants": 531562
+}, {
+    "relation_id": 62780,
+    "schluessel": 95640000000,
+    "name": "Nürnberg",
+    "ways": 22355,
+    "nodes": 28726,
+    "relations": 28,
+    "all_elements": 51109,
+    "monthly_growth": 370,
+    "inhabitants": 498876
+}, {
+    "relation_id": 1730383,
+    "schluessel": 32520006006,
+    "name": "Hameln",
+    "ways": 4298,
+    "nodes": 366,
+    "relations": 0,
+    "all_elements": 4664,
+    "monthly_growth": 353,
+    "inhabitants": 56260
+}, {
+    "relation_id": 1187159,
+    "schluessel": 100410100100,
+    "name": "Saarbrücken",
+    "ways": 12272,
+    "nodes": 2931,
+    "relations": 2,
+    "all_elements": 15205,
+    "monthly_growth": 347,
+    "inhabitants": 177201
+}, {
+    "relation_id": 62695,
+    "schluessel": 64130000000,
+    "name": "Offenbach am Main",
+    "ways": 11750,
+    "nodes": 425,
+    "relations": 16,
+    "all_elements": 12191,
+    "monthly_growth": 328,
+    "inhabitants": 119203
+}, {
+    "relation_id": 62422,
+    "schluessel": 110000000000,
+    "name": "Berlin",
+    "ways": 62431,
+    "nodes": 318051,
+    "relations": 227,
+    "all_elements": 380709,
+    "monthly_growth": 321,
+    "inhabitants": 3421829
+}, {
+    "relation_id": 62734,
+    "schluessel": 51190000000,
+    "name": "Oberhausen",
+    "ways": 25176,
+    "nodes": 515,
+    "relations": 23,
+    "all_elements": 25714,
+    "monthly_growth": 304,
+    "inhabitants": 209097
+}, {
+    "relation_id": 1800297,
+    "schluessel": 59140000000,
+    "name": "Hagen",
+    "ways": 26212,
+    "nodes": 611,
+    "relations": 13,
+    "all_elements": 26836,
+    "monthly_growth": 297,
+    "inhabitants": 185996
+}, {
+    "relation_id": 62449,
+    "schluessel": 53160000000,
+    "name": "Leverkusen",
+    "ways": 8797,
+    "nodes": 2484,
+    "relations": 20,
+    "all_elements": 11301,
+    "monthly_growth": 281,
+    "inhabitants": 160819
+}, {
+    "relation_id": 163256,
+    "schluessel": 59700040040,
+    "name": "Siegen",
+    "ways": 24960,
+    "nodes": 1676,
+    "relations": 8,
+    "all_elements": 26644,
+    "monthly_growth": 257,
+    "inhabitants": 99403
+}, {
+    "relation_id": 62539,
+    "schluessel": 51110000000,
+    "name": "Düsseldorf",
+    "ways": 71806,
+    "nodes": 9064,
+    "relations": 42,
+    "all_elements": 80912,
+    "monthly_growth": 239,
+    "inhabitants": 598686
+}, {
+    "relation_id": 27027,
+    "schluessel": 10030000000,
+    "name": "Lübeck",
+    "ways": 43015,
+    "nodes": 2157,
+    "relations": 16,
+    "all_elements": 45188,
+    "monthly_growth": 235,
+    "inhabitants": 212958
+}, {
+    "relation_id": 62428,
+    "schluessel": 91620000000,
+    "name": "München",
+    "ways": 49412,
+    "nodes": 110372,
+    "relations": 98,
+    "all_elements": 159882,
+    "monthly_growth": 231,
+    "inhabitants": 1407836
+}, {
+    "relation_id": 62559,
+    "schluessel": 40110000000,
+    "name": "Bremen",
+    "ways": 91129,
+    "nodes": 7363,
+    "relations": 70,
+    "all_elements": 98562,
+    "monthly_growth": 222,
+    "inhabitants": 548547
+}, {
+    "relation_id": 58590,
+    "schluessel": 51700048048,
+    "name": "Wesel",
+    "ways": 14433,
+    "nodes": 1191,
+    "relations": 9,
+    "all_elements": 15633,
+    "monthly_growth": 217,
+    "inhabitants": 60070
+}, {
+    "relation_id": 2783849,
+    "schluessel": 84355002016,
+    "name": "Friedrichshafen",
+    "ways": 4743,
+    "nodes": 566,
+    "relations": 1,
+    "all_elements": 5310,
+    "monthly_growth": 213,
+    "inhabitants": 57961
+}, {
+    "relation_id": 418617,
+    "schluessel": 65310005005,
+    "name": "Gießen",
+    "ways": 7850,
+    "nodes": 947,
+    "relations": 0,
+    "all_elements": 8797,
+    "monthly_growth": 208,
+    "inhabitants": 77733
+}, {
+    "relation_id": 62374,
+    "schluessel": 95630000000,
+    "name": "Fürth",
+    "ways": 7993,
+    "nodes": 1882,
+    "relations": 5,
+    "all_elements": 9880,
+    "monthly_growth": 201,
+    "inhabitants": 119808
+}, {
+    "relation_id": 225494,
+    "schluessel": 65340014014,
+    "name": "Marburg",
+    "ways": 6130,
+    "nodes": 805,
+    "relations": 16,
+    "all_elements": 6951,
+    "monthly_growth": 198,
+    "inhabitants": 73125
+}, {
+    "relation_id": 62512,
+    "schluessel": 71110000000,
+    "name": "Koblenz",
+    "ways": 4885,
+    "nodes": 1099,
+    "relations": 32,
+    "all_elements": 6016,
+    "monthly_growth": 197,
+    "inhabitants": 110643
+}, {
+    "relation_id": 191361,
+    "schluessel": 31520012012,
+    "name": "Göttingen",
+    "ways": 16203,
+    "nodes": 2766,
+    "relations": 53,
+    "all_elements": 19022,
+    "monthly_growth": 179,
+    "inhabitants": 116891
+}, {
+    "relation_id": 215978,
+    "schluessel": 65320023023,
+    "name": "Wetzlar",
+    "ways": 1496,
+    "nodes": 145,
+    "relations": 4,
+    "all_elements": 1645,
+    "monthly_growth": 173,
+    "inhabitants": 51135
+}, {
+    "relation_id": 62414,
+    "schluessel": 34010000000,
+    "name": "Delmenhorst",
+    "ways": 1695,
+    "nodes": 1264,
+    "relations": 9,
+    "all_elements": 2968,
+    "monthly_growth": 149,
+    "inhabitants": 74052
+}, {
+    "relation_id": 62430,
+    "schluessel": 120520000000,
+    "name": "Cottbus",
+    "ways": 6947,
+    "nodes": 1944,
+    "relations": 9,
+    "all_elements": 8900,
+    "monthly_growth": 146,
+    "inhabitants": 99595
+}, {
+    "relation_id": 62496,
+    "schluessel": 64140000000,
+    "name": "Wiesbaden",
+    "ways": 7064,
+    "nodes": 2520,
+    "relations": 26,
+    "all_elements": 9610,
+    "monthly_growth": 132,
+    "inhabitants": 273871
+}, {
+    "relation_id": 158445,
+    "schluessel": 59780036036,
+    "name": "Unna",
+    "ways": 6420,
+    "nodes": 696,
+    "relations": 3,
+    "all_elements": 7119,
+    "monthly_growth": 123,
+    "inhabitants": 58856
+}, {
+    "relation_id": 168477,
+    "schluessel": 53620024024,
+    "name": "Frechen",
+    "ways": 4413,
+    "nodes": 71,
+    "relations": 0,
+    "all_elements": 4484,
+    "monthly_growth": 122,
+    "inhabitants": 51080
+}, {
+    "relation_id": 62381,
+    "schluessel": 91610000000,
+    "name": "Ingolstadt",
+    "ways": 1584,
+    "nodes": 24693,
+    "relations": 8,
+    "all_elements": 26285,
+    "monthly_growth": 119,
+    "inhabitants": 129136
+}, {
+    "relation_id": 62594,
+    "schluessel": 145110000000,
+    "name": "Chemnitz",
+    "ways": 23240,
+    "nodes": 12898,
+    "relations": 17,
+    "all_elements": 36155,
+    "monthly_growth": 114,
+    "inhabitants": 242022
+}, {
+    "relation_id": 62405,
+    "schluessel": 130030000000,
+    "name": "Rostock",
+    "ways": 15793,
+    "nodes": 8307,
+    "relations": 22,
+    "all_elements": 24122,
+    "monthly_growth": 111,
+    "inhabitants": 203431
+}, {
+    "relation_id": 191645,
+    "schluessel": 146120000000,
+    "name": "Dresden",
+    "ways": 25612,
+    "nodes": 39648,
+    "relations": 114,
+    "all_elements": 65374,
+    "monthly_growth": 109,
+    "inhabitants": 530754
+}, {
+    "relation_id": 168489,
+    "schluessel": 51620008008,
+    "name": "Grevenbroich",
+    "ways": 16259,
+    "nodes": 845,
+    "relations": 1,
+    "all_elements": 17105,
+    "monthly_growth": 108,
+    "inhabitants": 61891
+}, {
+    "relation_id": 163046,
+    "schluessel": 53580008008,
+    "name": "Düren",
+    "ways": 2925,
+    "nodes": 973,
+    "relations": 0,
+    "all_elements": 3898,
+    "monthly_growth": 107,
+    "inhabitants": 88953
+}, {
+    "relation_id": 62534,
+    "schluessel": 96620000000,
+    "name": "Schweinfurt",
+    "ways": 2714,
+    "nodes": 2120,
+    "relations": 2,
+    "all_elements": 4836,
+    "monthly_growth": 103,
+    "inhabitants": 51851
+}, {
+    "relation_id": 173103,
+    "schluessel": 53780004004,
+    "name": "Bergisch Gladbach",
+    "ways": 6580,
+    "nodes": 452,
+    "relations": 2,
+    "all_elements": 7034,
+    "monthly_growth": 102,
+    "inhabitants": 109425
+}, {
+    "relation_id": 454863,
+    "schluessel": 66310009009,
+    "name": "Fulda",
+    "ways": 1093,
+    "nodes": 1117,
+    "relations": 3,
+    "all_elements": 2213,
+    "monthly_growth": 99,
+    "inhabitants": 65036
+}, {
+    "relation_id": 163307,
+    "schluessel": 51620024024,
+    "name": "Neuss",
+    "ways": 13441,
+    "nodes": 7656,
+    "relations": 5,
+    "all_elements": 21102,
+    "monthly_growth": 95,
+    "inhabitants": 152252
+}, {
+    "relation_id": 62531,
+    "schluessel": 31010000000,
+    "name": "Braunschweig",
+    "ways": 44874,
+    "nodes": 965,
+    "relations": 35,
+    "all_elements": 45874,
+    "monthly_growth": 87,
+    "inhabitants": 247227
+}, {
+    "relation_id": 2772661,
+    "schluessel": 84150061061,
+    "name": "Reutlingen",
+    "ways": 24651,
+    "nodes": 336,
+    "relations": 3,
+    "all_elements": 24990,
+    "monthly_growth": 83,
+    "inhabitants": 111357
+}, {
+    "relation_id": 62691,
+    "schluessel": 82220000000,
+    "name": "Mannheim",
+    "ways": 38422,
+    "nodes": 1027,
+    "relations": 5,
+    "all_elements": 39454,
+    "monthly_growth": 80,
+    "inhabitants": 296690
+}, {
+    "relation_id": 142623,
+    "schluessel": 57660008008,
+    "name": "Bad Salzuflen",
+    "ways": 14145,
+    "nodes": 684,
+    "relations": 0,
+    "all_elements": 14829,
+    "monthly_growth": 79,
+    "inhabitants": 52121
+}, {
+    "relation_id": 62411,
+    "schluessel": 93620000000,
+    "name": "Regensburg",
+    "ways": 9211,
+    "nodes": 3055,
+    "relations": 39,
+    "all_elements": 12305,
+    "monthly_growth": 76,
+    "inhabitants": 140276
+}, {
+    "relation_id": 62481,
+    "schluessel": 150030000000,
+    "name": "Magdeburg",
+    "ways": 12128,
+    "nodes": 8875,
+    "relations": 35,
+    "all_elements": 21038,
+    "monthly_growth": 74,
+    "inhabitants": 231021
+}, {
+    "relation_id": 2420744,
+    "schluessel": 33550022022,
+    "name": "Lüneburg",
+    "ways": 397,
+    "nodes": 16676,
+    "relations": 3,
+    "all_elements": 17076,
+    "monthly_growth": 73,
+    "inhabitants": 71668
+}, {
+    "relation_id": 62646,
+    "schluessel": 57110000000,
+    "name": "Bielefeld",
+    "ways": 65752,
+    "nodes": 3168,
+    "relations": 18,
+    "all_elements": 68938,
+    "monthly_growth": 66,
+    "inhabitants": 328864
+}, {
+    "relation_id": 1176503,
+    "schluessel": 32540021021,
+    "name": "Hildesheim",
+    "ways": 1734,
+    "nodes": 1291,
+    "relations": 4,
+    "all_elements": 3029,
+    "monthly_growth": 64,
+    "inhabitants": 99390
+}, {
+    "relation_id": 1797918,
+    "schluessel": 33510006006,
+    "name": "Celle",
+    "ways": 6616,
+    "nodes": 1106,
+    "relations": 3,
+    "all_elements": 7725,
+    "monthly_growth": 63,
+    "inhabitants": 68508
+}, {
+    "relation_id": 62400,
+    "schluessel": 64120000000,
+    "name": "Frankfurt am Main",
+    "ways": 80678,
+    "nodes": 4834,
+    "relations": 21,
+    "all_elements": 85533,
+    "monthly_growth": 63,
+    "inhabitants": 701350
+}, {
+    "relation_id": 62418,
+    "schluessel": 31030000000,
+    "name": "Wolfsburg",
+    "ways": 5363,
+    "nodes": 3489,
+    "relations": 6,
+    "all_elements": 8858,
+    "monthly_growth": 59,
+    "inhabitants": 122457
+}, {
+    "relation_id": 1421453,
+    "schluessel": 31530017017,
+    "name": "Goslar",
+    "ways": 3920,
+    "nodes": 717,
+    "relations": 4,
+    "all_elements": 4641,
+    "monthly_growth": 57,
+    "inhabitants": 50681
+}, {
+    "relation_id": 397076,
+    "schluessel": 145240330330,
+    "name": "Zwickau",
+    "ways": 1243,
+    "nodes": 4517,
+    "relations": 7,
+    "all_elements": 5767,
+    "monthly_growth": 57,
+    "inhabitants": 91564
+}, {
+    "relation_id": 444912,
+    "schluessel": 64330012012,
+    "name": "Rüsselsheim am Main",
+    "ways": 4662,
+    "nodes": 1849,
+    "relations": 0,
+    "all_elements": 6511,
+    "monthly_growth": 54,
+    "inhabitants": 60929
+}, {
+    "relation_id": 172679,
+    "schluessel": 72110000000,
+    "name": "Trier",
+    "ways": 4303,
+    "nodes": 1115,
+    "relations": 22,
+    "all_elements": 5440,
+    "monthly_growth": 53,
+    "inhabitants": 107233
+}, {
+    "relation_id": 2778914,
+    "schluessel": 84160041041,
+    "name": "Tübingen",
+    "ways": 12757,
+    "nodes": 1242,
+    "relations": 14,
+    "all_elements": 14013,
+    "monthly_growth": 49,
+    "inhabitants": 85383
+}, {
+    "relation_id": 62640,
+    "schluessel": 94620000000,
+    "name": "Bayreuth",
+    "ways": 13717,
+    "nodes": 760,
+    "relations": 5,
+    "all_elements": 14482,
+    "monthly_growth": 49,
+    "inhabitants": 71572
+}, {
+    "relation_id": 148074,
+    "schluessel": 57740032032,
+    "name": "Paderborn",
+    "ways": 31427,
+    "nodes": 2179,
+    "relations": 12,
+    "all_elements": 33618,
+    "monthly_growth": 47,
+    "inhabitants": 143659
+}, {
+    "relation_id": 62581,
+    "schluessel": 64110000000,
+    "name": "Darmstadt",
+    "ways": 7968,
+    "nodes": 12015,
+    "relations": 16,
+    "all_elements": 19999,
+    "monthly_growth": 47,
+    "inhabitants": 149743
+}, {
+    "relation_id": 62495,
+    "schluessel": 84210000000,
+    "name": "Ulm",
+    "ways": 2115,
+    "nodes": 19765,
+    "relations": 5,
+    "all_elements": 21885,
+    "monthly_growth": 44,
+    "inhabitants": 119218
+}, {
+    "relation_id": 62484,
+    "schluessel": 92610000000,
+    "name": "Landshut",
+    "ways": 9020,
+    "nodes": 5487,
+    "relations": 11,
+    "all_elements": 14518,
+    "monthly_growth": 44,
+    "inhabitants": 66179
+}, {
+    "relation_id": 62526,
+    "schluessel": 150010000000,
+    "name": "Dessau-Roßlau",
+    "ways": 7565,
+    "nodes": 4120,
+    "relations": 1,
+    "all_elements": 11686,
+    "monthly_growth": 42,
+    "inhabitants": 83616
+}, {
+    "relation_id": 452988,
+    "schluessel": 83175010096,
+    "name": "Offenburg",
+    "ways": 7840,
+    "nodes": 526,
+    "relations": 6,
+    "all_elements": 8372,
+    "monthly_growth": 40,
+    "inhabitants": 57448
+}, {
+    "relation_id": 62403,
+    "schluessel": 95620000000,
+    "name": "Erlangen",
+    "ways": 17766,
+    "nodes": 3700,
+    "relations": 38,
+    "all_elements": 21504,
+    "monthly_growth": 40,
+    "inhabitants": 105624
+}, {
+    "relation_id": 62518,
+    "schluessel": 82120000000,
+    "name": "Karlsruhe",
+    "ways": 44225,
+    "nodes": 3119,
+    "relations": 72,
+    "all_elements": 47416,
+    "monthly_growth": 38,
+    "inhabitants": 299103
+}, {
+    "relation_id": 62522,
+    "schluessel": 55130000000,
+    "name": "Gelsenkirchen",
+    "ways": 38223,
+    "nodes": 2253,
+    "relations": 16,
+    "all_elements": 40492,
+    "monthly_growth": 35,
+    "inhabitants": 257850
+}, {
+    "relation_id": 405292,
+    "schluessel": 81180048048,
+    "name": "Ludwigsburg",
+    "ways": 4004,
+    "nodes": 419,
+    "relations": 8,
+    "all_elements": 4431,
+    "monthly_growth": 33,
+    "inhabitants": 89639
+}, {
+    "relation_id": 535895,
+    "schluessel": 64350014014,
+    "name": "Hanau",
+    "ways": 2806,
+    "nodes": 3306,
+    "relations": 4,
+    "all_elements": 6116,
+    "monthly_growth": 32,
+    "inhabitants": 89907
+}, {
+    "relation_id": 62369,
+    "schluessel": 120540000000,
+    "name": "Potsdam",
+    "ways": 11247,
+    "nodes": 5957,
+    "relations": 23,
+    "all_elements": 17227,
+    "monthly_growth": 31,
+    "inhabitants": 161468
+}, {
+    "relation_id": 62363,
+    "schluessel": 130750039039,
+    "name": "Greifswald",
+    "ways": 1866,
+    "nodes": 5924,
+    "relations": 5,
+    "all_elements": 7795,
+    "monthly_growth": 31,
+    "inhabitants": 56445
+}, {
+    "relation_id": 62385,
+    "schluessel": 51170000000,
+    "name": "Mülheim an der Ruhr",
+    "ways": 31536,
+    "nodes": 1320,
+    "relations": 12,
+    "all_elements": 32868,
+    "monthly_growth": 30,
+    "inhabitants": 166640
+}, {
+    "relation_id": 62724,
+    "schluessel": 73160000000,
+    "name": "Neustadt an der Weinstraße",
+    "ways": 1400,
+    "nodes": 515,
+    "relations": 2,
+    "all_elements": 1917,
+    "monthly_growth": 30,
+    "inhabitants": 52400
+}, {
+    "relation_id": 27020,
+    "schluessel": 10010000000,
+    "name": "Flensburg",
+    "ways": 6508,
+    "nodes": 665,
+    "relations": 4,
+    "all_elements": 7177,
+    "monthly_growth": 27,
+    "inhabitants": 83971
+}, {
+    "relation_id": 27021,
+    "schluessel": 10020000000,
+    "name": "Kiel",
+    "ways": 28805,
+    "nodes": 7550,
+    "relations": 23,
+    "all_elements": 36378,
+    "monthly_growth": 26,
+    "inhabitants": 241533
+}, {
+    "relation_id": 168449,
+    "schluessel": 51620004004,
+    "name": "Dormagen",
+    "ways": 12583,
+    "nodes": 323,
+    "relations": 3,
+    "all_elements": 12909,
+    "monthly_growth": 26,
+    "inhabitants": 62498
+}, {
+    "relation_id": 158642,
+    "schluessel": 53820056056,
+    "name": "Sankt Augustin",
+    "ways": 2916,
+    "nodes": 4310,
+    "relations": 3,
+    "all_elements": 7229,
+    "monthly_growth": 26,
+    "inhabitants": 54285
+}, {
+    "relation_id": 1829065,
+    "schluessel": 59130000000,
+    "name": "Dortmund",
+    "ways": 98120,
+    "nodes": 647,
+    "relations": 20,
+    "all_elements": 98787,
+    "monthly_growth": 25,
+    "inhabitants": 575944
+}, {
+    "relation_id": 62464,
+    "schluessel": 96630000000,
+    "name": "Würzburg",
+    "ways": 5608,
+    "nodes": 3354,
+    "relations": 13,
+    "all_elements": 8975,
+    "monthly_growth": 25,
+    "inhabitants": 124698
+}, {
+    "relation_id": 59418,
+    "schluessel": 32410001001,
+    "name": "Hannover",
+    "ways": 28106,
+    "nodes": 36210,
+    "relations": 46,
+    "all_elements": 64362,
+    "monthly_growth": 24,
+    "inhabitants": 518386
+}, {
+    "relation_id": 62340,
+    "schluessel": 82110000000,
+    "name": "Baden-Baden",
+    "ways": 9348,
+    "nodes": 1313,
+    "relations": 3,
+    "all_elements": 10664,
+    "monthly_growth": 22,
+    "inhabitants": 53012
+}, {
+    "relation_id": 1242298,
+    "schluessel": 83265004074,
+    "name": "Villingen-Schwenningen",
+    "ways": 9157,
+    "nodes": 3578,
+    "relations": 5,
+    "all_elements": 12740,
+    "monthly_growth": 22,
+    "inhabitants": 81128
+}, {
+    "relation_id": 62407,
+    "schluessel": 97610000000,
+    "name": "Augsburg",
+    "ways": 33477,
+    "nodes": 10679,
+    "relations": 23,
+    "all_elements": 44179,
+    "monthly_growth": 22,
+    "inhabitants": 276542
+}, {
+    "relation_id": 62478,
+    "schluessel": 51240000000,
+    "name": "Wuppertal",
+    "ways": 58175,
+    "nodes": 2691,
+    "relations": 17,
+    "all_elements": 60883,
+    "monthly_growth": 21,
+    "inhabitants": 343488
+}, {
+    "relation_id": 62631,
+    "schluessel": 34040000000,
+    "name": "Osnabrück",
+    "ways": 4407,
+    "nodes": 2566,
+    "relations": 5,
+    "all_elements": 6978,
+    "monthly_growth": 20,
+    "inhabitants": 156315
+}, {
+    "relation_id": 62659,
+    "schluessel": 31020000000,
+    "name": "Salzgitter",
+    "ways": 4008,
+    "nodes": 1046,
+    "relations": 3,
+    "all_elements": 5057,
+    "monthly_growth": 18,
+    "inhabitants": 98197
+}, {
+    "relation_id": 62564,
+    "schluessel": 53340002002,
+    "name": "Aachen",
+    "ways": 40071,
+    "nodes": 2433,
+    "relations": 23,
+    "all_elements": 42527,
+    "monthly_growth": 18,
+    "inhabitants": 241683
+}, {
+    "relation_id": 55060,
+    "schluessel": 53820068068,
+    "name": "Troisdorf",
+    "ways": 18216,
+    "nodes": 47,
+    "relations": 3,
+    "all_elements": 18266,
+    "monthly_growth": 18,
+    "inhabitants": 72978
+}, {
+    "relation_id": 63504,
+    "schluessel": 55620014014,
+    "name": "Gladbeck",
+    "ways": 14702,
+    "nodes": 81,
+    "relations": 3,
+    "all_elements": 14786,
+    "monthly_growth": 17,
+    "inhabitants": 74011
+}, {
+    "relation_id": 62748,
+    "schluessel": 51140000000,
+    "name": "Krefeld",
+    "ways": 5460,
+    "nodes": 33853,
+    "relations": 3,
+    "all_elements": 39316,
+    "monthly_growth": 15,
+    "inhabitants": 222058
+}, {
+    "relation_id": 62671,
+    "schluessel": 160520000000,
+    "name": "Gera",
+    "ways": 4136,
+    "nodes": 2918,
+    "relations": 5,
+    "all_elements": 7059,
+    "monthly_growth": 15,
+    "inhabitants": 94977
+}, {
+    "relation_id": 62493,
+    "schluessel": 160550000000,
+    "name": "Weimar",
+    "ways": 6267,
+    "nodes": 1316,
+    "relations": 9,
+    "all_elements": 7592,
+    "monthly_growth": 14,
+    "inhabitants": 63315
+}, {
+    "relation_id": 62644,
+    "schluessel": 59110000000,
+    "name": "Bochum",
+    "ways": 41307,
+    "nodes": 2902,
+    "relations": 9,
+    "all_elements": 44218,
+    "monthly_growth": 13,
+    "inhabitants": 361734
+}, {
+    "relation_id": 62745,
+    "schluessel": 160510000000,
+    "name": "Erfurt",
+    "ways": 8374,
+    "nodes": 13614,
+    "relations": 16,
+    "all_elements": 22004,
+    "monthly_growth": 13,
+    "inhabitants": 204880
+}, {
+    "relation_id": 1403657,
+    "schluessel": 53660016016,
+    "name": "Euskirchen",
+    "ways": 13850,
+    "nodes": 708,
+    "relations": 8,
+    "all_elements": 14566,
+    "monthly_growth": 12,
+    "inhabitants": 55558
+}, {
+    "relation_id": 63503,
+    "schluessel": 55620020020,
+    "name": "Herten",
+    "ways": 9687,
+    "nodes": 2350,
+    "relations": 0,
+    "all_elements": 12037,
+    "monthly_growth": 12,
+    "inhabitants": 60582
+}, {
+    "relation_id": 62471,
+    "schluessel": 82310000000,
+    "name": "Pforzheim",
+    "ways": 8657,
+    "nodes": 10587,
+    "relations": 5,
+    "all_elements": 19249,
+    "monthly_growth": 12,
+    "inhabitants": 117754
+}, {
+    "relation_id": 2784842,
+    "schluessel": 83355004043,
+    "name": "Konstanz",
+    "ways": 12546,
+    "nodes": 277,
+    "relations": 6,
+    "all_elements": 12829,
+    "monthly_growth": 12,
+    "inhabitants": 81141
+}, {
+    "relation_id": 26225,
+    "schluessel": 130730088088,
+    "name": "Stralsund",
+    "ways": 1821,
+    "nodes": 6666,
+    "relations": 5,
+    "all_elements": 8492,
+    "monthly_growth": 12,
+    "inhabitants": 57301
+}, {
+    "relation_id": 422634,
+    "schluessel": 10600063063,
+    "name": "Norderstedt",
+    "ways": 5729,
+    "nodes": 478,
+    "relations": 2,
+    "all_elements": 6209,
+    "monthly_growth": 11,
+    "inhabitants": 75394
+}, {
+    "relation_id": 155707,
+    "schluessel": 55660076076,
+    "name": "Rheine",
+    "ways": 890,
+    "nodes": 21325,
+    "relations": 1,
+    "all_elements": 22216,
+    "monthly_growth": 11,
+    "inhabitants": 73484
+}, {
+    "relation_id": 62598,
+    "schluessel": 66110000000,
+    "name": "Kassel",
+    "ways": 28521,
+    "nodes": 5490,
+    "relations": 19,
+    "all_elements": 34030,
+    "monthly_growth": 11,
+    "inhabitants": 194087
+}, {
+    "relation_id": 1075335,
+    "schluessel": 34540032032,
+    "name": "Lingen (Ems)",
+    "ways": 391,
+    "nodes": 408,
+    "relations": 0,
+    "all_elements": 799,
+    "monthly_growth": 9,
+    "inhabitants": 52158
+}, {
+    "relation_id": 62578,
+    "schluessel": 53150000000,
+    "name": "Köln",
+    "ways": 146180,
+    "nodes": 10731,
+    "relations": 60,
+    "all_elements": 156971,
+    "monthly_growth": 9,
+    "inhabitants": 1034175
+}, {
+    "relation_id": 63505,
+    "schluessel": 55620012012,
+    "name": "Dorsten",
+    "ways": 17992,
+    "nodes": 739,
+    "relations": 8,
+    "all_elements": 18739,
+    "monthly_growth": 9,
+    "inhabitants": 75547
+}, {
+    "relation_id": 139087,
+    "schluessel": 57700024024,
+    "name": "Minden",
+    "ways": 17231,
+    "nodes": 4920,
+    "relations": 2,
+    "all_elements": 22153,
+    "monthly_growth": 8,
+    "inhabitants": 79969
+}, {
+    "relation_id": 62525,
+    "schluessel": 94610000000,
+    "name": "Bamberg",
+    "ways": 14019,
+    "nodes": 68,
+    "relations": 18,
+    "all_elements": 14105,
+    "monthly_growth": 8,
+    "inhabitants": 71167
+}, {
+    "relation_id": 142681,
+    "schluessel": 57660020020,
+    "name": "Detmold",
+    "ways": 10777,
+    "nodes": 462,
+    "relations": 6,
+    "all_elements": 11245,
+    "monthly_growth": 7,
+    "inhabitants": 73449
+}, {
+    "relation_id": 2063638,
+    "schluessel": 59620040040,
+    "name": "Menden",
+    "ways": 5445,
+    "nodes": 96,
+    "relations": 0,
+    "all_elements": 5541,
+    "monthly_growth": 7,
+    "inhabitants": 53354
+}, {
+    "relation_id": 62347,
+    "schluessel": 73140000000,
+    "name": "Ludwigshafen am Rhein",
+    "ways": 8608,
+    "nodes": 2920,
+    "relations": 5,
+    "all_elements": 11533,
+    "monthly_growth": 7,
+    "inhabitants": 161518
+}, {
+    "relation_id": 2792080,
+    "schluessel": 81365007065,
+    "name": "Schwäbisch Gmünd",
+    "ways": 14406,
+    "nodes": 158,
+    "relations": 4,
+    "all_elements": 14568,
+    "monthly_growth": 7,
+    "inhabitants": 58564
+}, {
+    "relation_id": 66555,
+    "schluessel": 51580016016,
+    "name": "Hilden",
+    "ways": 9730,
+    "nodes": 365,
+    "relations": 3,
+    "all_elements": 10098,
+    "monthly_growth": 5,
+    "inhabitants": 54737
+}, {
+    "relation_id": 138119,
+    "schluessel": 57540008008,
+    "name": "Gütersloh",
+    "ways": 23931,
+    "nodes": 1387,
+    "relations": 0,
+    "all_elements": 25318,
+    "monthly_growth": 5,
+    "inhabitants": 95507
+}, {
+    "relation_id": 62453,
+    "schluessel": 73190000000,
+    "name": "Worms",
+    "ways": 15219,
+    "nodes": 114,
+    "relations": 3,
+    "all_elements": 15336,
+    "monthly_growth": 5,
+    "inhabitants": 80296
+}, {
+    "relation_id": 168464,
+    "schluessel": 53620036036,
+    "name": "Pulheim",
+    "ways": 10352,
+    "nodes": 154,
+    "relations": 5,
+    "all_elements": 10511,
+    "monthly_growth": 4,
+    "inhabitants": 53109
+}, {
+    "relation_id": 1800165,
+    "schluessel": 59620024024,
+    "name": "Iserlohn",
+    "ways": 5689,
+    "nodes": 8322,
+    "relations": 3,
+    "all_elements": 14014,
+    "monthly_growth": 4,
+    "inhabitants": 93119
+}, {
+    "relation_id": 62751,
+    "schluessel": 81210000000,
+    "name": "Heilbronn",
+    "ways": 24476,
+    "nodes": 957,
+    "relations": 2,
+    "all_elements": 25435,
+    "monthly_growth": 4,
+    "inhabitants": 118122
+}, {
+    "relation_id": 59415,
+    "schluessel": 32410010010,
+    "name": "Langenhagen",
+    "ways": 2259,
+    "nodes": 973,
+    "relations": 2,
+    "all_elements": 3234,
+    "monthly_growth": 3,
+    "inhabitants": 51847
+}, {
+    "relation_id": 62444,
+    "schluessel": 34050000000,
+    "name": "Wilhelmshaven",
+    "ways": 3109,
+    "nodes": 5285,
+    "relations": 0,
+    "all_elements": 8394,
+    "monthly_growth": 3,
+    "inhabitants": 75728
+}, {
+    "relation_id": 56664,
+    "schluessel": 55620004004,
+    "name": "Castrop-Rauxel",
+    "ways": 13384,
+    "nodes": 159,
+    "relations": 2,
+    "all_elements": 13545,
+    "monthly_growth": 3,
+    "inhabitants": 73751
+}, {
+    "relation_id": 146654,
+    "schluessel": 57580012012,
+    "name": "Herford",
+    "ways": 13741,
+    "nodes": 2292,
+    "relations": 0,
+    "all_elements": 16033,
+    "monthly_growth": 3,
+    "inhabitants": 65333
+}, {
+    "relation_id": 62470,
+    "schluessel": 120510000000,
+    "name": "Brandenburg an der Havel",
+    "ways": 1162,
+    "nodes": 1303,
+    "relations": 2,
+    "all_elements": 2467,
+    "monthly_growth": 3,
+    "inhabitants": 71032
+}, {
+    "relation_id": 62658,
+    "schluessel": 40120000000,
+    "name": "Bremerhaven",
+    "ways": 3422,
+    "nodes": 2289,
+    "relations": 5,
+    "all_elements": 5716,
+    "monthly_growth": 2,
+    "inhabitants": 108844
+}, {
+    "relation_id": 56679,
+    "schluessel": 51580032032,
+    "name": "Velbert",
+    "ways": 16484,
+    "nodes": 503,
+    "relations": 3,
+    "all_elements": 16990,
+    "monthly_growth": 2,
+    "inhabitants": 80572
+}, {
+    "relation_id": 158454,
+    "schluessel": 59780024024,
+    "name": "Lünen",
+    "ways": 12575,
+    "nodes": 907,
+    "relations": 3,
+    "all_elements": 13485,
+    "monthly_growth": 2,
+    "inhabitants": 84775
+}, {
+    "relation_id": 338875,
+    "schluessel": 64340001001,
+    "name": "Bad Homburg vor der Höhe",
+    "ways": 3540,
+    "nodes": 7783,
+    "relations": 0,
+    "all_elements": 11323,
+    "monthly_growth": 2,
+    "inhabitants": 52379
+}, {
+    "relation_id": 2792098,
+    "schluessel": 81175005026,
+    "name": "Göppingen",
+    "ways": 7165,
+    "nodes": 298,
+    "relations": 1,
+    "all_elements": 7464,
+    "monthly_growth": 2,
+    "inhabitants": 55571
+}, {
+    "relation_id": 62523,
+    "schluessel": 120530000000,
+    "name": "Frankfurt (Oder)",
+    "ways": 173,
+    "nodes": 6049,
+    "relations": 2,
+    "all_elements": 6224,
+    "monthly_growth": 2,
+    "inhabitants": 58018
+}, {
+    "relation_id": 62528,
+    "schluessel": 10040000000,
+    "name": "Neumünster",
+    "ways": 720,
+    "nodes": 611,
+    "relations": 1,
+    "all_elements": 1332,
+    "monthly_growth": 1,
+    "inhabitants": 77058
+}, {
+    "relation_id": 59417,
+    "schluessel": 32410005005,
+    "name": "Garbsen",
+    "ways": 3264,
+    "nodes": 236,
+    "relations": 1,
+    "all_elements": 3501,
+    "monthly_growth": 1,
+    "inhabitants": 59912
+}, {
+    "relation_id": 62699,
+    "schluessel": 51220000000,
+    "name": "Solingen",
+    "ways": 32094,
+    "nodes": 1895,
+    "relations": 3,
+    "all_elements": 33992,
+    "monthly_growth": 1,
+    "inhabitants": 155768
+}, {
+    "relation_id": 66578,
+    "schluessel": 51580020020,
+    "name": "Langenfeld (Rheinland)",
+    "ways": 13710,
+    "nodes": 914,
+    "relations": 7,
+    "all_elements": 14631,
+    "monthly_growth": 1,
+    "inhabitants": 56982
+}, {
+    "relation_id": 161503,
+    "schluessel": 51620022022,
+    "name": "Meerbusch",
+    "ways": 13958,
+    "nodes": 78,
+    "relations": 0,
+    "all_elements": 14036,
+    "monthly_growth": 1,
+    "inhabitants": 54389
+}, {
+    "relation_id": 54462,
+    "schluessel": 51700008008,
+    "name": "Dinslaken",
+    "ways": 5377,
+    "nodes": 395,
+    "relations": 6,
+    "all_elements": 5778,
+    "monthly_growth": 1,
+    "inhabitants": 67190
+}, {
+    "relation_id": 168469,
+    "schluessel": 53620008008,
+    "name": "Bergheim",
+    "ways": 10993,
+    "nodes": 50,
+    "relations": 1,
+    "all_elements": 11044,
+    "monthly_growth": 1,
+    "inhabitants": 59272
+}, {
+    "relation_id": 63460,
+    "schluessel": 55620024024,
+    "name": "Marl",
+    "ways": 7098,
+    "nodes": 11430,
+    "relations": 4,
+    "all_elements": 18532,
+    "monthly_growth": 1,
+    "inhabitants": 83634
+}, {
+    "relation_id": 56665,
+    "schluessel": 55620032032,
+    "name": "Recklinghausen",
+    "ways": 20824,
+    "nodes": 320,
+    "relations": 10,
+    "all_elements": 21154,
+    "monthly_growth": 1,
+    "inhabitants": 115320
+}, {
+    "relation_id": 157396,
+    "schluessel": 59580004004,
+    "name": "Arnsberg",
+    "ways": 4034,
+    "nodes": 456,
+    "relations": 2,
+    "all_elements": 4492,
+    "monthly_growth": 1,
+    "inhabitants": 73501
+}, {
+    "relation_id": 152781,
+    "schluessel": 59740028028,
+    "name": "Lippstadt",
+    "ways": 16002,
+    "nodes": 1816,
+    "relations": 0,
+    "all_elements": 17818,
+    "monthly_growth": 1,
+    "inhabitants": 66312
+}, {
+    "relation_id": 401697,
+    "schluessel": 81190079079,
+    "name": "Waiblingen",
+    "ways": 2202,
+    "nodes": 1032,
+    "relations": 0,
+    "all_elements": 3234,
+    "monthly_growth": 1,
+    "inhabitants": 52845
+}, {
+    "relation_id": 2168233,
+    "schluessel": 91630000000,
+    "name": "Rosenheim",
+    "ways": 10795,
+    "nodes": 164,
+    "relations": 2,
+    "all_elements": 10961,
+    "monthly_growth": 1,
+    "inhabitants": 60464
+}, {
+    "relation_id": 62685,
+    "schluessel": 130040000000,
+    "name": "Schwerin",
+    "ways": 10821,
+    "nodes": 4222,
+    "relations": 2,
+    "all_elements": 15045,
+    "monthly_growth": 1,
+    "inhabitants": 91583
+}, {
+    "relation_id": 409608,
+    "schluessel": 145230320320,
+    "name": "Plauen",
+    "ways": 865,
+    "nodes": 519,
+    "relations": 0,
+    "all_elements": 1384,
+    "monthly_growth": 1,
+    "inhabitants": 63967
+}, {
+    "relation_id": 1853267,
+    "schluessel": 34560015015,
+    "name": "Nordhorn",
+    "ways": 2050,
+    "nodes": 232,
+    "relations": 0,
+    "all_elements": 2282,
+    "monthly_growth": 0,
+    "inhabitants": 52298
+}, {
+    "relation_id": 62455,
+    "schluessel": 51200000000,
+    "name": "Remscheid",
+    "ways": 19946,
+    "nodes": 424,
+    "relations": 16,
+    "all_elements": 20386,
+    "monthly_growth": 0,
+    "inhabitants": 108955
+}, {
+    "relation_id": 157995,
+    "schluessel": 53340012012,
+    "name": "Eschweiler",
+    "ways": 735,
+    "nodes": 332,
+    "relations": 0,
+    "all_elements": 1067,
+    "monthly_growth": 0,
+    "inhabitants": 55026
+}, {
+    "relation_id": 162473,
+    "schluessel": 53620028028,
+    "name": "Hürth",
+    "ways": 13455,
+    "nodes": 451,
+    "relations": 2,
+    "all_elements": 13908,
+    "monthly_growth": 0,
+    "inhabitants": 57230
+}, {
+    "relation_id": 168483,
+    "schluessel": 53620032032,
+    "name": "Kerpen",
+    "ways": 9849,
+    "nodes": 777,
+    "relations": 2,
+    "all_elements": 10628,
+    "monthly_growth": 0,
+    "inhabitants": 63784
+}, {
+    "relation_id": 62396,
+    "schluessel": 59160000000,
+    "name": "Herne",
+    "ways": 22565,
+    "nodes": 2769,
+    "relations": 11,
+    "all_elements": 25345,
+    "monthly_growth": 0,
+    "inhabitants": 154417
+}, {
+    "relation_id": 162828,
+    "schluessel": 59540016016,
+    "name": "Hattingen",
+    "ways": 5910,
+    "nodes": 4797,
+    "relations": 0,
+    "all_elements": 10707,
+    "monthly_growth": 0,
+    "inhabitants": 54358
+}, {
+    "relation_id": 62701,
+    "schluessel": 97630000000,
+    "name": "Kempten (Allgäu)",
+    "ways": 9491,
+    "nodes": 418,
+    "relations": 8,
+    "all_elements": 9917,
+    "monthly_growth": 0,
+    "inhabitants": 65044
+}, {
+    "relation_id": 62705,
+    "schluessel": 130710107107,
+    "name": "Neubrandenburg",
+    "ways": 2362,
+    "nodes": 5222,
+    "relations": 1,
+    "all_elements": 7585,
+    "monthly_growth": 0,
+    "inhabitants": 63437
+}, {
+    "relation_id": 162826,
+    "schluessel": 59540036036,
+    "name": "Witten",
+    "ways": 18729,
+    "nodes": 532,
+    "relations": 5,
+    "all_elements": 19266,
+    "monthly_growth": -1,
+    "inhabitants": 95629
+}, {
+    "relation_id": 2792882,
+    "schluessel": 81160019019,
+    "name": "Esslingen am Neckar",
+    "ways": 15217,
+    "nodes": 189,
+    "relations": 2,
+    "all_elements": 15408,
+    "monthly_growth": -1,
+    "inhabitants": 89242
+}, {
+    "relation_id": 88547,
+    "schluessel": 51660036036,
+    "name": "Willich",
+    "ways": 74,
+    "nodes": 15572,
+    "relations": 0,
+    "all_elements": 15646,
+    "monthly_growth": -2,
+    "inhabitants": 50599
+}, {
+    "relation_id": 152285,
+    "schluessel": 55700004004,
+    "name": "Ahlen",
+    "ways": 12096,
+    "nodes": 1872,
+    "relations": 2,
+    "all_elements": 13970,
+    "monthly_growth": -2,
+    "inhabitants": 51766
+}, {
+    "relation_id": 56682,
+    "schluessel": 51580028028,
+    "name": "Ratingen",
+    "ways": 19219,
+    "nodes": 348,
+    "relations": 6,
+    "all_elements": 19573,
+    "monthly_growth": -3,
+    "inhabitants": 86388
+}, {
+    "relation_id": 941087,
+    "schluessel": 97750135135,
+    "name": "Neu-Ulm",
+    "ways": 8058,
+    "nodes": 3166,
+    "relations": 1,
+    "all_elements": 11225,
+    "monthly_growth": -3,
+    "inhabitants": 54969
+}, {
+    "relation_id": 409676,
+    "schluessel": 146260110110,
+    "name": "Görlitz",
+    "ways": 2790,
+    "nodes": 1702,
+    "relations": 3,
+    "all_elements": 4495,
+    "monthly_growth": -3,
+    "inhabitants": 54042
+}, {
+    "relation_id": 88531,
+    "schluessel": 51660032032,
+    "name": "Viersen",
+    "ways": 50,
+    "nodes": 21778,
+    "relations": 2,
+    "all_elements": 21830,
+    "monthly_growth": -4,
+    "inhabitants": 74907
+}, {
+    "relation_id": 62410,
+    "schluessel": 51160000000,
+    "name": "Mönchengladbach",
+    "ways": 1240,
+    "nodes": 51791,
+    "relations": 2,
+    "all_elements": 53033,
+    "monthly_growth": -7,
+    "inhabitants": 255430
+}, {
+    "relation_id": 168563,
+    "schluessel": 59620032032,
+    "name": "Lüdenscheid",
+    "ways": 12934,
+    "nodes": 1010,
+    "relations": 1,
+    "all_elements": 13945,
+    "monthly_growth": -7,
+    "inhabitants": 72927
+}, {
+    "relation_id": 62652,
+    "schluessel": 73120000000,
+    "name": "Kaiserslautern",
+    "ways": 17718,
+    "nodes": 419,
+    "relations": 6,
+    "all_elements": 18143,
+    "monthly_growth": -9,
+    "inhabitants": 97162
+}, {
+    "relation_id": 62768,
+    "schluessel": 83110000000,
+    "name": "Freiburg im Breisgau",
+    "ways": 17660,
+    "nodes": 8566,
+    "relations": 39,
+    "all_elements": 26265,
+    "monthly_growth": -100,
+    "inhabitants": 220286
+}]
