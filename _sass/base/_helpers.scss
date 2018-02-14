@@ -593,3 +593,7 @@
   .pad-55-print { padding: 55px; }
   .pad-60-print { padding: 60px; }
 }
+
+.grayscale{
+  filter: grayscale(100%) opacity(50%);
+}

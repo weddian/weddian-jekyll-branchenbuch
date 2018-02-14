@@ -1,5 +1,46 @@
 ---
-layout: default
+layout: page
 ---
 
-<h1>{{ page.title }}</h1>
+{% assign categories = site.categories | sort: 'order' %}
+<ul>
+{% for c in categories %}
+<li><a href="/{{ c.slug }}-{{ page.citySlug }}.html">{{ c.label }}</a></li>
+{% endfor %}
+</ul>
+
+<ul>
+<amp-list width="auto"
+  height="1200"
+  layout="fixed-height"
+  src="https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}"
+  items="data">
+  {% raw %}
+  <template type="amp-mustache">
+          <div class="col-4">
+          {{#logo}}
+          <amp-img layout="responsive" height="90" width="160" src="{{ logo }}"></amp-img>
+          {{/logo}}
+      {{^logo}}
+      {% endraw %}
+      <amp-img alt="Mountains"
+      fallback
+      layout="responsive"
+      width="160"
+      height="90"
+      src="images/categories-small/{{ page.categorySlug }}.jpg"
+      class="grayscale"></amp-img>
+      {% raw %}
+      {{/logo}}
+      <p><a href="{{slug}}.html">{{name}}</a><br>
+      {{ description }}
+  </p>
+  </div>
+  </template>
+  {% endraw %}
+  <div overflow
+    class="list-overflow">
+    See more
+  </div>
+</amp-list>
+</ul>
