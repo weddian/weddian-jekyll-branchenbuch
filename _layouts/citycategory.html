@@ -1,15 +1,16 @@
 ---
 layout: page
 ---
-
+<div class="row clear pad-top-5 pad-bottom-5">
+<div class="col-3">
 {% assign categories = site.categories | sort: 'order' %}
 <ul>
 {% for c in categories %}
 <li><a href="/{{ c.slug }}-{{ page.citySlug }}.html">{{ c.label }}</a></li>
 {% endfor %}
 </ul>
-
-<ul>
+</div>
+<div class="col-9">
 <amp-list width="auto"
   height="1200"
   layout="fixed-height"
@@ -17,7 +18,7 @@ layout: page
   items="data">
   {% raw %}
   <template type="amp-mustache">
-          <div class="col-4">
+          <div class="col-6">
           {{#logo}}
           <amp-img layout="responsive" height="90" width="160" src="{{ logo }}"></amp-img>
           {{/logo}}
@@ -32,9 +33,10 @@ layout: page
       class="grayscale"></amp-img>
       {% raw %}
       {{/logo}}
-      <p><a href="{{slug}}.html">{{name}}</a><br>
-      {{ description }}
-  </p>
+      <a href="{{slug}}.html">
+      <h3>{{name}}<br><small>{{ subtitle }} {{#subtitle}}-{{/subtitle}} {{ distance }}km entfernt</small></h3>
+      <p>{{ description }}</p>
+</a>
   </div>
   </template>
   {% endraw %}
@@ -43,4 +45,5 @@ layout: page
     See more
   </div>
 </amp-list>
-</ul>
+</div>
+</div>

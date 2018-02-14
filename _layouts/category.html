@@ -1,7 +1,8 @@
 ---
 layout: page
 ---
-
+<div class="row clear pad-top-5 pad-bottom-5">
+<div class="col-3">
 {% assign cities = site.data.city-inhabitants | sort: 'inhabitants' | reverse %}
 <ul>
 {% for c in cities limit: 30 %}
@@ -9,15 +10,16 @@ layout: page
 {% endfor %}
 <li><a href="/cities.html">&rarr; Alle Städte</a></li>
 </ul>
-<div class="row clear pad-top-5 pad-bottom-5">
-<amp-list width="auto"
+</div>
+<div class="col-9 row">
+  <amp-list width="auto"
   height="1200"
   layout="fixed-height"
   src="https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.slug }}"
   items="data">
   {% raw %}
 <template type="amp-mustache">
-        <div class="col-4">
+        <div class="col-6">
         {{#logo}}
         <amp-img layout="responsive" height="90" width="160" src="{{ logo }}"></amp-img>
         {{/logo}}
@@ -32,9 +34,8 @@ layout: page
     class="grayscale"></amp-img>
     {% raw %}
     {{/logo}}
-    <p><a href="{{slug}}.html">{{name}}</a><br>
-    {{ description }}
-</p>
+    <a href="{{slug}}.html"><h3>{{name}}</h3><br>
+    <p>{{ description }}</p></a>
 </div>
 </template>
 {% endraw %}
@@ -43,4 +44,5 @@ layout: page
     See more
   </div>
 </amp-list>
+</div>
 </div>
