@@ -21,9 +21,7 @@ plugins:
 collections:
   serviceprovider:
     output: true
-  cities:
-    output: true
-  states:
+  city-categories:
     output: true
   categories:
     output: true
@@ -37,19 +35,16 @@ defaults:
       permalink: "/:slug.html"
   - scope:
       path: ""
-      type: cities
+      type: city-categories
     values:
       layout: city
+      permalink: "/:fileSlug.html"
   - scope:
       path: ""
       type: categories
     values:
       layout: category
-  - scope:
-      path: ""
-      type: states
-    values:
-      layout: city
+      permalink: "/:slug.html"
 
 sass:
   style: compressed
