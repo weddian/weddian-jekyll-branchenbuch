@@ -1,0 +1,223 @@
+// ==========================================================================
+// Base – Forms
+// ==========================================================================
+
+// Form, Fieldset and Legend
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+// All Form Elements
+label,
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: $base-input-color;
+  font: inherit;
+  margin: 0;
+  border-radius: 0;
+}
+
+// Mixed Input Fields
+[type="text"],
+[type="email"],
+[type="password"],
+[type="tel"],
+[type="number"],
+[type="date"] {
+  height: $base-input-height;
+  padding: 10px;
+  background-color: $base-input-background-color;
+  border: 1px solid $base-input-border-color;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  border-radius: 0;
+  &:focus {
+    background-color: $base-input-background-focus-color;
+    border-color: $base-input-border-focus-color;
+    outline: 0;
+  }
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+// Text Area
+textarea {
+  padding: 10px;
+  background-color: $base-input-background-color;
+  border: 1px solid $base-input-border-color;
+  overflow: auto;
+  &:focus {
+    background-color: $base-input-background-focus-color;
+    border-color: $base-input-border-focus-color;
+    outline: 0;
+  }
+}
+
+// Select
+select {
+  text-transform: none;
+  height: $base-input-height;
+  padding: 0 10px;
+  background-color: $base-input-background-color;
+  border: 1px solid $base-input-border-color;
+  &:focus {
+    background-color: $base-input-background-focus-color;
+    border-color: $base-input-border-focus-color;
+    outline: 0;
+  }
+}
+optgroup { font-weight: 700; }
+
+// Buttons
+button {
+  border-radius: 0;
+  overflow: visible;
+  text-transform: none;
+  cursor: pointer;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  border-radius: 0;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: not-allowed;
+}
+
+
+// Placeholder Colour
+input::-webkit-input-placeholder { color: $base-input-placeholder-color; }
+input:-moz-placeholder { color: $base-input-placeholder-color; }
+input::-moz-placeholder { color: $base-input-placeholder-color; }
+input:-ms-input-placeholder { color: $base-input-placeholder-color; }
+
+form.amp-form-submit-error [submit-error] {
+  color: red;
+}
+
+form.amp-form-submit-success [submit-success] {
+  color: green;
+  font-weight: bold;
+}
+
+form.amp-form-submit-success.hide-inputs > fieldset,
+form.amp-form-submit-success.hide-inputs .form-input-group,
+form.amp-form-submit-success.hide-inputs .form-group,
+form.amp-form-submit-success.hide-inputs .form-button-group {
+  display: none;
+}
+
+textarea.form-control {
+  box-sizing: border-box;
+  height: auto;
+}
+
+.form-control {
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border: 1px solid #f1f1f1;
+  border-radius: 0;
+  display: block;
+  font-size: 14px;
+  height: 46px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 15px 20px;
+  color: #969595;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+  box-shadow: none;
+}
+
+.form-button-group button {
+  background-color: $primary;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  height: 44px;
+  border-radius: 6px;
+  letter-spacing: 0.6px;
+  padding: 0 40px;
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-input-group {
+  margin-right: -16px;
+  margin-left: -16px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between
+}
+
+.form-input-group div {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.form-button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+

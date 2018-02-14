@@ -37,7 +37,7 @@ defaults:
       path: ""
       type: city-categories
     values:
-      layout: city
+      layout: citycategory
       permalink: "/:slug.html"
   - scope:
       path: ""
