@@ -4,552 +4,631 @@
     "lat": 54.321775,
     "lon": 10.13727,
     "inhabitants": 246306,
-    "land": "Schleswig-Holstein"
+    "land": "Schleswig-Holstein",
+    "citySlug": "kiel"
   },
   {
     "name": "Lübeck",
     "lat": 53.866269,
     "lon": 10.683932,
     "inhabitants": 216253,
-    "land": "Schleswig-Holstein"
+    "land": "Schleswig-Holstein",
+    "citySlug": "luebeck"
   },
   {
     "name": "Hamburg",
     "lat": 53.550678,
     "lon": 9.99697,
     "inhabitants": 1787408,
-    "land": "Hamburg"
+    "land": "Hamburg",
+    "citySlug": "hamburg"
   },
   {
     "name": "Braunschweig",
     "lat": 52.26249,
     "lon": 10.520525,
     "inhabitants": 251364,
-    "land": "Niedersachsen"
+    "land": "Niedersachsen",
+    "citySlug": "braunschweig"
   },
   {
     "name": "Salzgitter",
     "lat": 52.160601,
     "lon": 10.328465,
     "inhabitants": 101079,
-    "land": "Niedersachsen"
+    "land": "Niedersachsen",
+    "citySlug": "salzgitter"
   },
   {
     "name": "Wolfsburg",
     "lat": 52.421938,
     "lon": 10.784975,
     "inhabitants": 124045,
-    "land": "Niedersachsen"
+    "land": "Niedersachsen",
+    "citySlug": "wolfsburg"
   },
   {
     "name": "Göttingen",
     "lat": 51.533027,
     "lon": 9.93514,
     "inhabitants": 118914,
-    "land": "Niedersachsen"
+    "land": "Niedersachsen",
+    "citySlug": "goettingen"
   },
   {
     "name": "Hannover",
     "lat": 52.374551,
     "lon": 9.738084,
     "inhabitants": 532163,
-    "land": "Niedersachsen"
+    "land": "Niedersachsen",
+    "citySlug": "hannover"
   },
   {
     "name": "Hildesheim",
     "lat": 52.155018,
     "lon": 9.948634,
     "inhabitants": 101667,
-    "land": "Niedersachsen"
+    "land": "Niedersachsen",
+    "citySlug": "hildesheim"
   },
   {
     "name": "Oldenburg (Oldenburg)",
     "lat": 53.140025,
     "lon": 8.212993,
     "inhabitants": 163830,
-    "land": "Niedersachsen"
+    "land": "Niedersachsen",
+    "citySlug": "oldenburg-oldenburg"
   },
   {
     "name": "Osnabrück",
     "lat": 52.27692,
     "lon": 8.04205,
     "inhabitants": 162403,
-    "land": "Niedersachsen"
+    "land": "Niedersachsen",
+    "citySlug": "osnabrueck"
   },
   {
     "name": "Bremen",
     "lat": 53.075606,
     "lon": 8.809338,
     "inhabitants": 557464,
-    "land": "Bremen"
+    "land": "Bremen",
+    "citySlug": "bremen"
   },
   {
     "name": "Bremerhaven",
     "lat": 53.543032,
     "lon": 8.578068,
     "inhabitants": 114025,
-    "land": "Bremen"
+    "land": "Bremen",
+    "citySlug": "bremerhaven"
   },
   {
     "name": "Düsseldorf",
     "lat": 51.22422,
     "lon": 6.780068,
     "inhabitants": 612178,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "duesseldorf"
   },
   {
     "name": "Duisburg",
     "lat": 51.433259,
     "lon": 6.765477,
     "inhabitants": 491231,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "duisburg"
   },
   {
     "name": "Essen",
     "lat": 51.455843,
     "lon": 7.012583,
     "inhabitants": 582624,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "essen"
   },
   {
     "name": "Krefeld",
     "lat": 51.332637,
     "lon": 6.56089,
     "inhabitants": 225144,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "krefeld"
   },
   {
     "name": "Mönchengladbach",
     "lat": 51.194473,
     "lon": 6.43161,
     "inhabitants": 259996,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "moenchengladbach"
   },
   {
     "name": "Mülheim an der Ruhr",
     "lat": 51.428107,
     "lon": 6.88505,
     "inhabitants": 169278,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "muelheim-an-der-ruhr"
   },
   {
     "name": "Oberhausen",
     "lat": 51.470317,
     "lon": 6.852291,
     "inhabitants": 210934,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "oberhausen"
   },
   {
     "name": "Remscheid",
     "lat": 51.179878,
     "lon": 7.194356,
     "inhabitants": 109499,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "remscheid"
   },
   {
     "name": "Solingen",
     "lat": 51.171718,
     "lon": 7.085665,
     "inhabitants": 158726,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "solingen"
   },
   {
     "name": "Wuppertal",
     "lat": 51.271288,
     "lon": 7.195874,
     "inhabitants": 350046,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "wuppertal"
   },
   {
     "name": "Neuss",
     "lat": 51.198873,
     "lon": 6.691409,
     "inhabitants": 155414,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "neuss"
   },
   {
     "name": "Moers",
     "lat": 51.453559,
     "lon": 6.628027,
     "inhabitants": 104529,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "moers"
   },
   {
     "name": "Bonn",
     "lat": 50.734245,
     "lon": 7.099187,
     "inhabitants": 318809,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "bonn"
   },
   {
     "name": "Köln",
     "lat": 50.938107,
     "lon": 6.957068,
     "inhabitants": 1060582,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "koeln"
   },
   {
     "name": "Leverkusen",
     "lat": 51.03245,
     "lon": 6.979767,
     "inhabitants": 163487,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "leverkusen"
   },
   {
     "name": "Aachen",
     "lat": 50.773516,
     "lon": 6.0848,
     "inhabitants": 245885,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "aachen"
   },
   {
     "name": "Bergisch Gladbach",
     "lat": 50.992244,
     "lon": 7.130608,
     "inhabitants": 111366,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "bergisch-gladbach"
   },
   {
     "name": "Bottrop",
     "lat": 51.523694,
     "lon": 6.929939,
     "inhabitants": 117143,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "bottrop"
   },
   {
     "name": "Gelsenkirchen",
     "lat": 51.510892,
     "lon": 7.096064,
     "inhabitants": 260368,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "gelsenkirchen"
   },
   {
     "name": "Münster",
     "lat": 51.961908,
     "lon": 7.626804,
     "inhabitants": 310039,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "muenster"
   },
   {
     "name": "Recklinghausen",
     "lat": 51.614576,
     "lon": 7.197544,
     "inhabitants": 114330,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "recklinghausen"
   },
   {
     "name": "Bielefeld",
     "lat": 52.020578,
     "lon": 8.53212,
     "inhabitants": 333090,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "bielefeld"
   },
   {
     "name": "Paderborn",
     "lat": 51.719601,
     "lon": 8.757301,
     "inhabitants": 148126,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "paderborn"
   },
   {
     "name": "Bochum",
     "lat": 51.482699,
     "lon": 7.217177,
     "inhabitants": 364742,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "bochum"
   },
   {
     "name": "Dortmund",
     "lat": 51.514171,
     "lon": 7.464165,
     "inhabitants": 586181,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "dortmund"
   },
   {
     "name": "Hagen",
     "lat": 51.360171,
     "lon": 7.467406,
     "inhabitants": 189044,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "hagen"
   },
   {
     "name": "Hamm",
     "lat": 51.678312,
     "lon": 7.816947,
     "inhabitants": 179397,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "hamm"
   },
   {
     "name": "Herne",
     "lat": 51.540365,
     "lon": 7.222793,
     "inhabitants": 155851,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "herne"
   },
   {
     "name": "Siegen",
     "lat": 50.874559,
     "lon": 8.024625,
     "inhabitants": 102355,
-    "land": "Nordrhein-Westfalen"
+    "land": "Nordrhein-Westfalen",
+    "citySlug": "siegen"
   },
   {
     "name": "Darmstadt",
     "lat": 49.873211,
     "lon": 8.6566,
     "inhabitants": 155353,
-    "land": "Hessen"
+    "land": "Hessen",
+    "citySlug": "darmstadt"
   },
   {
     "name": "Frankfurt am Main",
     "lat": 50.11088,
     "lon": 8.682433,
     "inhabitants": 732688,
-    "land": "Hessen"
+    "land": "Hessen",
+    "citySlug": "frankfurt-am-main"
   },
   {
     "name": "Offenbach am Main",
     "lat": 50.105567,
     "lon": 8.764442,
     "inhabitants": 123734,
-    "land": "Hessen"
+    "land": "Hessen",
+    "citySlug": "offenbach-am-main"
   },
   {
     "name": "Wiesbaden",
     "lat": 50.081698,
     "lon": 8.239138,
     "inhabitants": 276218,
-    "land": "Hessen"
+    "land": "Hessen",
+    "citySlug": "wiesbaden"
   },
   {
     "name": "Kassel",
     "lat": 51.314684,
     "lon": 9.495199,
     "inhabitants": 197984,
-    "land": "Hessen"
+    "land": "Hessen",
+    "citySlug": "kassel"
   },
   {
     "name": "Koblenz",
     "lat": 50.359516,
     "lon": 7.597956,
     "inhabitants": 112586,
-    "land": "Rheinland-Pfalz"
+    "land": "Rheinland-Pfalz",
+    "citySlug": "koblenz"
   },
   {
     "name": "Trier",
     "lat": 49.756737,
     "lon": 6.641293,
     "inhabitants": 114914,
-    "land": "Rheinland-Pfalz"
+    "land": "Rheinland-Pfalz",
+    "citySlug": "trier"
   },
   {
     "name": "Ludwigshafen am Rhein",
     "lat": 49.483235,
     "lon": 8.447899,
     "inhabitants": 164718,
-    "land": "Rheinland-Pfalz"
+    "land": "Rheinland-Pfalz",
+    "citySlug": "ludwigshafen-am-rhein"
   },
   {
     "name": "Mainz",
     "lat": 50.001959,
     "lon": 8.271855,
     "inhabitants": 209779,
-    "land": "Rheinland-Pfalz"
+    "land": "Rheinland-Pfalz",
+    "citySlug": "mainz"
   },
   {
     "name": "Stuttgart",
     "lat": 48.775817,
     "lon": 9.177734,
     "inhabitants": 623738,
-    "land": "Baden-Württemberg"
+    "land": "Baden-Württemberg",
+    "citySlug": "stuttgart"
   },
   {
     "name": "Heilbronn",
     "lat": 49.140428,
     "lon": 9.217953,
     "inhabitants": 122567,
-    "land": "Baden-Württemberg"
+    "land": "Baden-Württemberg",
+    "citySlug": "heilbronn"
   },
   {
     "name": "Karlsruhe",
     "lat": 49.009626,
     "lon": 8.405282,
     "inhabitants": 307755,
-    "land": "Baden-Württemberg"
+    "land": "Baden-Württemberg",
+    "citySlug": "karlsruhe"
   },
   {
     "name": "Heidelberg",
     "lat": 49.408826,
     "lon": 8.702067,
     "inhabitants": 156267,
-    "land": "Baden-Württemberg"
+    "land": "Baden-Württemberg",
+    "citySlug": "heidelberg"
   },
   {
     "name": "Mannheim",
     "lat": 49.48778,
     "lon": 8.466275,
     "inhabitants": 305780,
-    "land": "Baden-Württemberg"
+    "land": "Baden-Württemberg",
+    "citySlug": "mannheim"
   },
   {
     "name": "Pforzheim",
     "lat": 48.891285,
     "lon": 8.699166,
     "inhabitants": 122247,
-    "land": "Baden-Württemberg"
+    "land": "Baden-Württemberg",
+    "citySlug": "pforzheim"
   },
   {
     "name": "Freiburg im Breisgau",
     "lat": 47.994786,
     "lon": 7.849877,
     "inhabitants": 226393,
-    "land": "Baden-Württemberg"
+    "land": "Baden-Württemberg",
+    "citySlug": "freiburg-im-breisgau"
   },
   {
     "name": "Reutlingen",
     "lat": 48.49208,
     "lon": 9.212006,
     "inhabitants": 114310,
-    "land": "Baden-Württemberg"
+    "land": "Baden-Württemberg",
+    "citySlug": "reutlingen"
   },
   {
     "name": "Ulm",
     "lat": 48.398454,
     "lon": 9.990402,
     "inhabitants": 122636,
-    "land": "Baden-Württemberg"
+    "land": "Baden-Württemberg",
+    "citySlug": "ulm"
   },
   {
     "name": "Ingolstadt",
     "lat": 48.76542,
     "lon": 11.423387,
     "inhabitants": 132438,
-    "land": "Bayern"
+    "land": "Bayern",
+    "citySlug": "ingolstadt"
   },
   {
     "name": "München",
     "lat": 48.143439,
     "lon": 11.573599,
     "inhabitants": 1450381,
-    "land": "Bayern"
+    "land": "Bayern",
+    "citySlug": "muenchen"
   },
   {
     "name": "Regensburg",
     "lat": 49.017834,
     "lon": 12.097392,
     "inhabitants": 145465,
-    "land": "Bayern"
+    "land": "Bayern",
+    "citySlug": "regensburg"
   },
   {
     "name": "Erlangen",
     "lat": 49.595133,
     "lon": 11.00498,
     "inhabitants": 108336,
-    "land": "Bayern"
+    "land": "Bayern",
+    "citySlug": "erlangen"
   },
   {
     "name": "Fürth",
     "lat": 49.477384,
     "lon": 10.989974,
     "inhabitants": 124171,
-    "land": "Bayern"
+    "land": "Bayern",
+    "citySlug": "fuerth"
   },
   {
     "name": "Nürnberg",
     "lat": 49.450938,
     "lon": 11.075269,
     "inhabitants": 509975,
-    "land": "Bayern"
+    "land": "Bayern",
+    "citySlug": "nuernberg"
   },
   {
     "name": "Würzburg",
     "lat": 49.79393,
     "lon": 9.93725,
     "inhabitants": 124873,
-    "land": "Bayern"
+    "land": "Bayern",
+    "citySlug": "wuerzburg"
   },
   {
     "name": "Augsburg",
     "lat": 48.369696,
     "lon": 10.892578,
     "inhabitants": 286374,
-    "land": "Bayern"
+    "land": "Bayern",
+    "citySlug": "augsburg"
   },
   {
     "name": "Saarbrücken",
     "lat": 49.236301,
     "lon": 6.996011,
     "inhabitants": 178151,
-    "land": "Saarland"
+    "land": "Saarland",
+    "citySlug": "saarbruecken"
   },
   {
     "name": "Berlin",
     "lat": 52.51767,
     "lon": 13.405538,
     "inhabitants": 3520031,
-    "land": "Berlin"
+    "land": "Berlin",
+    "citySlug": "berlin"
   },
   {
     "name": "Potsdam",
     "lat": 52.400355,
     "lon": 13.05358,
     "inhabitants": 167745,
-    "land": "Brandenburg"
+    "land": "Brandenburg",
+    "citySlug": "potsdam"
   },
   {
     "name": "Rostock",
     "lat": 54.088548,
     "lon": 12.135993,
     "inhabitants": 206011,
-    "land": "Mecklenburg-Vorpommern"
+    "land": "Mecklenburg-Vorpommern",
+    "citySlug": "rostock"
   },
   {
     "name": "Chemnitz",
     "lat": 50.833593,
     "lon": 12.921602,
     "inhabitants": 248645,
-    "land": "Sachsen"
+    "land": "Sachsen",
+    "citySlug": "chemnitz"
   },
   {
     "name": "Dresden",
     "lat": 51.051697,
     "lon": 13.736883,
     "inhabitants": 543825,
-    "land": "Sachsen"
+    "land": "Sachsen",
+    "citySlug": "dresden"
   },
   {
     "name": "Leipzig",
     "lat": 51.338288,
     "lon": 12.377931,
     "inhabitants": 560472,
-    "land": "Sachsen"
+    "land": "Sachsen",
+    "citySlug": "leipzig"
   },
   {
     "name": "Halle (Saale)",
     "lat": 51.482478,
     "lon": 11.970666,
     "inhabitants": 236991,
-    "land": "Sachsen-Anhalt"
+    "land": "Sachsen-Anhalt",
+    "citySlug": "halle-saale"
   },
   {
     "name": "Magdeburg",
     "lat": 52.126248,
     "lon": 11.632726,
     "inhabitants": 235723,
-    "land": "Sachsen-Anhalt"
+    "land": "Sachsen-Anhalt",
+    "citySlug": "magdeburg"
   },
   {
     "name": "Erfurt",
     "lat": 50.977122,
     "lon": 11.027236,
     "inhabitants": 210118,
-    "land": "Thüringen"
+    "land": "Thüringen",
+    "citySlug": "erfurt"
   },
   {
     "name": "Jena",
     "lat": 50.93006,
     "lon": 11.591842,
     "inhabitants": 109527,
-    "land": "Thüringen"
+    "land": "Thüringen",
+    "citySlug": "jena"
   }
 ]
