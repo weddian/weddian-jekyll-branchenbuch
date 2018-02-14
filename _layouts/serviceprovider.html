@@ -13,10 +13,10 @@ layout: default
                         class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </span></div>
             </div>
             <div class="head-bookmark-bock">
-                <div class="detail-banner-btn"><a href="#anfragen"><i
+                <div class="detail-banner-btn"><a href="#anfragen" class="button-primary"><i
                         class="fa fa-bookmark-o"></i>&nbsp;&nbsp;Anfragen</a>
                 </div>
-                <div class="detail-banner-btn"><a href="#bewerten"><i
+                <div class="detail-banner-btn"><a href="#bewerten" class="button-primary"><i
                         class="fa fa-heart-o"></i>&nbsp;&nbsp;Bewerten</a></div>
             </div>
         </div>
@@ -26,36 +26,6 @@ layout: default
 <section class="borders content">
     <q class="intro flex-box">{{ page.description}}</q>
 </section>
-
-{% if page.gallery %}
-<section class="borders content ampstart-card">
-    <amp-carousel width="1280" height="720"
-                  layout="responsive"
-                  type="slides" id="carousel-with-preview">
-        {% for image in page.gallery %}
-        <amp-img src="{{ image.url | replace: 't_gallery', 't_glry'}}"
-                 width="1280" height="720"
-                 layout="responsive"
-                 alt="a sample image"></amp-img>
-        {% endfor %}
-    </amp-carousel>
-    <amp-carousel class="carousel-preview"
-                  width="auto"
-                  height="100"
-                  layout="fixed-height"
-                  type="carousel">
-        {% for image in page.gallery %}
-        <button on="tap:carousel-with-preview.goToSlide(index={{forloop.index0}})">
-            <amp-img src="{{ image.url | replace: 't_gallery', 't_glrythumb' }}"
-                     width="160"
-                     height="90"
-                     layout="fixed"
-                     alt="a sample image"></amp-img>
-        </button>
-        {% endfor %}
-    </amp-carousel>
-</section>
-{% endif %}
 
 <section class="borders content flex-box">
     <div class="description">
@@ -75,7 +45,7 @@ layout: default
         {% endif %}
         {% endif %}
         <div class="head-bookmark-bock">
-            <div class="detail-banner-btn"><a href="#anfragen"><i
+            <div class="detail-banner-btn"><a href="#anfragen" class="button-primary"><i
                     class="fa fa-bookmark-o"></i>&nbsp;&nbsp;Anfragen</a>
             </div>
         </div>
