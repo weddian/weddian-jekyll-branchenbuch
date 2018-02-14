@@ -38,7 +38,7 @@ defaults:
       type: city-categories
     values:
       layout: city
-      permalink: "/:fileSlug.html"
+      permalink: "/:slug.html"
   - scope:
       path: ""
       type: categories
