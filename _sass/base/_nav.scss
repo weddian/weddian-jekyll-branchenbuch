@@ -1,9 +1,37 @@
-header {
-    display: flex;
-    align-items: center;
-    height: 80px;
+.header{
+   position: relative;
+   top: 0;
+   width: 100%; 
+   border-bottom: 1px solid $base-input-border-color;
 }
-
-header h3 {
-    display: inline-block;
+.header *{
+  margin:0;
+  padding: 0;
+}
+  .header .nav {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+.header .title{
+  line-height: 80px;
+  height: 80px;
+  float: left;
+  font-size: 1.17em;
+  font-weight: bold;
+  display: flex;
+}
+.header .title amp-img{
+  vertical-align: middle
+}
+.nav ul{
+  height: 80px;
+  float: right;
+}
+.nav ul li{
+  line-height: 80px;
+  height: 80px;
+  float: right;
+  display: inline-block;
+  margin-left: 1rem;
 }

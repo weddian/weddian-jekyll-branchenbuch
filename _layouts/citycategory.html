@@ -18,7 +18,9 @@ layout: page
   items="data">
   {% raw %}
   <template type="amp-mustache">
-          <div class="col-6">
+    <div class="col-6">
+    <a href="{{slug}}.html">
+          <div class="card">
           {{#logo}}
           <amp-img layout="responsive" height="90" width="160" src="{{ logo }}"></amp-img>
           {{/logo}}
@@ -33,11 +35,13 @@ layout: page
       class="grayscale"></amp-img>
       {% raw %}
       {{/logo}}
-      <a href="{{slug}}.html">
-      <h3>{{name}}<br><small>{{ subtitle }} {{#subtitle}}-{{/subtitle}} {{ distance }}km entfernt</small></h3>
-      <p>{{ description }}</p>
-</a>
+      <div class="card-content">
+      <h3 class="card-title">{{name}}<br><small>{{ subtitle }} {{#subtitle}}-{{/subtitle}} {{ distance }}km entfernt</small></h3>
+      {{#description}}<p class="card-description">{{ description }}</p>{{/description}}
+      </div>
   </div>
+    </a>
+    </div>
   </template>
   {% endraw %}
   <div overflow

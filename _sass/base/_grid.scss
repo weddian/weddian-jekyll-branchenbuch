@@ -110,8 +110,7 @@
 .col-2-5,
 .col-3-5,
 .col-4-5 {
-  padding-left: $grid-gutter;
-  padding-right: $grid-gutter;
+  padding: $grid-gutter;
   position: relative;
   float: $grid-alignment;
 }
@@ -192,8 +191,7 @@ $columns: 12;
   .col-2-5-m,
   .col-3-5-m,
   .col-4-5-m {
-    padding-left: $grid-gutter-m;
-    padding-right: $grid-gutter-m;
+    padding: $grid-gutter-m;
     position: relative;
     float: $grid-alignment;
   }
@@ -275,8 +273,7 @@ $columns: 12;
   .col-2-5-l,
   .col-3-5-l,
   .col-4-5-l {
-    padding-left: $grid-gutter-l;
-    padding-right: $grid-gutter-l;
+    padding: $grid-gutter-l;
     position: relative;
     float: $grid-alignment;
   }
@@ -358,8 +355,7 @@ $columns: 12;
   .col-2-5-xl,
   .col-3-5-xl,
   .col-4-5-xl {
-    padding-left: $grid-gutter-xl;
-    padding-right: $grid-gutter-xl;
+    padding: $grid-gutter-xl;
     position: relative;
     float: $grid-alignment;
   }

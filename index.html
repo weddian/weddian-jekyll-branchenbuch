@@ -7,10 +7,16 @@ layout: page
 <div class="row clear pad-top-5 pad-bottom-5">
 
 {% for c in categories %}
-<div class="col-4">
+<div class="col-12 col-6-m col-4-l">
+<a href="{{ site.baseurl }}{{ c.url }}">    
+<div class="card">
     <amp-img layout="responsive" height="90" width="160" src="{{ site.baseurl }}/images/categories-small/{{ c.slug }}.jpg"></amp-img>
-    <p><a href="{{ site.baseurl }}{{ c.url }}">{{ c.title }}</a><br>
-    {{ c.desc }}</p>
+    <div class="card-content">
+    <h3 class="card-title">{{ c.title }}</h3>
+    <p class="card-description">{{ c.desc }}</p>
+    </div>
+</div>
+</a>
 </div>
 {% endfor %}
 </div>

@@ -78,10 +78,10 @@ $container-l:                                   960px !default;
 $container-xl:                                  1120px !default;
 
 // Grid Gutters
-$grid-gutter:                                   15px !default;
-$grid-gutter-m:                                 15px !default;
-$grid-gutter-l:                                 15px !default;
-$grid-gutter-xl:                                15px !default;
+$grid-gutter:                                   7px !default;
+$grid-gutter-m:                                 7px !default;
+$grid-gutter-l:                                 7px !default;
+$grid-gutter-xl:                                7px !default;
 
 // Responsive Breakpoints
 $breakpoint-m:                                  ($container-m + 20) !default;

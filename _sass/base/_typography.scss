@@ -31,7 +31,6 @@ a {
 // Headings
 h1, h2, h3, h4, h5, h6 {
   font-family: $base-heading-font-family;
-  margin: 0;
 }
 h1, .fs-1 {
   @include font-size($base-h1-font-size);
