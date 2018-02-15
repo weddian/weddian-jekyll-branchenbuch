@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<div class="container">
 <div class="image-header">
     <div class="slt_item_head">
         <div class="user_logo_pic"><amp-img layout="responsive" width="302" height="170" src="{{ page.logo.url }}"/></div>
@@ -61,6 +62,10 @@ layout: default
     {% endfor %}
     {% endif %}
 </section>
+
+<div class="gallery-wrapper">
+{% include gallery.html %}
+</div>
 
 {% if page.reviews > 0 %}
 <section class="borders content" id="reviews">
@@ -228,5 +233,4 @@ layout: default
     </form>
 </section>
 {% endif %}
-
-
+</div>

@@ -1,7 +1,7 @@
 .card {
     min-height: 340px;
     border-radius: 2px;
-    border: 1px solid lightgray;
+    border: 1px solid $gray;
     padding: 0;
     margin: 7px;
     position: relative;
@@ -25,7 +25,6 @@
   -ms-transition: max-height 2s; 
   -o-transition: max-height 2s; 
   transition: max-height 2s;
-  max-height: 75%;
 }
 
 .card .card-title {
@@ -39,12 +38,8 @@
     cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 100%;
 }
 
-.card-content:hover{
-    max-height: 100%;
-}
 .card-content:hover > p {
     overflow: visible;
     white-space: normal;

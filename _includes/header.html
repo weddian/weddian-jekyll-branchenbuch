@@ -1,16 +1,30 @@
 <header class="header">
         <div class="container">
-                <h3 class="title">
-                <amp-img src="/images/weddian-logo-72.png" width="72" height="72"></amp-img>
-                        
+                <a class="title" href="{{ site.baseurl }}/">
+                        <amp-img src="/images/weddian-logo-72.png" width="60" height="60"></amp-img>
+
                         Weddian Branchenbuch
-                </h3>
+                </a>
                 <nav class="nav">
                         <ul class="list list--nav">
-                                <li><a href="https://blog.weddian.de">Blog</a></li>                       
-                                <li><a href="https://blog.weddian.de">Hochzeitsplaner</a></li>
-                                <li><a href="https://blog.weddian.de">Dienstleister</a></li>
+                                <li>
+                                        <a href="https://blog.weddian.de">Blog</a>
+                                </li>
+                                <li>
+                                        <a href="http://www.hochzeitsplanerplus.de/">Hochzeitsplaner</a>
+                                </li>
+                                <li>
+                                        <a href="https://app.weddian.de">Dienstleister</a>
+                                </li>
+                        </ul>
+                        <ul class="sidebar-toggle">
+                                <li>
+                                        <a on="tap:sidebar.open">Menü</a>
+                                </li>
                         </ul>
                 </nav>
+
         </div>
 </header>
+
+{% include sidebar.html %}

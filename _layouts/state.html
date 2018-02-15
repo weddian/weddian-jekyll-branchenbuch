@@ -1,10 +1,11 @@
 ---
-layout: default
+layout: page
 ---
+
 <ul>
     {% for sp in site.serviceprovider %}
     {% if sp.address.state == page.title %}
     <li><a href="{{ site.baseurl }}{{ sp.url }}">{{ sp.name }}<br>{{ sp.description }}</a></li>
     {% endif %}
     {% endfor %}
-   </ul>
+</ul>

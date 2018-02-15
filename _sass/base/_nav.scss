@@ -1,37 +1,82 @@
-.header{
-   position: relative;
-   top: 0;
-   width: 100%; 
-   border-bottom: 1px solid $base-input-border-color;
+.header {
+  position: relative;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid $base-input-border-color;
 }
-.header *{
-  margin:0;
+
+.header .container .nav,
+.header .container .title,
+.header .container ul {
+  margin: 0;
   padding: 0;
 }
-  .header .nav {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-end;
-  }
-.header .title{
+
+.header .title {
   line-height: 80px;
   height: 80px;
   float: left;
   font-size: 1.17em;
   font-weight: bold;
-  display: flex;
+  color: $black;
 }
-.header .title amp-img{
+
+.header .title amp-img {
   vertical-align: middle
 }
-.nav ul{
+
+.nav .list {
   height: 80px;
   float: right;
+  display: none;
 }
-.nav ul li{
+
+@media only screen and (min-width: $breakpoint-m) {
+  .nav .list {
+    display: block;
+  }
+}
+
+.nav .sidebar-toggle {
+  @include breakpoint(m) {
+    display: none;
+  }
+}
+
+.nav .list li,
+  .nav .sidebar-toggle li {
   line-height: 80px;
   height: 80px;
   float: right;
-  display: inline-block;
-  margin-left: 1rem;
+  display: block;
+  margin-right: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+amp-sidebar {
+  width: 250px;
+  background-color: $white;
+  border-left: 1px solid $gray;
+}
+
+amp-sidebar ul,
+amp-sidebar li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+amp-sidebar li {
+  border-bottom: 1px solid $gray;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 14px;
+}
+
+amp-sidebar li:first-of-type {
+  border-top: 1px solid $gray;
 }
