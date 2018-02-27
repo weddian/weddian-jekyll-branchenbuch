@@ -85,6 +85,7 @@ $grid-gutter-l:                                 7px !default;
 $grid-gutter-xl:                                7px !default;
 
 // Responsive Breakpoints
+$breakpoint-s:                                  ($container-m + 19) !default;
 $breakpoint-m:                                  ($container-m + 20) !default;
 $breakpoint-l:                                  ($container-l + 20) !default;
 $breakpoint-xl:                                 ($container-xl + 20) !default;

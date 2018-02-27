@@ -230,7 +230,12 @@
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-
+@include breakpoint(s){
+  .none-s { display: none; }
+  .block-s { display: block; }
+  .inline-block-s { display: inline-block; }
+  .inline-s { display: inline; }
+}
 // Tablet Helpers
 @include breakpoint(m) {
   

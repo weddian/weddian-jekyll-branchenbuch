@@ -7,12 +7,17 @@ layout: default
 <div class="row clear pad-top-5 pad-bottom-5">
 <div class="col-12 col-3-m">
 {% assign cities = site.data.city-inhabitants | sort: 'inhabitants' | reverse %}
-<ul class="menu">
+<ul class="menu none-s">
 {% for c in cities limit: 30 %}
 <li><a href="/{{ page.slug }}-{{ c.citySlug }}.html">{{ c.name }}</a></li>
 {% endfor %}
 <li><a href="/cities.html">&rarr; Alle Städte</a></li>
 </ul>
+<select on="change:AMP.navigateTo(url=event.value)">
+    {% for c in cities limit: 30 %}
+    <option value="/{{ page.slug }}-{{ c.citySlug }}.html" >{{ c.name }}</option>
+    {% endfor %}
+</select>
 </div>
 <div class="col-12 col-9-m row">
   <amp-list width="auto"

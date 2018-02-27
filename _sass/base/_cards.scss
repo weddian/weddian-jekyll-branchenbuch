@@ -1,5 +1,5 @@
 .card {
-    min-height: 340px;
+    min-height: 360px;
     border-radius: 2px;
     border: 1px solid $gray;
     padding: 0;
@@ -26,7 +26,12 @@
   -o-transition: max-height 2s; 
   transition: max-height 2s;
 }
-
+@media (max-width: 600px){
+    .card,.card-content{
+        min-height:0px;
+        position:relative;
+    }
+}
 .card .card-title {
     font-size: 1.17em;
     font-weight: bold;
