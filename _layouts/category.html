@@ -13,7 +13,7 @@ layout: default
 {% endfor %}
 <li><a href="/cities.html">&rarr; Alle Städte</a></li>
 </ul>
-<select on="change:AMP.navigateTo(url=event.value)">
+<select on="change:AMP.navigateTo(url=event.value)" class="none-m">
     {% for c in cities limit: 30 %}
     <option value="/{{ page.slug }}-{{ c.citySlug }}.html" >{{ c.name }}</option>
     {% endfor %}

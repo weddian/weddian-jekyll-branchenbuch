@@ -25,12 +25,15 @@
 }
 .menu li.active{
     background-color: rgba(222, 25, 96, 0.4);
-    border:1px solid rgba(222, 25, 96, 0.7);
 }
 .menu li.active a{
-    color: $black;
+    color: #767879;
 }
 .menu li amp-img{
     vertical-align: middle;
     margin-right: 7px;
+}
+select{
+    margin: 14px;
+    width: calc(100% - 28px);
 }
