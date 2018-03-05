@@ -25,6 +25,8 @@ collections:
     output: true
   categories:
     output: true
+  plans:
+    output: false
 
 defaults:
   - scope:

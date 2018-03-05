@@ -3,6 +3,6 @@ layout: default
 ---
 
 <div class="container">
-<h1>{% if page.label %}{{ page.label }}{% elsif page.name %}{{ page.name }}{% else %}{{ page.title }}{% endif %}</h1>
+<h1>{% if page.label %}{{ page.label }}{% elsif page.title %}{{ page.title }}{% else %}{{ page.endif }}{% endif %}</h1>
 {{ content }}
 </div>

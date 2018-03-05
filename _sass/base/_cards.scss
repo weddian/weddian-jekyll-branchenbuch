@@ -25,11 +25,11 @@
 }
 
 @include breakpoint(m) {
-    .card{
+    .card.image-card{
         min-height: 360px;
         position: relative;
     }
-    .card .card-content {
+    .card.image-card .card-content {
     min-height: 156px;        
         position: absolute;
         bottom: 0;
@@ -38,13 +38,13 @@
         margin: 0;
         width: 100%;
     }
-    .card-content>p {
+    .card.image-card .card-content>p {
         height: 66px;
         cursor: pointer;
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .card-content:hover>p {
+    .card.image-card .card-content:hover>p {
         overflow: visible;
         white-space: normal;
         height: auto;
