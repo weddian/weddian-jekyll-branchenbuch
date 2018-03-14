@@ -3,26 +3,7 @@ layout: default
 ---
 
 <div class="container">
-<div class="image-header">
-    <div class="slt_item_head">
-        <div class="user_logo_pic"><amp-img layout="responsive" width="302" height="170" src="{{ page.logo.url }}"/></div>
-        <div class="slt_item_contant">
-            <h1>{{ page.name }}</h1>
-            <p class="location"><i class="fa fa-map-marker"></i> {{ page.addressLabel }}</p>
-            <div class="rating-box">
-                <div><span> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
-                        class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </span></div>
-            </div>
-            <div class="head-bookmark-bock">
-                <div class="detail-banner-btn"><a href="#anfragen" class="button-primary"><i
-                        class="fa fa-bookmark-o"></i>&nbsp;&nbsp;Anfragen</a>
-                </div>
-                <div class="detail-banner-btn"><a href="#bewerten" class="button-primary"><i
-                        class="fa fa-heart-o"></i>&nbsp;&nbsp;Bewerten</a></div>
-            </div>
-        </div>
-    </div>
-</div>
+{% include image-header.html %}
 
 <section class="borders content">
     <q class="intro flex-box">{{ page.description}}</q>
@@ -66,118 +47,7 @@ layout: default
 <div class="gallery-wrapper">
 {% include gallery.html %}
 </div>
-
-{% if page.reviews > 0 %}
-<section class="borders content" id="reviews">
-    <h2>Bewertungen</h2>
-    {% for review in page.reviewList %}
-    <div class="review">
-        <div>
-            <p>{{ review.review }}</p>
-        </div>
-        <div class="reviewer">
-            <div class="flex-box">
-                <b>{{ review.userName }}</b>
-                <span>&nbsp;aus {{review.userCity}},&nbsp;</span>
-                <amp-timeago locale="de" layout="fixed-height" height="24"
-                         cutoff="15552000"
-                         datetime="{{review.createdDate | divided_by: 1000 | date: '%FT%T.%LZ'}}">
-                {{review.createdDate | divided_by: 1000 | date: 'am %e.%m.%Y '}}</amp-timeago>
-            </div>
-            <div class="stars">{% for i in (1..5) %}{% if i <= review.stars %}★{% else %}☆{% endif %}{% endfor %}</div>
-        </div>
-    </div>
-    {% endfor %}
-</section>
-{% endif %}
-
-<section class="borders content" id="bewerten" >
-<h2>{% if page.reviews == 0 %}Erste {% endif %}Bewertung schreiben</h2>
-
-    <form method="post" class="hide-inputs"
-          action-xhr="{{ site.backend }}/api/v2/userReview"
-          target="_top">
-        <input type="hidden" name="serviceProviderId" value="{{ page.serviceProviderId }}">
-        <fieldset class="rating">
-            <input name="stars"
-                   type="radio"
-                   id="rating5"
-                   value="5"/>
-            <label for="rating5"
-                   title="5 stars">☆</label>
-
-            <input name="stars"
-                   type="radio"
-                   id="rating4"
-                   value="4" />
-            <label for="rating4"
-                   title="4 stars">☆</label>
-
-            <input name="stars"
-                   type="radio"
-                   id="rating3"
-                   value="3"/>
-            <label for="rating3"
-                   title="3 stars">☆</label>
-
-            <input name="stars"
-                   type="radio"
-                   id="rating2"
-                   value="2"/>
-            <label for="rating2"
-                   title="2 stars">☆</label>
-
-            <input name="stars"
-                   type="radio"
-                   id="rating1"
-                   value="1"
-                   checked="checked"/>
-            <label for="rating1"
-                   title="1 stars">☆</label>
-        </fieldset>
-        <div class="form-input-group">
-            <div>
-            <input type="text" class="form-control"
-                   name="userName"
-                   placeholder="Name"
-                   required>
-            </div>
-            <div>
-            <input type="email" class="form-control"
-                   name="userId"
-                   placeholder="E-Mail"
-                   required>
-            </div>
-            <div>
-            <input type="text" class="form-control"
-                   name="userCity"
-                   placeholder="Wohnort"
-                   required>
-            </div>
-        </div>
-        <div class="form-group">
-            <textarea class="form-control"
-                  name="review"
-                  rows="3"
-                  placeholder="Deine Bewertung..."></textarea>
-            <div></div>
-        </div>
-        <div class="form-button-group">
-            <button>Bewerten</button>
-        </div>
-        <div submit-success>
-            <template type="amp-mustache">
-                Vielen Dank für deine Bewertung.
-            </template>
-        </div>
-        <div submit-error>
-            <template type="amp-mustache">
-                Bitte fülle alle Felder aus und gib mindestens 30 Zeichen in der Bewertung ein.
-            </template>
-        </div>
-    </form>
-</section>
-
+        
 {% if page.offerInquiry %}
 <section class="borders content" id="anfragen" >
 <h2>Unverbindliche Anfrage stellen</h2>
@@ -231,6 +101,115 @@ layout: default
             </template>
         </div>
     </form>
+</section>
+{% endif %}
+<section class="borders content" id="bewerten" >
+        <h2>{% if page.reviews == 0 %}Erste {% endif %}Bewertung schreiben</h2>
+        
+            <form method="post" class="hide-inputs"
+                  action-xhr="{{ site.backend }}/api/v2/userReview"
+                  target="_top">
+                <input type="hidden" name="serviceProviderId" value="{{ page.serviceProviderId }}">
+                <fieldset class="rating">
+                    <input name="stars"
+                           type="radio"
+                           id="rating5"
+                           value="5"/>
+                    <label for="rating5"
+                           title="5 stars">☆</label>
+        
+                    <input name="stars"
+                           type="radio"
+                           id="rating4"
+                           value="4" />
+                    <label for="rating4"
+                           title="4 stars">☆</label>
+        
+                    <input name="stars"
+                           type="radio"
+                           id="rating3"
+                           value="3"/>
+                    <label for="rating3"
+                           title="3 stars">☆</label>
+        
+                    <input name="stars"
+                           type="radio"
+                           id="rating2"
+                           value="2"/>
+                    <label for="rating2"
+                           title="2 stars">☆</label>
+        
+                    <input name="stars"
+                           type="radio"
+                           id="rating1"
+                           value="1"
+                           checked="checked"/>
+                    <label for="rating1"
+                           title="1 stars">☆</label>
+                </fieldset>
+                <div class="form-input-group">
+                    <div>
+                    <input type="text" class="form-control"
+                           name="userName"
+                           placeholder="Name"
+                           required>
+                    </div>
+                    <div>
+                    <input type="email" class="form-control"
+                           name="userId"
+                           placeholder="E-Mail"
+                           required>
+                    </div>
+                    <div>
+                    <input type="text" class="form-control"
+                           name="userCity"
+                           placeholder="Wohnort"
+                           required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control"
+                          name="review"
+                          rows="3"
+                          placeholder="Deine Bewertung..."></textarea>
+                    <div></div>
+                </div>
+                <div class="form-button-group">
+                    <button>Bewerten</button>
+                </div>
+                <div submit-success>
+                    <template type="amp-mustache">
+                        Vielen Dank für deine Bewertung.
+                    </template>
+                </div>
+                <div submit-error>
+                    <template type="amp-mustache">
+                        Bitte fülle alle Felder aus und gib mindestens 30 Zeichen in der Bewertung ein.
+                    </template>
+                </div>
+            </form>
+        </section>
+{% if page.reviews > 0 %}
+<section class="borders content" id="reviews">
+    <h2>Bewertungen</h2>
+    {% for review in page.reviewList %}
+    <div class="review">
+        <div>
+            <p>{{ review.review }}</p>
+        </div>
+        <div class="reviewer">
+            <div class="flex-box">
+                <b>{{ review.userName }}</b>
+                <span>&nbsp;aus {{review.userCity}},&nbsp;</span>
+                <amp-timeago locale="de" layout="fixed-height" height="24"
+                         cutoff="15552000"
+                         datetime="{{review.createdDate | divided_by: 1000 | date: '%FT%T.%LZ'}}">
+                {{review.createdDate | divided_by: 1000 | date: 'am %e.%m.%Y '}}</amp-timeago>
+            </div>
+            <div class="stars">{% for i in (1..5) %}{% if i <= review.stars %}★{% else %}☆{% endif %}{% endfor %}</div>
+        </div>
+    </div>
+    {% endfor %}
 </section>
 {% endif %}
 </div>

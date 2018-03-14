@@ -4,57 +4,9 @@ layout: default
 ---
 
 <div class="container">
-<div class="image-header">
-    <div class="slt_item_head">
-        <div class="slt_item_contant">
-            <h1>{{ page.name }}</h1>
-            <div class="head-bookmark-bock">
-                <div class="detail-banner-btn">
-                    <a href="#anfragen" class="button-primary">
-                        <i class="fa fa-bookmark-o"></i>&nbsp;&nbsp;Anfragen</a>
-                </div>
-                <div class="detail-banner-btn">
-                    <a href="#bewerten" class="button-primary">
-                        <i class="fa fa-heart-o"></i>&nbsp;&nbsp;Bewerten</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{% include image-header.html %}
 
-{% assign categories = site.categories | sort: 'order' %}
-<div class="row clear pad-top-5 pad-bottom-5">
+{% include categories.html %}
 
-    {% for category in categories %}
-    <div class="col-12 col-6-m col-4-l">
-        <a href="{{ site.baseurl }}{{ category.url }}">
-            <div class="card image-card">
-                <amp-img layout="responsive" height="90" width="160" src="{{ site.baseurl }}/images/categories-small/{{ category.slug }}.jpg"></amp-img>
-                <div class="card-content">
-                    <h3 class="card-title">{{ category.label }}</h3>
-                    <p class="card-description">{{ category.desc }}</p>
-                </div>
-            </div>
-        </a>
-    </div>
-    {% endfor %}
-</div>
-
-<div class="row clear pad-top-5 pad-bottom-5">
-    {% for plan in site.plans %}
-    <div class="col-12 col-4-l">
-            <div class="card">
-                <div class="card-content">
-                    <h3 class="card-title">{{ plan.title }}<br><small>{{ plan.subtitle }}</small></h3>
-                    <span>{{ plan.badge }}</span>
-                    <p>Preis:<br>
-                    monatlich: {{ plan.price_monthly }}<br>
-                    jährlich: {{ plan.price_annually }}
-                    </p>
-                    {{ plan.content | markdownify }}
-                </div>
-            </div>
-    </div>
-    {% endfor %}
-</div>
+{% include plans.html %}
 </div>

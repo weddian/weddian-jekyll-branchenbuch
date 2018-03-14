@@ -1,9 +1,12 @@
-
-.image-header {
-    background-image: url("/images/pexels-photo-134469.jpeg");
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: auto 100%;
+  .image-header {
+    position: relative;
+  }
+  
+  .image-header amp-img {
+    position: relative;
+  }
+    .image-header amp-img img {
+    object-fit: cover;
   }
   
   .slt_item_head {

@@ -1,0 +1,17 @@
+<div class="row clear pad-top-5 pad-bottom-5">
+    {% for plan in site.plans %}
+    <div class="col-12 col-6-m col-4-l">
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-title">{{ plan.title }}<br><small>{{ plan.subtitle }}</small></h3>
+                    <span>{{ plan.badge }}</span>
+                    <p>Preis:<br>
+                    monatlich: {{ plan.price_monthly }}<br>
+                    jährlich: {{ plan.price_annually }}
+                    </p>
+                    {{ plan.content | markdownify }}
+                </div>
+            </div>
+    </div>
+    {% endfor %}
+</div>
