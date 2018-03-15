@@ -1,31 +1,17 @@
-  /* old */
-.footer-map {
-    margin-top: 16px;
-    background-color: $black;
-    background-position: 50% -40px;
-    background-size: contain;
-  }
+
   
-  .site-footer {
+  .footer {
     color: $white;
     box-sizing: border-box;
+    background-color: $black;
+  }
+  .footer h2{
+    color: white;
   }
   
-  .footer-top {
-    background: rgba(30, 30, 30, 0.98);
-    padding: $default-pad-2 0 $default-pad-2;
-  }
-  
-  .footer-bottom {
-    background-color: #191919;
-    font-size: 0.875rem;
-    border-top: 1px solid #353535;
-    padding: $default-pad-3 0;
-  }
-  
-  .footer-bottom p {
-    text-align: center;
-  }
+.footer .copyright{
+  background-color: rgba(30,30,30,0.98);
+}
   
   .footer-content {
     width: 920px;
@@ -35,11 +21,11 @@
     margin-left: auto;
   }
   
-  .site-footer hr {
+  .footer hr {
     background: $primary;
     border: 0 none;
     bottom: 0;
-    height: 2px;
+    height: $default-border-width;
     margin: 10px 0;
     top: -25px;
     width: 14%;

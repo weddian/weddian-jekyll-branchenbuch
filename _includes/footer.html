@@ -1,29 +1,42 @@
-<footer class="site-footer footer-map">
-    <div class="footer-top">
-        <div class="footer-content">
-            <div class="flex-box">
-                <div class="half-box">
-                    <h2>Über {{ site.title }}</h2>
-                    <hr>
-                    <p class="about-lt">{{ site.description }}</p>
-                    <a href="about.html" class="btn-primary-link more-detail"><i class="fa fa-hand-o-right"></i> Read
-                        More</a>
-                </div>
-                <div class="half-box">
-                    <h2>Weitere Informationen</h2>
-                    <hr>
-                    <ul class="use-slt-link">
-                        <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Impressum</a></li>
-                        <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;AGB</a></li>
-                        <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Datenschutz</a></li>
-                        <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Mediadaten</a></li>
-                        <li><a href="#"><i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Sitemap</a></li>
-                    </ul>
-                </div>
+<footer class="footer col-12 pad-0">
+        <div class="container">
+            <div class="col-12 col-6-m">
+                <h2>Über {{ site.title }}</h2>
+                <hr>
+                <p class="about-lt">{{ site.description }}</p>
+                <a href="about.html" class="btn-primary-link more-detail">
+                    <i class="fa fa-hand-o-right"></i> Read More
+                </a>
+            </div>
+            <div class="col-12 col-6-m">
+                <h2>Weitere Informationen</h2>
+                <hr>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Impressum</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;AGB</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Datenschutz</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Mediadaten</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-hand-o-right"></i>&nbsp;&nbsp;Sitemap</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 copyright text-center">
+                <p>Copyright © {{ site.time | date: "%Y" }} Weddian UG.</p>
             </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <p>Copyright © {{ site.time | date: "%Y" }} Weddian UG.</p>
     </div>
 </footer>

@@ -29,6 +29,10 @@ textarea {
   margin: 0;
   border-radius: $default-border-radius;
 }
+input:not([type="radio"]),textarea{
+  margin-right:$default-pad-1;
+  width: 100%;
+}
 
 // Mixed Input Fields
 [type="text"],

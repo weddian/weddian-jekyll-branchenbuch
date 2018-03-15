@@ -3,53 +3,54 @@ layout: default
 ---
 
 <div class="container">
-{% include sp/header.html %}
+    {% include sp/header.html %}
 
-<section class="borders content">
-    <q class="flex">{{ page.description}}</q>
-</section>
+    <div class="col-12">
+        <q class="flex">{{ page.description}}</q>
+    </div>
 
-<section class="borders content flex-box">
-    <div class="description">
+
+    <div class="description col-12 col-8-l">
         <h2>Beschreibung</h2>
         {{ page.longDescription }}
     </div>
-    <div class="contacts">
+
+    <div class="contacts col-12 col-4-l">
         <h3>Kontakt</h3>
         <h4>Telefon:</h4>
-        <div><a href="tel:{{page.phone}}">{{page.phone}}</a></div>
+        <div>
+            <a href="tel:{{page.phone}}">{{page.phone}}</a>
+        </div>
         <h4>E-Mail:</h4>
-        <div><a href="mailto:{{page.email}}">{{page.email}}</a></div>
-        {% if page.socialNetworks %}
-        {% if page.socialNetworks.instagram %}
+        <div>
+            <a href="mailto:{{page.email}}">{{page.email}}</a>
+        </div>
+        {% if page.socialNetworks %} {% if page.socialNetworks.instagram %}
         <h4>Instagram:</h4>
-        <div><a href="{{ page.socialNetworks.instagram }}">{{ page.socialNetworks.instagram }}</a></div>
-        {% endif %}
-        {% endif %}
-        <div class="pad-top-5">
-            <div class="detail-banner-btn"><a href="#anfragen" class="button-primary"><i
-                    class="fa fa-bookmark-o"></i>&nbsp;&nbsp;Anfragen</a>
-            </div>
+        <div>
+            <a href="{{ page.socialNetworks.instagram }}">{{ page.socialNetworks.instagram }}</a>
+        </div>
+        {% endif %} {% endif %}
+        <div>
+            <a href="#anfragen" class="button-primary mar-top-1">
+                <i class="fa fa-bookmark-o"></i>&nbsp;&nbsp;Anfragen</a>
         </div>
     </div>
-</section>
 
-{% if page.extraData.questions %}
-<section class="borders content" id="faq">
-<h2>Fragen und Antworten</h2>
-{% for question in page.extraData.questions %}
-<h4>{{ question.question }}</h4>
-{{ question.answer }}
-    {% endfor %}
-    {% endif %}
-</section>
+    {% if page.extraData.questions %}
+    <div id="faq" class="col-12">
+        <h2>Fragen und Antworten</h2>
+        {% for question in page.extraData.questions %}
+        <h4>{{ question.question }}</h4>
+        {{ question.answer }} {% endfor %} {% endif %}
+    </div>
 
-<div class="gallery-wrapper">
-{% include sp/gallery.html %}
-</div>
+    {% include sp/gallery.html %}
+ 
+    {% include sp/inquiry.html %}
 
-{% include sp/inquiry.html %}
-{% include sp/rating.html %}
-{% include sp/reviews.html %}
+    {% include sp/rating.html %}
+
+    {% include sp/reviews.html %}
 
 </div>

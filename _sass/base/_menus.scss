@@ -24,11 +24,17 @@
     border-bottom-right-radius: 2px;
 }
 .menu li.active{
-    background-color: rgba(222, 25, 96, 0.4);
+    background-color: $gray;
 }
-.menu li a,
-.menu li.active a{
+.menu li a{
     color: #767879;
+}
+.menu li.active a{
+    color: $black;
+}
+.menu li.active a amp-img img{
+    -webkit-filter: contrast(200%);
+    filter: contrast(200%);
 }
 .menu li amp-img{
     vertical-align: middle;

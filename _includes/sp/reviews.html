@@ -1,5 +1,5 @@
 {% if page.reviews > 0 %}
-<section class="borders content" id="reviews">
+<div class="col-12" id="reviews">
     <h2>Bewertungen</h2>
     {% for review in page.reviewList %}
     <div class="review">
@@ -19,5 +19,5 @@
         </div>
     </div>
     {% endfor %}
-</section>
+</div>
 {% endif %}
