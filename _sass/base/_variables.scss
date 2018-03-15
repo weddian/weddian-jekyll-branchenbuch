@@ -7,7 +7,7 @@ $black: black;
 $white: white;
 $green: green;
 $yellow: yellow;
-$gray: lightgray;
+$gray: #EAEAEA;
 
 // Global Typography
 $base-background-color:                         #fff !default;
@@ -89,3 +89,10 @@ $breakpoint-s:                                  ($container-m + 19) !default;
 $breakpoint-m:                                  ($container-m + 20) !default;
 $breakpoint-l:                                  ($container-l + 20) !default;
 $breakpoint-xl:                                 ($container-xl + 20) !default;
+
+$default-pad-1: 1rem;
+$default-pad-2: 1.5rem;
+$default-pad-3: 3rem;
+
+$default-border-radius: 3px;
+$default-border-width: 2px;

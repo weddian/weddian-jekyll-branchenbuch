@@ -1,0 +1,26 @@
+ {% if page.offerInquiry %}
+<section class="borders content" id="anfragen">
+    <h2>Unverbindliche Anfrage stellen</h2>
+
+    <form method="post" class="hide-inputs" action-xhr="{{ site.backend }}/api/v2/userInquiry" target="_top">
+        <input type="hidden" name="serviceProviderId" value="{{ page.serviceProviderId }}">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="userId" placeholder="E-Mail" required>
+        <input type="tel" name="phone" placeholder="Telefon (optional)">
+        <input type="text" name="weddingDate" placeholder="Hochzeitsdatum" required>
+        <textarea name="inquiry" rows="3" placeholder="Deine Anfrage..."></textarea>
+
+        <button class="button-primary">Anfragen</button>
+        <div submit-success>
+            <template type="amp-mustache">
+                Vielen Dank für deine Anfrage!
+            </template>
+        </div>
+        <div submit-error>
+            <template type="amp-mustache">
+                Bitte fülle alle Felder aus und gib mindestens 30 Zeichen in der Anfrage ein.
+            </template>
+        </div>
+    </form>
+</section>
+{% endif %}

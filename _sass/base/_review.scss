@@ -1,5 +1,5 @@
 .review {
-    border: 1px solid #eee;
+    border: $default-border-width solid #eee;
     margin-bottom: 16px;
 }
 
@@ -9,7 +9,7 @@
     line-height: 24px;
     color: #969595;
     margin: 0;
-    padding: 16px;
+    padding: $default-pad-2;
     text-align: justify;
     letter-spacing: 0.4px;
 }
@@ -17,7 +17,7 @@
 .reviewer {
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: $default-pad-2;
     background-color: #f9f9f9;
 }
 

@@ -1,0 +1,23 @@
+{% if page.reviews > 0 %}
+<section class="borders content" id="reviews">
+    <h2>Bewertungen</h2>
+    {% for review in page.reviewList %}
+    <div class="review">
+        <div>
+            <p>{{ review.review }}</p>
+        </div>
+        <div class="reviewer">
+            <div class="flex-box">
+                <b>{{ review.userName }}</b>
+                <span>&nbsp;aus {{review.userCity}},&nbsp;</span>
+                <amp-timeago locale="de" layout="fixed-height" height="24"
+                         cutoff="15552000"
+                         datetime="{{review.createdDate | divided_by: 1000 | date: '%FT%T.%LZ'}}">
+                {{review.createdDate | divided_by: 1000 | date: 'am %e.%m.%Y '}}</amp-timeago>
+            </div>
+            <div class="stars">{% for i in (1..5) %}{% if i <= review.stars %}★{% else %}☆{% endif %}{% endfor %}</div>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+{% endif %}

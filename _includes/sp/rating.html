@@ -1,0 +1,39 @@
+<section class="borders content" id="bewerten">
+    <h2>{% if page.reviews == 0 %}Erste {% endif %}Bewertung schreiben</h2>
+
+    <form method="post" class="hide-inputs" action-xhr="{{ site.backend }}/api/v2/userReview" target="_top">
+        <input type="hidden" name="serviceProviderId" value="{{ page.serviceProviderId }}">
+        <fieldset class="rating">
+            <input name="stars" type="radio" id="rating5" value="5" />
+            <label for="rating5" title="5 stars">☆</label>
+
+            <input name="stars" type="radio" id="rating4" value="4" />
+            <label for="rating4" title="4 stars">☆</label>
+
+            <input name="stars" type="radio" id="rating3" value="3" />
+            <label for="rating3" title="3 stars">☆</label>
+
+            <input name="stars" type="radio" id="rating2" value="2" />
+            <label for="rating2" title="2 stars">☆</label>
+
+            <input name="stars" type="radio" id="rating1" value="1" checked="checked" />
+            <label for="rating1" title="1 stars">☆</label>
+        </fieldset>
+
+        <input type="text" name="userName" placeholder="Name" required>
+        <input type="email" name="userId" placeholder="E-Mail" required>
+        <input type="text" name="userCity" placeholder="Wohnort" required>
+        <textarea name="review" rows="3" placeholder="Deine Bewertung..."></textarea>
+        <button class="button">Bewerten</button>
+        <div submit-success>
+            <template type="amp-mustache">
+                Vielen Dank für deine Bewertung.
+            </template>
+        </div>
+        <div submit-error>
+            <template type="amp-mustache">
+                Bitte fülle alle Felder aus und gib mindestens 30 Zeichen in der Bewertung ein.
+            </template>
+        </div>
+    </form>
+</section>

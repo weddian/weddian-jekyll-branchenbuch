@@ -36,7 +36,7 @@
             {% assign count = count | plus: 1 %}
             <amp-image-lightbox id="lightbox{{count}}"
               layout="nodisplay"  on="tap:lightbox{{count}}.close" role="button" tabindex="1">
-              <button class="btn right" on="tap:lightbox{{count}}.close" role="button" tabindex="1">Schließen</button>
+              <button class="button button-primary right" on="tap:lightbox{{count}}.close" role="button" tabindex="1">Schließen</button>
             </amp-image-lightbox>
             {% endfor %}
             

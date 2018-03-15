@@ -1,21 +1,16 @@
 .card {
-    border-radius: 2px;
-    border: 1px solid $gray;
+    border-radius: $default-border-radius;
+    border: $default-border-width solid $gray;
     padding: 0;
-    margin: 7px;
+    margin: $default-pad-1;
 }
 
 .card .card-content {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-bottom: 14px;
+    padding-left: $default-pad-2;
+    padding-right: $default-pad-2;
+    padding-bottom: $default-pad-2;
     color: black;
     background-color: $white;
-    -webkit-transition: max-height 2s;
-    -moz-transition: max-height 2s;
-    -ms-transition: max-height 2s;
-    -o-transition: max-height 2s;
-    transition: max-height 2s;
 }
 
 .card .card-title {
@@ -38,7 +33,7 @@
         margin: 0;
         width: 100%;
     }
-    .card.image-card .card-content>p {
+    /*.card.image-card .card-content>p {
         height: 66px;
         cursor: pointer;
         overflow: hidden;
@@ -48,5 +43,5 @@
         overflow: visible;
         white-space: normal;
         height: auto;
-    }
+    }*/
 }

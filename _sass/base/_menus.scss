@@ -1,6 +1,6 @@
 .menu{
     list-style: none;
-    border-radius: 2px;
+    border-radius: $default-border-radius;
     margin-top: 14px;
     padding:0;
 }
@@ -9,7 +9,7 @@
     min-height: 32px;
     line-height: 22px;
     font-size: 14px;
-    border: 1px solid $gray;
+    border: $default-border-width solid $gray;
     border-top:none;
     padding: 5px;
     display: flex;
@@ -17,7 +17,7 @@
 .menu li:first-of-type{
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    border: 1px solid $gray;
+    border: $default-border-width solid $gray;
 }
 .menu li:last-of-type{
     border-bottom-left-radius: 2px;

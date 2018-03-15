@@ -4,7 +4,7 @@
 
 // Form, Fieldset and Legend
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: $default-border-width solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -27,7 +27,7 @@ textarea {
   color: $base-input-color;
   font: inherit;
   margin: 0;
-  border-radius: 0;
+  border-radius: $default-border-radius;
 }
 
 // Mixed Input Fields
@@ -40,7 +40,7 @@ textarea {
   height: $base-input-height;
   padding: 10px;
   background-color: $base-input-background-color;
-  border: 1px solid $base-input-border-color;
+  border: $default-border-width solid $base-input-border-color;
   -webkit-appearance: none;
   -moz-appearance: textfield;
   border-radius: 0;
@@ -78,9 +78,9 @@ textarea {
 
 // Text Area
 textarea {
-  padding: 10px;
+  padding: $default-pad-1;
   background-color: $base-input-background-color;
-  border: 1px solid $base-input-border-color;
+  border: $default-border-width solid $base-input-border-color;
   overflow: auto;
   &:focus {
     background-color: $base-input-background-focus-color;
@@ -93,9 +93,9 @@ textarea {
 select {
   text-transform: none;
   height: $base-input-height;
-  padding: 0 10px;
+  padding: 0 $default-pad-1;
   background-color: $base-input-background-color;
-  border: 1px solid $base-input-border-color;
+  border: $default-border-width solid $base-input-border-color;
   &:focus {
     background-color: $base-input-background-focus-color;
     border-color: $base-input-border-focus-color;
@@ -171,41 +171,25 @@ textarea.form-control {
 .form-control {
   box-sizing: border-box;
   background-color: #f9f9f9;
-  border: 1px solid #f1f1f1;
+  border: $default-border-width solid #f1f1f1;
   border-radius: 0;
   display: block;
-  font-size: 14px;
+  font-size: $default-pad-1;
   height: 46px;
   line-height: 24px;
   font-weight: 500;
-  padding: 15px 20px;
+  padding: $default-pad-1 $default-pad-1;
   color: #969595;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
   width: 100%;
   box-shadow: none;
 }
 
-.form-button-group button {
-  background-color: $primary;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-  height: 44px;
-  border-radius: 6px;
-  letter-spacing: 0.6px;
-  padding: 0 40px;
-  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .form-group {
-  margin-bottom: 16px;
+  margin-bottom: $default-pad-2;
 }
 
 .form-input-group {
-  margin-right: -16px;
-  margin-left: -16px;
   margin-bottom: 16px;
   display: flex;
   justify-content: space-between

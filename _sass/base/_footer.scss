@@ -1,42 +1,26 @@
-  // Footer
-  .footer {
-    background-color: $black;
-    color: $white;
-    a {
-      color: $white;
-    }
-  }
-  .footer-links {
-    padding: 0;
-    margin: 0;
-    & > li:not(:first-child) {
-      margin-left: 6px;
-    }
-  }
-
   /* old */
 .footer-map {
     margin-top: 16px;
-    background-color: #000000;
+    background-color: $black;
     background-position: 50% -40px;
     background-size: contain;
   }
   
   .site-footer {
-    color: #ffffff;
+    color: $white;
     box-sizing: border-box;
   }
   
   .footer-top {
     background: rgba(30, 30, 30, 0.98);
-    padding: 80px 0 70px;
+    padding: $default-pad-2 0 $default-pad-2;
   }
   
   .footer-bottom {
     background-color: #191919;
     font-size: 0.875rem;
     border-top: 1px solid #353535;
-    padding: 30px 0;
+    padding: $default-pad-3 0;
   }
   
   .footer-bottom p {
@@ -45,8 +29,8 @@
   
   .footer-content {
     width: 920px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: $default-pad-2;
+    padding-left: $default-pad-2;
     margin-right: auto;
     margin-left: auto;
   }
