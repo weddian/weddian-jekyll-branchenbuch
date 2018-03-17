@@ -1,0 +1,128 @@
+{% if site.list == 'overflow' %}
+<amp-list width="auto" height="1200" layout="fixed-height" src="https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=5"
+  items="data">
+  {% raw %}
+  <template type="amp-mustache">
+    <div class="col-12 col-6-m">
+      <a href="{{slug}}.html">
+        <div class="card image-card">
+          {{#logo}}
+          <amp-img layout="responsive" height="90" width="160" src="{{ logo }}"></amp-img>
+          {{/logo}} {{^logo}} {% endraw %}
+          <amp-img alt="Mountains" fallback layout="responsive" width="160" height="90" src="images/categories-small/{{ page.categorySlug }}.jpg"
+            class="grayscale"></amp-img>
+          {% raw %} {{/logo}}
+          <div class="card-content">
+            <h3 class="card-title">{{name}}
+              <br>
+              <small>{{ subtitle }} {{#subtitle}}-{{/subtitle}} {{ distance }}km entfernt</small>
+            </h3>
+            {{#description}}
+            <p class="card-description">{{ description }}</p>{{/description}}
+          </div>
+        </div>
+      </a>
+    </div>
+  </template>
+  {% endraw %}
+  <div overflow class="list-overflow">
+    See more
+  </div>
+</amp-list>
+{% elsif site.list == 'pagination' %}
+<amp-state id="control">
+  { "pageNumber": 0 }
+</amp-state>
+<amp-state id="page" src="https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=0"
+  [src]="'https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=' + control.pageNumber">
+</amp-state>
+<amp-list id="paged-amp-list" layout="fixed-height" height="1000" src="https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=0"
+  [src]="'https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=' + control.pageNumber"
+  items="data">
+  {% raw %}
+  <template type="amp-mustache">
+    <div class="col-12 col-6-m">
+      <a href="{{slug}}.html">
+        <div class="card image-card {{entryType}}">
+          {{#logo}}
+          <amp-img layout="responsive" height="90" width="160" src="{{ logo }}"></amp-img>
+          {{/logo}} {{^logo}} {% endraw %}
+          <amp-img alt="Mountains" fallback layout="responsive" width="160" height="90" src="images/categories-small/{{ page.categorySlug }}.jpg"
+            class="grayscale"></amp-img>
+          {% raw %} {{/logo}}
+          <div class="card-content">
+            <h3 class="card-title">{{name}}
+              <br>
+              <small>{{ subtitle }} {{#subtitle}}-{{/subtitle}} {{ distance }}km entfernt</small>
+            </h3>
+            {{#description}}
+            <p class="card-description">{{ description }}</p>{{/description}}
+          </div>
+        </div>
+      </a>
+    </div>
+  </template>
+  {% endraw %}
+</amp-list>
+<button class="button-primary mar-right-1 mar-top-1" [hidden]="control.pageNumber == 0 ? true : false" on="tap:
+AMP.setState({
+  control:{
+  pageNumber: control.pageNumber - 1
+}
+})">Vorherhige Seite</button>
+<button class="button-primary mar-top-1" [hidden]="page.data.length < 50 ? true : false" on="tap:
+AMP.setState({
+  control:{
+  pageNumber: control.pageNumber + 1
+  }
+})">Nächste Seite</button>
+<p class="info" [text]="'Seite ' + (page.meta.page.number + 1) + ' von ' + page.meta.page.totalPages">Seite 1</p>
+
+{% else %}
+<amp-state id="control">
+  { "showButton": true, "nextPage": 1 }
+</amp-state>
+<amp-state id="data" src="https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=0">
+</amp-state>
+<amp-state id="listNextPage" src="https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=1"
+  [src]="'https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=' + control.nextPage">
+</amp-state>
+<p [text]="data.data.length"></p>
+<amp-list src="https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=0"
+  [src]="data.data" layout="fixed-height" height="1000" [height]="data.data.length * 100" items="data">
+  <template type="amp-mustache">
+    <div class="col-12 col-6-m">
+      {% raw %}
+      <a href="{{slug}}.html">
+        <div class="card image-card">
+          {{#logo}}
+          <amp-img layout="responsive" height="90" width="160" src="{{ logo }}"></amp-img>
+          {{/logo}} {{^logo}} {% endraw %}
+          <amp-img alt="Fallback Image" fallback layout="responsive" width="160" height="90" src="images/categories-small/{{ page.categorySlug }}.jpg"
+            class="grayscale"></amp-img>
+          {% raw %} {{/logo}}
+          <div class="card-content">
+            <h3 class="card-title">{{name}}
+              <br>
+              <small>{{ subtitle }} {{#subtitle}}-{{/subtitle}} {{ distance }}km entfernt</small>
+            </h3>
+            {{#description}}
+            <p class="card-description">{{ description }}</p>{{/description}} {% endraw %}
+          </div>
+        </div>
+      </a>
+    </div>
+  </template>
+</amp-list>
+<button class="button-primary" [class]="(data.data.length < 50 || !control.showButton ? 'none' : 'button-primary')" on="tap: AMP.setState({
+            data: { 
+              data: data.data.concat(listNextPage.data)
+            },
+            control: {
+              showButton: listNextPage.data.length >= 50,
+              nextPage: control.nextPage + 1
+            }
+          });">
+  Mehr Anzeigen
+</button>
+{% endif %}

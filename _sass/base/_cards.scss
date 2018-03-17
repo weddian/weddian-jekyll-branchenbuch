@@ -19,6 +19,22 @@
     color: $primary;
 }
 
+.card.FREE{
+    border-color: $gray;
+}
+.card.PREMIUM, .card.PREMIUMPLUS{
+    border-color: $primary;
+}
+.card.PREMIUM, .card.PREMIUMPLUS{
+    .card-title:before{
+        content: '★';
+        color: $primary;
+        margin-right:.5rem;
+    }
+    .card-content{
+        border-top: $default-border-width solid $primary;
+    }
+}
 @include breakpoint(m) {
     .card.image-card{
         min-height: 360px;
