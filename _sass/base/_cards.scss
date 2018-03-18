@@ -19,25 +19,14 @@
     color: $primary;
 }
 
-.card.FREE{
-    border-color: $gray;
-}
-.card.PREMIUM, .card.PREMIUMPLUS{
-    border-color: $primary;
-}
-.card.PREMIUM, .card.PREMIUMPLUS{
-    .card-title:before{
-        content: '★';
-        color: $primary;
-        margin-right:.5rem;
-    }
-    .card-content{
-        border-top: $default-border-width solid $primary;
-    }
+.card .card-content .card-description{
+    height: 1.375rem * 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 @include breakpoint(m) {
     .card.image-card{
-        min-height: 360px;
+        min-height: 402px;
         position: relative;
     }
     .card.image-card .card-content {

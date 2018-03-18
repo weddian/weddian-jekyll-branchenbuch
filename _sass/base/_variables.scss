@@ -2,87 +2,85 @@
 // Base – Variables
 // ==========================================================================
 $primary: #DE1960;
-$black: black;
+$secondary: #e5e5e5;
+$black:#282828;
 $white: white;
-$green: green;
-$yellow: yellow;
-$gray: #EAEAEA;
+$gray: $secondary;
 // Global Typography
-$base-background-color : $white !default;
-$base-font-family : sans-serif !default;
-$base-font-size : 18 !default;
-$base-line-height : 22 !default;
-$base-font-weight : 400 !default;
-$base-font-color : $black !default;
-$base-link-color : $primary !default;
-$base-link-hover-color : $gray;
+$base-background-color: $white !default;
+$base-font-family: sans-serif !default;
+$base-font-size: 18 !default;
+$base-line-height: 22 !default;
+$base-font-weight: 400 !default;
+$base-font-color: $black !default;
+$base-link-color: $primary !default;
+$base-link-hover-color: $gray;
 // Headings
-$base-heading-font-family : sans-serif !default;
-$base-h1-font-size : 32 !default;
-$base-h1-line-height : 38 !default;
-$base-h1-font-weight : 700 !default;
-$base-h1-color : $black !default;
-$base-h2-font-size : 26 !default;
-$base-h2-line-height : 32 !default;
-$base-h2-font-weight : 700 !default;
-$base-h2-color : $black !default;
-$base-h3-font-size : 22 !default;
-$base-h3-line-height : 28 !default;
-$base-h3-font-weight : 700 !default;
-$base-h3-color : $black !default;
-$base-h4-font-size : 18 !default;
-$base-h4-line-height : 24 !default;
-$base-h4-font-weight : 700 !default;
-$base-h4-color : $black !default;
-$base-h5-font-size : 16 !default;
-$base-h5-line-height : 22 !default;
-$base-h5-font-weight : 700 !default;
-$base-h5-color : $black !default;
-$base-h6-font-size : 14 !default;
-$base-h6-line-height : 20 !default;
-$base-h6-font-weight : 700 !default;
-$base-h6-color : $black !default;
+$base-heading-font-family: sans-serif !default;
+$base-h1-font-size: 32 !default;
+$base-h1-line-height: 38 !default;
+$base-h1-font-weight: 700 !default;
+$base-h1-color: $black !default;
+$base-h2-font-size: 26 !default;
+$base-h2-line-height: 32 !default;
+$base-h2-font-weight: 700 !default;
+$base-h2-color: $black !default;
+$base-h3-font-size: 22 !default;
+$base-h3-line-height: 28 !default;
+$base-h3-font-weight: 700 !default;
+$base-h3-color: $black !default;
+$base-h4-font-size: 18 !default;
+$base-h4-line-height: 24 !default;
+$base-h4-font-weight: 700 !default;
+$base-h4-color: $black !default;
+$base-h5-font-size: 16 !default;
+$base-h5-line-height: 22 !default;
+$base-h5-font-weight: 700 !default;
+$base-h5-color: $black !default;
+$base-h6-font-size: 14 !default;
+$base-h6-line-height: 20 !default;
+$base-h6-font-weight: 700 !default;
+$base-h6-color: $black !default;
 // Blockquotes
-$base-blockquote-font-family : sans-serif !default;
-$base-blockquote-font-size : 22 !default;
-$base-blockquote-line-height : 28 !default;
+$base-blockquote-font-family: sans-serif !default;
+$base-blockquote-font-size: 22 !default;
+$base-blockquote-line-height: 28 !default;
 // Code
-$base-code-font-family : monospace,
+$base-code-font-family: monospace,
 monospace !default;
-$base-code-font-size : 13 !default;
-$base-code-line-height : 18 !default;
-$base-code-color : $black !default;
-$base-code-background-color : transparent !default;
-$base-code-border-color : #d7d7d7 !default;
+$base-code-font-size: 13 !default;
+$base-code-line-height: 18 !default;
+$base-code-color: $black !default;
+$base-code-background-color: transparent !default;
+$base-code-border-color: $gray !default;
 // Forms
-$base-input-height : 36px !default;
-$base-input-placeholder-color : #999 !default;
-$base-input-color : $black !default;
-$base-input-background-color : $white !default;
-$base-input-background-focus-color : $white !default;
-$base-input-border-color : #ccc !default;
-$base-input-border-focus-color : $primary !default;
-$base-select-box-height : 36px;
-
+$base-input-height: 36px !default;
+$base-input-placeholder-color: $gray !default;
+$base-input-color: $black !default;
+$base-input-background-color: $white !default;
+$base-input-background-focus-color: $white !default;
+$base-input-border-color: $gray !default;
+$base-input-border-focus-color: $primary !default;
+$base-select-box-height: 36px;
 // Grid Alignment
-$grid-alignment : left;
+$grid-alignment: left;
 // Grid Containers
-$container : 100% !default;
-$container-m : 720px !default;
-$container-l : 960px !default;
-$container-xl : 1120px !default;
+$container: 100% !default;
+$container-m: 720px !default;
+$container-l: 960px !default;
+$container-xl: 1120px !default;
 // Responsive Breakpoints
-$breakpoint-s : ($container-m + 19) !default;
-$breakpoint-m : ($container-m + 20) !default;
-$breakpoint-l : ($container-l + 20) !default;
-$breakpoint-xl : ($container-xl + 20) !default;
+$breakpoint-s: ($container-m + 19) !default;
+$breakpoint-m: ($container-m + 20) !default;
+$breakpoint-l: ($container-l + 20) !default;
+$breakpoint-xl: ($container-xl + 20) !default;
 $default-pad-1: 1rem !default;
 $default-pad-2: 1.5rem !default;
 $default-pad-3: 3rem !default;
 $default-border-radius: 3px;
 $default-border-width: 2px;
 // Grid Gutters
-$grid-gutter : $default-pad-1 !default;
-$grid-gutter-m : $default-pad-1 !default;
-$grid-gutter-l : $default-pad-1 !default;
-$grid-gutter-xl : $default-pad-1 !default;
+$grid-gutter: $default-pad-1 !default;
+$grid-gutter-m: $default-pad-1 !default;
+$grid-gutter-l: $default-pad-1 !default;
+$grid-gutter-xl: $default-pad-1 !default;

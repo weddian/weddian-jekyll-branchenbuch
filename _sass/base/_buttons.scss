@@ -18,7 +18,8 @@
   }
 }
 
-.button {
+.button,
+.button.FREE{
   @extend %button-shared;
   border: $default-border-width solid $gray;
   background-color: $white;
@@ -28,14 +29,20 @@
   }
 }
 
-.button-primary {
+.button-primary,
+.button.PREMIUM,
+.button.PREMIUMPLUS{
   @extend %button-shared;
   border: $default-border-width solid $primary;
-  background-color: $primary;
-  color: $white;
+  background-color: $white;
+  color: $black;
   &:hover {
-    color: $black;
+    background-color: $primary
   }
+}
+.button.PREMIUMPLUS:before{
+    content: '★';
+    margin-right:.5rem;
 }
 
 // Button Styled as Link

@@ -4,6 +4,9 @@ price_monthly: 14€
 price_annually: 9€
 subtitle: Beste Sichtbarkeit
 badge: Bestseller
+position: 1
+entryType: PREMIUM
+icon: fa-check-circle
 ---
 
 - Kontaktdaten & Profilbild
@@ -17,8 +20,8 @@ badge: Bestseller
 - höheres Ranking
 - Hervorhebung
 - Anzeige in bis zu 3 Kategorien
-- Kontaktgarantie
-- Top-Platzierung
-- Listung im Ratgeber-Bereich
-- Optimierung deines Eintrags
-- aktive Einholung von Bewertungen
+- ~~Kontaktgarantie~~
+- ~~Top-Platzierung~~
+- ~~Listung im Ratgeber-Bereich~~
+- ~~Optimierung deines Eintrags~~
+- ~~aktive Einholung von Bewertungen~~

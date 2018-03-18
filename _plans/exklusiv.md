@@ -3,6 +3,9 @@ title: Exklusiv
 subtitle: exklusive Werbung
 price_annually: 39€
 price_monthly: 44€
+position: 2
+entryType: PREMIUMPLUS
+icon: fa-heart
 ---
 
 - Kontaktdaten & Profilbild

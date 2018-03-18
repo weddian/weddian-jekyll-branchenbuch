@@ -1,17 +1,31 @@
 <div class="row clear pad-top-1 pad-bottom-1">
-    {% for plan in site.plans %}
+    {% assign plans = site.plans | sort: 'position' %} {% for plan in plans %}
     <div class="col-12 col-6-m col-4-l">
-            <div class="card">
-                <div class="card-content">
-                    <h3 class="card-title">{{ plan.title }}<br><small>{{ plan.subtitle }}</small></h3>
-                    <span>{{ plan.badge }}</span>
-                    <p>Preis:<br>
-                    monatlich: {{ plan.price_monthly }}<br>
-                    jährlich: {{ plan.price_annually }}
-                    </p>
-                    {{ plan.content | markdownify }}
+        <div class="card plan {{ plan.entryType }}">
+            <div class="card-content">
+                <h3 class="card-title"><i class="fa {{ plan.icon }}"></i> {{ plan.title }}
+                    <br>
+                    <small>{{ plan.subtitle }}</small>
+                </h3>
+                <div>
+                    <div class="col-12 text-center pad-bottom-0">
+                        <p class="primary pad-bottom-0 mar-bottom-0">Monatlicher Preis</p>
+                    </div>
+                    <div class="col-6 text-center pad-top-0">
+                        <span class="price-annually">{{ plan.price_annually }}</span><br>
+                        <span class="subtitle primary">jährliche Zahlung</span>
+                    </div>
+                    <div class="col-6 text-center pad-top-0">
+                        <span class="price-monthly">{{ plan.price_monthly }}</span><br>
+                        <span class="subtitle gray">monatliche Zahlung</span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <a class="button {{ plan.entryType }}" href="#">Mehr erfahren!</a>
+                    </div>
                 </div>
             </div>
+            {{ plan.content | markdownify }}
+        </div>
     </div>
     {% endfor %}
 </div>

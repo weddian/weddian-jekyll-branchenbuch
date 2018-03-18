@@ -1,0 +1,87 @@
+.plan.FREE {
+    border-color: $gray;
+}
+
+.plan.PREMIUM,
+.plan.PREMIUMPLUS {
+    border-color: $primary;
+}
+
+
+.plan ul {
+    padding: 0;
+    margin: 0;
+}
+
+.plan li {
+    list-style: none;
+    line-height: 32px;
+    min-height: 42px;
+    font-size: 18px;
+    border: $default-border-width solid $gray;
+    border-top: none;
+    padding: $default-pad-1;
+    display: flex;
+}
+
+.plan li del {
+    color: $gray;
+}
+
+.plan li {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+.plan li:first-of-type {
+    border-top: $default-border-width solid $gray;
+}
+
+.plan li:last-of-type {
+    border-bottom: none;
+}
+
+.plan li {
+    color: $primary;
+}
+
+.plan li.active {
+    background-color: $gray;
+}
+
+.plan .price-annually {
+    line-height: 4rem;
+    font-size: 4rem;
+    font-weight: bold;
+    color: $primary;
+}
+
+.plan .price-monthly {
+    line-height: 4rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $gray;
+}
+
+.plan .subtitle {
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: normal;
+    height: 1rem;
+    margin-top: 0.5rem;
+    padding: 0;
+}
+
+.plan .card-title{
+    margin: $default-pad-1;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.plan .card-title i.fa{
+    font-size: 1.75rem;
+}
+.plan .card-title small{
+    font-size: 1rem;
+    line-height: 1rem;
+}
