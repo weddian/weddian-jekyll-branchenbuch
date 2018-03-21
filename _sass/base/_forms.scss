@@ -40,6 +40,7 @@ input:not([type="radio"]),textarea{
 [type="password"],
 [type="tel"],
 [type="number"],
+[type="search"],
 [type="date"] {
   height: $base-input-height;
   padding: 10px;

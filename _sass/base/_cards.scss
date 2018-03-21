@@ -3,6 +3,7 @@
     border: $default-border-width solid $gray;
     padding: 0;
     margin: 0;
+    background-color: $white;
 }
 
 .card .card-content {
@@ -19,18 +20,19 @@
     color: $primary;
 }
 
-.card .card-content .card-description{
+.card .card-content .card-description {
     height: 1.375rem * 2;
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
 @include breakpoint(m) {
-    .card.image-card{
+    .card.image-card {
         min-height: 402px;
         position: relative;
     }
     .card.image-card .card-content {
-    min-height: 156px;        
+        min-height: 156px;
         position: absolute;
         bottom: 0;
         left: 0;

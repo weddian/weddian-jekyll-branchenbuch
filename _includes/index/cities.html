@@ -1,1 +1,13 @@
-<input type="search" placeholder="Nach Stadt suchen ..." />
+<div class="row clear pad-top-1 pad-bottom-1">
+    <div class="col-12 pad-bottom-0">
+        <h2 class="card-title">Region auswählen</h2>
+    </div>
+    <div class="col-12">
+        <select on="change:AMP.navigateTo(url=event.value)" class="mar-0" id="cities">
+            {% assign cities = site.data.city-inhabitants | sort: 'inhabitants' | reverse %}
+            {% for c in cities %}
+            <option value="/brautkleid-{{ c.citySlug }}.html">{{ c.name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+</div>

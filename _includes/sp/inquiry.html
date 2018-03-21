@@ -5,31 +5,31 @@
     <form method="post" class="hide-inputs" action-xhr="{{ site.backend }}/api/v2/userInquiry" target="_top">
         <input type="hidden" name="serviceProviderId" value="{{ page.serviceProviderId }}">
         
-        <div class="col-12 col-6-m col-3-l pad-left-0">
+        <div class="col-12 col-6-m col-3-l pad-left-0 pad-right-0-s">
                 <input type="text" name="name" placeholder="Name" required>
         </div>
-        <div class="col-12 col-6-m col-3-l pad-left-0">        
+        <div class="col-12 col-6-m col-3-l pad-left-0 pad-right-0-s">        
         <input type="email" name="userId" placeholder="E-Mail" required>
         </div>
-        <div class="col-12 col-6-m col-3-l pad-left-0">        
+        <div class="col-12 col-6-m col-3-l pad-left-0 pad-right-0-s">        
         <input type="tel" name="phone" placeholder="Telefon (optional)">
         </div>
-        <div class="col-12 col-6-m col-3-l pad-left-0">        
+        <div class="col-12 col-6-m col-3-l pad-left-0 pad-right-0-s">        
         <input type="text" name="weddingDate" placeholder="Hochzeitsdatum" required>
         </div>
-        <div class="col-12 pad-left-0">
+        <div class="col-12 pad-left-0 pad-right-0-s">
         
         <textarea name="inquiry" rows="3" placeholder="Deine Anfrage..."></textarea>
         </div>
-        <div class="col-12 pad-left-0">
+        <div class="col-12 pad-left-0 pad-right-0-s">
         <button class="button-primary">Anfragen</button>
         </div>
-        <div class="col-12 pad-left-0" submit-success>
+        <div class="col-12 pad-left-0 pad-right-0-s" submit-success>
             <template type="amp-mustache">
                 Vielen Dank für deine Anfrage!
             </template>
         </div>
-        <div class="col-12 pad-left-0" submit-error>
+        <div class="col-12 pad-left-0 pad-right-0-s" submit-error>
             <template type="amp-mustache">
                 Bitte fülle alle Felder aus und gib mindestens 30 Zeichen in der Anfrage ein.
             </template>

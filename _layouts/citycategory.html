@@ -13,7 +13,7 @@ layout: default
 <li {% if page.categorySlug == c.slug %}class="active"{% endif %}><a href="/{{ c.slug }}-{{ page.citySlug }}.html"><amp-img layout="fixed" height="24" width="24" src="{{ site.baseurl }}/images/category-icons/{{ c.slug }}.png"></amp-img> {{ c.label }}</a></li>
 {% endfor %}
 </ul>
-<select on="change:AMP.navigateTo(url=event.value)" class="none-m">
+<select on="change:AMP.navigateTo(url=event.value)" class="none-m" id="categories">
     {% for c in categories %}
     <option value="/{{ c.slug }}-{{ page.citySlug }}.html" {% if page.categorySlug == c.slug %}selected{% endif %}>{{ c.label }}</option>
     {% endfor %}

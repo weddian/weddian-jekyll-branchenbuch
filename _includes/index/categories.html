@@ -1,6 +1,8 @@
 {% assign categories = site.categories | sort: 'order' %}
 <div class="row clear pad-top-1 pad-bottom-1">
-
+    <div class="col-12 pad-bottom-0">
+        <h2 class="card-title">Kategorien</h2>
+    </div>
     {% for category in categories %}
     <div class="col-12 col-6-m col-4-l">
         <a href="{{ site.baseurl }}{{ category.url }}">

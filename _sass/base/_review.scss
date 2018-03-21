@@ -4,9 +4,6 @@
 }
 
 .review p {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 24px;
     color: #969595;
     margin: 0;
     padding: $default-pad-2;
@@ -39,18 +36,18 @@
     user-select: none;
     /* disable mouse/touch selection */
     cursor: pointer;
-    font-size: 2em;
+    font-size: 2rem;
     /* disable touch feedback on cursor: pointer - http://stackoverflow.com/q/25704650/1269037 */
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 /* the stars */
 
 .rating>label {
     display: inline-block;
-    width: 1em;
+    width: 1rem;
     /* magic number to overlap the radio buttons on top of the stars */
 }
 
@@ -76,12 +73,12 @@
     /* make the radio buttons big; they don't inherit font-size */
     transform: scale(var(--star-size));
     /* the magic numbers below correlate with the font-size */
-    top: -0.5em;
+    top: -0.5rem;
     /* margin-top doesn't work */
-    top: calc(var(--star-size) / 6 * -1em);
-    margin-left: -2.5em;
+    top: calc(var(--star-size) / 6 * -1rem);
+    margin-left: -2.5rem;
     /* overlap the radio buttons exactly under the stars */
-    margin-left: calc(var(--star-size) / 6 * -5em);
+    margin-left: calc(var(--star-size) / 6 * -5rem);
     z-index: 2;
     /* bring the button above the stars so it captures touches/clicks */
     opacity: 0;

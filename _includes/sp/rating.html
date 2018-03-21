@@ -3,7 +3,7 @@
 
     <form method="post" class="hide-inputs" action-xhr="{{ site.backend }}/api/v2/userReview" target="_top">
         <input type="hidden" name="serviceProviderId" value="{{ page.serviceProviderId }}">
-        <div class="col-12 pad-left-0">
+        <div class="col-12 pad-left-0 pad-right-0-s text-center">
             <fieldset class="rating">
                 <input name="stars" type="radio" id="rating5" value="5" />
                 <label for="rating5" title="5 stars">☆</label>
@@ -22,25 +22,25 @@
             </fieldset>
         </div>
 
-        <div class="col-12 col-12-m col-4-l pad-left-0">
+        <div class="col-12 col-12-m col-4-l pad-left-0 pad-right-0-s">
             <input type="text" name="userName" placeholder="Name" required>
         </div>
-        <div class="col-12 col-6-m col-4-l pad-left-0">
+        <div class="col-12 col-6-m col-4-l pad-left-0 pad-right-0-s">
             <input type="email" name="userId" placeholder="E-Mail" required>
         </div>
-        <div class="col-12 col-6-m col-4-l pad-left-0">
+        <div class="col-12 col-6-m col-4-l pad-left-0 pad-right-0-s">
             <input type="text" name="userCity" placeholder="Wohnort" required>
         </div>
-        <div class="col-12 pad-left-0">
+        <div class="col-12 pad-left-0 pad-right-0-s">
             <textarea name="review" rows="3" placeholder="Deine Bewertung..."></textarea>
         </div>
-        <div class="col-12 pad-left-0">
+        <div class="col-12 pad-left-0 pad-right-0-s">
             <button class="button-primary">Bewerten</button>
         </div>
-        <div class="col-12 pad-left-0" submit-success>
+        <div class="col-12 pad-left-0 pad-right-0-s" submit-success>
                 Vielen Dank für deine Bewertung.
         </div>
-        <div class="col-12 pad-left-0" submit-error>
+        <div class="col-12 pad-left-0 pad-right-0-s" submit-error>
                 Bitte fülle alle Felder aus und gib mindestens 30 Zeichen in der Bewertung ein.
         </div>
     </form>

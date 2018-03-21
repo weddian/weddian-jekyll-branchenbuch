@@ -19,7 +19,7 @@
 }
 
 .button,
-.button.FREE{
+.button.FREE {
   @extend %button-shared;
   border: $default-border-width solid $gray;
   background-color: $white;
@@ -31,18 +31,19 @@
 
 .button-primary,
 .button.PREMIUM,
-.button.PREMIUMPLUS{
+.button.PREMIUMPLUS {
   @extend %button-shared;
   border: $default-border-width solid $primary;
-  background-color: $white;
-  color: $black;
+  background-color: $primary;
+  color: $white;
   &:hover {
-    background-color: $primary
+    color: $black
   }
 }
-.button.PREMIUMPLUS:before{
-    content: '★';
-    margin-right:.5rem;
+
+.button.PREMIUMPLUS:before {
+  content: '★';
+  margin-right: .5rem;
 }
 
 // Button Styled as Link
@@ -56,5 +57,12 @@
   }
   &:active {
     outline: 0;
+  }
+}
+
+@include breakpoint(s) {
+  .full-width-button {
+    width: 100%;
+    text-align: center;
   }
 }

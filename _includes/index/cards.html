@@ -1,0 +1,15 @@
+<div class="clear row pad-top-1 pad-bottom-1">
+    <div class="col-12 pad-bottom-0">
+        <h2 class="card-title">Features</h2>
+    </div>
+        {% for card in site.cards %}
+        <div class="col-12">
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-title">{{ card.title }}</h3>
+                    {{ card.content | markdownify }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+</div>
