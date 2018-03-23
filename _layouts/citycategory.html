@@ -3,9 +3,10 @@ layout: default
 ---
 
 <div class="container">
-<h1>{{ page.label }} in {{ page.name }}</h1>
-
-<div class="row clear pad-top-1 pad-bottom-1">
+<div class="row clear">
+<div class="col-12 pad-bottom-0">
+    <h1>{{ page.label }} in {{ page.name }}</h1>
+</div>
 <div class="col-12 col-3-m">
 {% assign categories = site.categories | sort: 'order' %}
 <ul class="menu none-s">

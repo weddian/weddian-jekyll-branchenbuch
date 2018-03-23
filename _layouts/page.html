@@ -3,6 +3,12 @@ layout: default
 ---
 
 <div class="container">
+<div class="row clear">
+<div class="col-12 pad-bottom-0">
 <h1>{% if page.label %}{{ page.label }}{% elsif page.title %}{{ page.title }}{% else %}{{ page.endif }}{% endif %}</h1>
+</div>
+<div class="col-12">
 {{ content }}
+</div>
+</div>
 </div>

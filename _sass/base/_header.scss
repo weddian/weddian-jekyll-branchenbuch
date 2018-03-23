@@ -1,6 +1,9 @@
   .sp-header {
     position: relative;
     min-height: 450px;
+    border-top: 0;
+    border: $default-border-width solid $gray;
+    border-radius: $default-border-radius;
   }
   @include breakpoint(m){
     .sp-header{
@@ -8,8 +11,8 @@
     }
   }
 
-  .sp-header amp-img.background img {
-    object-fit: contain;
+  .sp-header amp-img.sp-header-background img {
+    object-fit: cover;
   }
 
   .sp-header .sp-header-overlay {

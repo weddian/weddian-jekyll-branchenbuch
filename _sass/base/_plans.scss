@@ -7,13 +7,14 @@
     border-color: $primary;
 }
 
-
-.plan ul {
+.plan ul,
+ul.weddian-app {
     padding: 0;
     margin: 0;
 }
 
-.plan li {
+.plan li,
+.weddian-app li {
     list-style: none;
     line-height: 32px;
     min-height: 42px;
@@ -23,12 +24,21 @@
     padding: $default-pad-1;
     display: flex;
 }
+.weddian-app li:before{
+    content: '★';
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+.weddian-app li:last-of-type{
+    border: none;
+}
 
 .plan li del {
     color: $gray;
 }
 
-.plan li {
+.plan li,
+.weddian-app li {
     border-left: none;
     border-right: none;
     border-radius: 0;
@@ -42,11 +52,13 @@
     border-bottom: none;
 }
 
-.plan li {
+.plan li,
+.weddian-app li {
     color: $primary;
 }
 
-.plan li.active {
+.plan li.active,
+.weddian-app li.active {
     background-color: $gray;
 }
 
@@ -73,15 +85,22 @@
     padding: 0;
 }
 
-.plan .card-title{
+.plan .card-title {
     margin: $default-pad-1;
     font-size: 2rem;
     line-height: 2rem;
+    font-family: $base-heading-font-family;
 }
-.plan .card-title i.fa{
+
+.plan .card-title small {
+    font-family: sans-serif;
+}
+
+.plan .card-title i.fa {
     font-size: 1.75rem;
 }
-.plan .card-title small{
+
+.plan .card-title small {
     font-size: 1rem;
     line-height: 1rem;
 }
