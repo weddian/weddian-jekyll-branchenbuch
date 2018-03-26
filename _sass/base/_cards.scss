@@ -16,9 +16,12 @@
 
 .card .card-title {
     font-size: 1.17em;
-    font-weight: bold;
-    font-family: sans-serif;
     color: $primary;
+}
+
+.card-title {
+    font-family: $base-font-family;
+    font-weight: bold;
 }
 
 .card .card-content .card-description {

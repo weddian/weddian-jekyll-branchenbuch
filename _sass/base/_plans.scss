@@ -8,28 +8,36 @@
 }
 
 .plan ul,
-ul.weddian-app {
+ul.styled-list {
     padding: 0;
     margin: 0;
 }
 
 .plan li,
-.weddian-app li {
+.styled-list li {
     list-style: none;
     line-height: 32px;
     min-height: 42px;
     font-size: 18px;
     border: $default-border-width solid $gray;
     border-top: none;
-    padding: $default-pad-1;
+    @include breakpoint(s){
+        padding: 0.3rem $default-pad-1;
+    }
+    @include breakpoint(m){
+        padding: 0.5rem $default-pad-1;
+    }
+    @include breakpoint(l){
+        padding: $default-pad-1;
+    }
     display: flex;
 }
-.weddian-app li:before{
+.styled-list li:before{
     content: '★';
     font-size: 1.5rem;
     margin-right: .5rem;
 }
-.weddian-app li:last-of-type{
+.styled-list li:last-of-type{
     border: none;
 }
 
@@ -38,7 +46,7 @@ ul.weddian-app {
 }
 
 .plan li,
-.weddian-app li {
+.styled-list li {
     border-left: none;
     border-right: none;
     border-radius: 0;
@@ -53,12 +61,12 @@ ul.weddian-app {
 }
 
 .plan li,
-.weddian-app li {
+.styled-list li {
     color: $primary;
 }
 
 .plan li.active,
-.weddian-app li.active {
+.styled-list li.active {
     background-color: $gray;
 }
 
@@ -93,7 +101,7 @@ ul.weddian-app {
 }
 
 .plan .card-title small {
-    font-family: sans-serif;
+    font-family: $base-font-family;
 }
 
 .plan .card-title i.fa {

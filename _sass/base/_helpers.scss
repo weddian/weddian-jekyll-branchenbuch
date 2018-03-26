@@ -876,3 +876,8 @@
 .gray {
   color: $gray;
 }
+
+.border{
+  border: $default-border-width solid $black;
+  border-radius: $default-border-radius;
+}

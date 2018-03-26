@@ -17,16 +17,16 @@ layout: default
 
     <div class="contacts col-12 col-4-l">
         <h2>Kontakt</h2>
-        <h4>Telefon:</h4>
+        <h4 class="card-title">Telefon:</h4>
         <div>
             <a href="tel:{{page.phone}}">{{page.phone}}</a>
         </div>
-        <h4>E-Mail:</h4>
+        <h4 class="card-title">E-Mail:</h4>
         <div>
             <a href="mailto:{{page.email}}">{{page.email}}</a>
         </div>
         {% if page.socialNetworks %} {% if page.socialNetworks.instagram %}
-        <h4>Instagram:</h4>
+        <h4 class="card-title">Instagram:</h4>
         <div>
             <a href="{{ page.socialNetworks.instagram }}">{{ page.socialNetworks.instagram }}</a>
         </div>
@@ -41,8 +41,8 @@ layout: default
     <div id="faq" class="col-12">
         <h2>Fragen und Antworten</h2>
         {% for question in page.extraData.questions %}
-        <h4>{{ question.question }}</h4>
-        {{ question.answer }} {% endfor %} {% endif %}
+        <h4 class="card-title">{{ question.question }}</h4>
+        {{ question.answer| markdownify }} {% endfor %} {% endif %}
     </div>
 
     {% include sp/gallery.html %}

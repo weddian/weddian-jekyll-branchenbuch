@@ -32,6 +32,8 @@ textarea {
 input:not([type="radio"]),textarea{
   margin-right:$default-pad-1;
   width: 100%;
+  border: $default-border-width solid $base-input-border-color;
+  border-radius: $default-border-radius; 
 }
 
 // Mixed Input Fields
@@ -46,6 +48,7 @@ input:not([type="radio"]),textarea{
   padding: 10px;
   background-color: $base-input-background-color;
   border: $default-border-width solid $base-input-border-color;
+  border-radius: $default-border-radius;  
   -webkit-appearance: none;
   -moz-appearance: textfield;
   border-radius: 0;

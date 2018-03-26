@@ -12,11 +12,9 @@
                 <p class="location" amp-fx="parallax" data-parallax-factor="1.15">
                     <i class="fa fa-map-marker"></i> {{ page.addressLabel }}</p>
                 {% if page.rating > 0.0 %}
-                    <div class="rating-box" amp-fx="parallax" data-parallax-factor="1.15">
-                    <span>
-                            {% for i in (1..5) %}{% if i <= page.rating %}★{% else %}☆{% endif %}{% endfor %}
-                    </span>
-                </div>
+                    <p class="rating-box" amp-fx="parallax" data-parallax-factor="1.15">
+                            {% for i in (1..5) %}{% if i <= page.rating %}<i class="fa fa-star"></i>{% else %}<i class="fa fa-star-o"></i>{% endif %}{% endfor %}
+                </p>
                 {% endif %}
                 <div class="pad-bottom-1">
                     <a href="#anfragen" class="button-primary mar-top-1 mar-right-1 full-width-button" amp-fx="parallax" data-parallax-factor="1.15">
