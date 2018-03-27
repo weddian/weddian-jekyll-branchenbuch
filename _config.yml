@@ -1,4 +1,5 @@
 title: Weddian Branchenbuch
+subtitle: Das Hochzeits-Branchenbuch für die mobile Generation
 email: team@weddian.de
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -6,8 +7,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://branchenbuch.weddian.de" # the base hostname & protocol for your site, e.g. http://example.com
-backend: http://localhost:8081 # "https://apptest.weddian.de"
-twitter_username: jekyllrb
+backend: "https://apptest.weddian.de"
+twitter_username: weddiande
 
 markdown: kramdown
 exclude:

@@ -8,3 +8,8 @@ _categories
 .firebaserc
 firebase-debug.log
 firebase.json
+node_modules
+_includes/css/index.css
+_includes/css/list.css
+_includes/css/page.css
+_includes/css/serviceprovider.css

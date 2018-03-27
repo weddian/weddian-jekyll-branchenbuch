@@ -1,0 +1,25 @@
+{
+  "name": "weddian-jekyll-branchenbuch",
+  "version": "1.0.0",
+  "description": "Das Branchenbuch für die Hochzeitsplanung",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gulp && bundle exec jekyll clean && bundle exec jekyll serve --incremental",
+    "build": "gulp && bundle exec jekyll clean && bundle exec jekyll build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weddian/weddian-jekyll-branchenbuch.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/weddian/weddian-jekyll-branchenbuch/issues"
+  },
+  "homepage": "https://branchenbuch.weddian.de/"
+}

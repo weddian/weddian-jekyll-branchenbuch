@@ -1,0 +1,98 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>
+    {{ site.title }}: {{ page.title }}
+</title>
+
+<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}: {{ site.description }}{% endif %}">
+<meta name="robots" content="index,follow"> {% if page.author %}
+<meta name="author" content="{{ page.author }}"> {% endif %}
+<meta itemprop="name" content="{{ site.title }}">
+<meta name="theme-color" content="#D32F2F">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+
+<link rel="apple-touch-icon-precomposed" sizes="92x92" href="{{ site.baseurl }}/images/weddian-logo-92.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/images/weddian-logo-72.png">
+<link rel="shortcut icon" href="{{ " /images/favicon.png " | prepend: site.baseurl }}">
+
+<meta name="msapplication-TileImage" content="{{ site.baseurl }}/images/92x92.png">
+<meta name="msapplication-TileColor" content="#D32F2F">
+
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ site.title }}: {{ page.title }}" />
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}: {{ site.description }}{% endif %}"
+/>
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/weddian-logo-92.png" />
+<meta property="og:image:type" content="image/png" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@{{ site.twitter_username }}" />
+<meta name="twitter:title" content="{{ site.title }}: {{ page.title }}" />
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}: {{ site.description }}{% endif %}"
+/>
+<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/images/weddian-logo-92.png" />
+{% if page.title == 'Startseite' %}
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "{{ site.url }}",
+        "name": "{{ site.title }}",
+        "logo": "{{ site.url }}{{ site.baseurl }}/images/weddian-logo-92.png",
+        "sameAs": [
+            "https://twitter.com/{{ site.twitter_username }}"
+        ]
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "{{ site.title }}",
+        "headline": "{{ site.subtitle }}",
+        "url": "{{ site.url }}",
+        "image": "{{ site.url }}{{ site.baseurl }}/images/weddian-logo-92.png",
+        "description": "{{ site.description }}",
+        "publisher": {
+            "@type": "Organization",
+            "logo": "{{ site.url }}{{ site.baseurl }}/images/weddian-logo-92.png",
+            "url": "{{ site.url }}",
+            "name": "{{ site.title }}"
+        }
+    }
+</script>
+{% endif %}
+{% if page.path contains '_serviceprovider' %}
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "{{ page.address.city }}",
+            "addressRegion": "{% if page.address.county %}{{ page.address.county | append: ', ' }}{% endif %}{{ page.address.country }}",
+            "postalCode": "{{ page.address.zip }}",
+            "streetAddress": "{{ page.address.street }}{% if page.address.streetNumber %}{{ page.address.streetNumber | prepend: ' ' }}{% endif %}"
+        },
+        "geo":{
+            "@type":"GeoCoordinates",
+            "latitude":{{ page.location.coordinates[1] }},
+            "longitude":{{ page.location.coordinates[0] }}
+          },
+        "description": "{{ page.description }}",
+        "name": "{{ page.title }}",
+        "telephone": "{{ page.phone }}"
+        {% if page.gallery %}
+        ,"image": [
+        {% for image in page.gallery %}
+        "{{ image.url }}"{% if forloop.last == false %},{% endif %}
+        {% endfor %}
+        ]
+        {% endif %}
+    }
+</script>
+{% endif %}

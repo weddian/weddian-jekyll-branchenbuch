@@ -1,5 +1,5 @@
 {% if site.list == 'overflow' %}
-<amp-list width="auto" height="1200" layout="fixed-height" src="https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=5"
+<amp-list width="auto" height="1200" layout="fixed-height" src="{{ site.backend }}/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=5"
   items="data">
   {% raw %}
   <template type="amp-mustache">
@@ -34,11 +34,11 @@
 <amp-state id="control">
   { "pageNumber": 0 }
 </amp-state>
-<amp-state id="page" src="https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=0"
-  [src]="'https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=' + control.pageNumber">
+<amp-state id="page" src="{{ site.backend }}/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=0"
+  [src]="'{{ site.backend }}/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=' + control.pageNumber">
 </amp-state>
-<amp-list id="paged-amp-list" layout="fixed-height" height="1000" src="https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=0"
-  [src]="'https://apptest.weddian.de/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=' + control.pageNumber"
+<amp-list id="paged-amp-list" layout="fixed-height" height="1000" src="{{ site.backend }}/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=0"
+  [src]="'{{ site.backend }}/api/search/serviceProvider?categorySlug={{ page.categorySlug }}&latitude={{ page.lat }}&longitude={{ page.lon }}&size=50&page=' + control.pageNumber"
   items="data">
   {% raw %}
   <template type="amp-mustache">
