@@ -19,14 +19,9 @@
                 layout="responsive"
                 width="1280"
                 height="720"></amp-img>
-                {% if image.description %}
-                    <figcaption on="tap:AMP.setState({expanded: !expanded})"
-                    tabindex="0"
-                    role="button"
-                    [class]="expanded ? 'expanded' : ''"><span [text]="expanded ? 'X' : '+'">+</span>&ensp;<span [text]="expanded ? '' : ''">(Ausklappen)&ensp;</span>
-                    {{ image.description }}
-                  </figcaption>
-                  {% endif %}
+                <figcaption>
+                  {{ image.description }}
+                </figcaption>
             </figure>
             {% endfor %}
             </amp-carousel>

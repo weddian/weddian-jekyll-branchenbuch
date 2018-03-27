@@ -5,5 +5,6 @@ _serviceprovider
 .idea
 _city-categories
 _categories
-
-
+.firebaserc
+firebase-debug.log
+firebase.json

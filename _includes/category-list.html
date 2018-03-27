@@ -70,7 +70,7 @@
 </amp-list>
 <div class="text-center row clear">
 <div class="col-6">
-<button href="#" class="button button-full mar-top-1 mar-left-1" [hidden]="control.pageNumber == 0 ? true : false" on="tap:
+<button class="button button-full mar-top-1 mar-left-1" [hidden]="control.pageNumber == 0 ? true : false" on="tap:
 AMP.setState({
   control: {
       pageNumber: control.pageNumber - 1
@@ -78,7 +78,7 @@ AMP.setState({
 })">Vorherhige Seite</button>
 </div>
 <div class="col-6">
-<button href="#" class="button button-full mar-top-1 mar-right-1" [hidden]="page.data.length < 50 ? true : false" on="tap:
+<button class="button button-full mar-top-1 mar-right-1" [hidden]="page.data.length < 50 ? true : false" on="tap:
 AMP.setState({
   control: {
   pageNumber: control.pageNumber + 1
