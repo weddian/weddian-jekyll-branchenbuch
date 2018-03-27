@@ -1,0 +1,18 @@
+{% if page.extraData.questions %}
+<div id="faq" class="col-12">
+    <h2>Fragen und Antworten</h2>
+    <ul class="list-unstyled">
+    {% for question in page.extraData.questions %}
+    <li>
+        <p class="primary mar-top-1">
+            <b>{{ question.question }}</b>
+        </p>
+        <p class="mar-bottom-0 black">
+            {{ question.answer| markdownify }}
+        </p>
+        <hr>
+    </li>
+     {% endfor %} 
+    </ul>
+</div>
+{% endif %}

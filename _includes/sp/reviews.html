@@ -1,24 +1,32 @@
 {% if page.reviews > 0 %}
 <div class="col-12" id="reviews">
     <h2>Bewertungen</h2>
-    {% for review in page.reviewList %}
-    <div class="review">
-        <div>
-            <p>{{ review.review }}</p>
-        </div>
-        <div class="reviewer">
-            <div class="flex-box">
-                <b>{{ review.userName }}</b>
-                <span>&nbsp;aus {{review.userCity}},&nbsp;
-                <amp-timeago locale="de" layout="fixed-height" height="24"
-                         cutoff="15552000"
-                         datetime="{{review.createdDate | divided_by: 1000 | date: '%FT%T.%LZ'}}">
-                {{review.createdDate | divided_by: 1000 | date: 'am %e.%m.%Y '}}</amp-timeago>
-            </span>
+    <p class="primary">Durchschnittlich: {{ page.rating | round: 2 }} {% for i in (1..5) %}{% if i
+        <= page.rating %}<i class="fa fa-star"></i>{% else %}
+            <i class="fa fa-star-o"></i>{% endif %}{% endfor %}</p>
+    <div class="row clear">
+        {% for review in page.reviewList %}
+        <div class="col-12">
+            <div class="review card">
+                <div class="reviewer">
+                    <p>
+                        <b>{{ review.userName }}</b>
+                        <span>&nbsp;aus {{review.userCity}},&nbsp;
+                            <amp-timeago locale="de" layout="fixed-height" height="24" cutoff="15552000" datetime="{{review.createdDate | divided_by: 1000 | date: '%FT%T.%LZ'}}">
+                                {{review.createdDate | divided_by: 1000 | date: 'am %e.%m.%Y '}}</amp-timeago>
+                        </span>
+                    </p>
+                    <div class="stars">{% for i in (1..5) %}{% if i
+                        <= review.stars %}<i class="fa fa-star"></i>{% else %}
+                            <i class="fa fa-star-o"></i>{% endif %}{% endfor %}</div>
+                </div>
+                <div class="card-content pad-top-1">
+                    <p>{{ review.review }}</p>
+                </div>
+
             </div>
-            <div class="stars">{% for i in (1..5) %}{% if i <= review.stars %}<i class="fa fa-star"></i>{% else %}<i class="fa fa-star-o"></i>{% endif %}{% endfor %}</div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
 {% endif %}

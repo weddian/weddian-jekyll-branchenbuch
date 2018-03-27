@@ -5,7 +5,12 @@
     margin: 0;
     background-color: $white;
 }
-
+.card .card-header{
+        display: flex;
+        justify-content: space-between;
+        padding: $default-pad-1;
+        background-color: #f9f9f9;
+}
 .card .card-content {
     padding-left: $default-pad-2;
     padding-right: $default-pad-2;

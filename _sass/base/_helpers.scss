@@ -253,17 +253,18 @@
 .pad-right-1 {
   padding-right: $default-pad-1;
 }
-@include breakpoint(s){
-  .pad-left-0-s{
+
+@include breakpoint(s) {
+  .pad-left-0-s {
     padding-left: 0;
   }
-  .pad-top-0-s{
+  .pad-top-0-s {
     padding-top: 0;
   }
-  .pad-right-0-s{
+  .pad-right-0-s {
     padding-right: 0;
   }
-  .pad-bottom-0-s{
+  .pad-bottom-0-s {
     padding-bottom: 0;
   }
 }
@@ -877,7 +878,15 @@
   color: $gray;
 }
 
-.border{
+.lightgray {
+  color: $lightgray;
+}
+
+.darkgray {
+  color: $darkgray;
+}
+
+.border {
   border: $default-border-width solid $black;
   border-radius: $default-border-radius;
 }

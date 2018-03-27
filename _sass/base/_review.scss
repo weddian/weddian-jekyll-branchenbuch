@@ -1,21 +1,20 @@
 .review {
-    border: $default-border-width solid #eee;
-    margin-bottom: 16px;
+    border: $default-border-width solid $gray;
+    border-radius: $default-border-radius;
+    margin-bottom: $default-pad-2;
 }
 
-.review p {
-    color: #969595;
-    margin: 0;
-    padding: $default-pad-2;
+.review .card-content p{
     text-align: justify;
     letter-spacing: 0.4px;
+    color: $darkgray;
 }
 
 .reviewer {
     display: flex;
     justify-content: space-between;
-    padding: $default-pad-2;
-    background-color: #f9f9f9;
+    padding: $default-pad-1;
+    background-color: $lightgray;
 }
 
 .stars {

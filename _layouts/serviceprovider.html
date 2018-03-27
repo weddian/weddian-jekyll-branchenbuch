@@ -17,40 +17,38 @@ layout: default
 
     <div class="contacts col-12 col-4-l">
         <h2>Kontakt</h2>
-        <h4 class="card-title">Telefon:</h4>
-        <div>
-            <a href="tel:{{page.phone}}">{{page.phone}}</a>
-        </div>
-        <h4 class="card-title">E-Mail:</h4>
-        <div>
-            <a href="mailto:{{page.email}}">{{page.email}}</a>
-        </div>
-        {% if page.socialNetworks %} {% if page.socialNetworks.instagram %}
-        <h4 class="card-title">Instagram:</h4>
-        <div>
-            <a href="{{ page.socialNetworks.instagram }}">{{ page.socialNetworks.instagram }}</a>
-        </div>
-        {% endif %} {% endif %}
-        <div>
-            <a href="#anfragen" class="button-primary mar-top-1">
-                <i class="fa fa-bookmark-o"></i>&nbsp;&nbsp;Anfragen</a>
+        <div class="card">
+            <div class="card-content">
+                <h4 class="card-title">Telefon:</h4>
+                <div>
+                    <a href="tel:{{page.phone}}">{{page.phone}}</a>
+                </div>
+                <h4 class="card-title">E-Mail:</h4>
+                <div>
+                    <a href="mailto:{{page.email}}">{{page.email}}</a>
+                </div>
+                {% if page.socialNetworks %} {% if page.socialNetworks.instagram %}
+                <h4 class="card-title">Instagram:</h4>
+                <div>
+                    <a href="{{ page.socialNetworks.instagram }}">{{ page.socialNetworks.instagram }}</a>
+                </div>
+                {% endif %} {% endif %}
+                <div>
+                    <a href="#anfragen" class="button-primary mar-top-1">
+                        <i class="fa fa-bookmark-o"></i>&nbsp;&nbsp;Anfragen</a>
+                </div>
+            </div>
         </div>
     </div>
 
-    {% if page.extraData.questions %}
-    <div id="faq" class="col-12">
-        <h2>Fragen und Antworten</h2>
-        {% for question in page.extraData.questions %}
-        <h4 class="card-title">{{ question.question }}</h4>
-        {{ question.answer| markdownify }} {% endfor %} {% endif %}
-    </div>
+    {% include sp/faq.html %}
 
     {% include sp/gallery.html %}
- 
+    
     {% include sp/inquiry.html %}
-
+    
     {% include sp/rating.html %}
-
+    
     {% include sp/reviews.html %}
 
 </div>
