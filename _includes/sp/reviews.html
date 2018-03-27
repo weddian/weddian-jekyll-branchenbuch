@@ -11,7 +11,7 @@
                 <div class="reviewer">
                     <p>
                         <b>{{ review.userName }}</b>
-                        <span>&nbsp;aus {{review.userCity}},&nbsp;
+                        <span>&ensp;aus {{review.userCity}},
                             <amp-timeago locale="de" layout="fixed-height" height="24" cutoff="15552000" datetime="{{review.createdDate | divided_by: 1000 | date: '%FT%T.%LZ'}}">
                                 {{review.createdDate | divided_by: 1000 | date: 'am %e.%m.%Y '}}</amp-timeago>
                         </span>

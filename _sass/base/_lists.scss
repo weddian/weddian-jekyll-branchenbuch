@@ -19,13 +19,11 @@ dl {
   }
 }
 .list-overflow[overflow] {
-  background: gray;
-  color: #fff;
   cursor: pointer;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 2;
-  padding: $default-pad-2;
+  margin:0;
 }

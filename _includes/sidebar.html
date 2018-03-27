@@ -3,10 +3,11 @@
   side="right">
   <ul class="list list--nav">
         <li><a href="#" on="tap:sidebar.close">Schließen</a></li>
-        <li><a href="https://blog.weddian.de">Blog</a></li>                       
-        <li><a href="http://www.hochzeitsplanerplus.de/">Hochzeitsplaner</a></li>
-        <li><a href="https://app.weddian.de">Dienstleister</a></li>
-        <li><amp-img layout="fixed" width="135" height="40" src="{{ site.baseurl }}/images/app-store-badge.svg"></amp-img></li>
-        <li><amp-img layout="fixed" width="135" height="40" src="{{ site.baseurl }}/images/play-store-badge.png"></amp-img></li>
+        {% for item in site.data.header %}
+        <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+        {% endfor %}
+        
 </ul>
+<amp-img layout="fixed" width="162" height="48" class="mar-left-2 mar-top-1" src="{{ site.baseurl }}/images/app-store-badge.svg"></amp-img>
+<amp-img layout="fixed" width="162" height="48" class="mar-left-2 mar-top-1" src="{{ site.baseurl }}/images/play-store-badge.png"></amp-img>
 </amp-sidebar>
