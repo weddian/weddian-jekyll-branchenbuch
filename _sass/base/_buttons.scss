@@ -41,6 +41,16 @@
   }
 }
 
+.card.image-card .button.FREE,
+.card.image-card .button.PREMIUM,
+.card.image-card .button.PREMIUMPLUS{
+  line-height: 38px;
+  height: 38px;
+  padding: 0 $default-pad-2;
+  position: absolute;
+  bottom: $default-pad-2;
+}
+
 .button.PREMIUMPLUS:before {
   content: '★';
   margin-right: .5rem;
