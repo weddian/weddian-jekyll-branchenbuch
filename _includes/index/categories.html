@@ -6,7 +6,7 @@
     {% for category in categories %}
     <div class="col-12 col-6-m col-4-l">
         <a href="{{ site.baseurl }}{{ category.url }}">
-            <div class="card image-card">
+            <div class="card category-card">
                 <amp-img layout="responsive" height="90" width="160" src="{{ site.baseurl }}/images/categories-small/{{ category.slug }}.jpg"></amp-img>
                 <div class="card-content">
                     <h3 class="card-title">{{ category.label }}</h3>

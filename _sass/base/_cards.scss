@@ -34,7 +34,17 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
-
+.card.image-card.PREMIUM .card-content,
+.card.image-card.PREMIUMPLUS .card-content{
+    background: #fadeed;
+}
+.card.card.category-card .card-content{
+    position: relative;
+}
+.card.image-card .card-content,
+.card.category-card .card-content{
+    padding-bottom: calc(1.5rem + 38px);
+}
 @include breakpoint(m) {
     .card.image-card {
         min-height: 400px;
